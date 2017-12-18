@@ -1,20 +1,57 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: './src/index.html',
-  filename: 'index.html',
-  inject: 'body'
-})
+const path = require('path')
+const webpack = require('webpack')
+
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+
+const paths = {
+  src: path.join(__dirname, 'src'),
+  dist: path.join(__dirname, 'dist'),
+  data: path.join(__dirname, 'data')
+}
+
 module.exports = {
-  entry: './src/index.js',
+  context: paths.src,
+  entry: ['./app.js', './main.scss'],
   output: {
-    path: path.resolve('dist'),
-    filename: 'index_bundle.js'
+    filename: 'app.bundle.js',
+    path: paths.dist,
+    publicPath: 'dist',
   },
   module: {
-    loaders: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ }
-    ]
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: [/node_modules/],
+        use: [{
+          loader: 'babel-loader',
+          options: { presets: ['es2015', 'stage-0'] },
+        }],
+      },
+      {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract([
+          'css-loader', 'sass-loader'
+        ]),
+      }
+    ],
   },
-  plugins: [HtmlWebpackPluginConfig]
+  devServer: {
+    contentBase: paths.dist,
+    compress: true,
+    port: '4800',
+    stats: 'errors-only',
+  },
+  plugins: [
+    new ExtractTextPlugin({
+      filename: 'main.bundle.css',
+      allChunks: true,
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: paths.data,
+        to: paths.dist + '/data'
+      }
+    ])
+  ],
 }
