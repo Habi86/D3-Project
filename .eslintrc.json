@@ -26,26 +26,16 @@
         ],
         "no-console": 0,
         "ignoreComments": true,
-        "keyword-spacing": [
-            "after",
-            "before"
-        ],
+        "keyword-spacing":
+        ["error", { "before": true ,  "after": true }],
         "eqeqeq" : 1,
         "space-infix-ops": [
           "error",
           {"int32Hint": false}
         ],
-        "brace-style": [
-          "stroustrup"
-        ],
-        "curly": [
-          "multi-line"
-        ],
-        "camelcase": [
-          "always"
-        ],
-        "space-before-function-paren": [
-          "never"
-        ]
+        "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
+        "curly": ["error", "multi-line"],
+        "camelcase": ["error", { "properties": "always" }],
+        "space-before-function-paren": ["error", "never"]
     }
 }
