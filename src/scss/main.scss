@@ -1,5 +1,33 @@
 // main styles
 @import 'colors';
 @import 'mixins';
+h4 {
+    color: $primary-color;
+    margin: 20px;
+}
 
 //styles for charts
+rect {
+    fill: $primary-color;
+    fill-opacity: 0.8;
+}
+
+rect:hover {
+    fill-opacity: 1;
+}
+
+.axis {
+    font-size: smaller;
+}
+
+label , span{
+    font-size: 20px;
+    margin-left: 20px;
+    input[type='checkbox'] {
+        opacity: 1 !important;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+        position: relative !important;
+    }
+}

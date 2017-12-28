@@ -3,15 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning D3.js</title>
+    <title>Stackoverflow Survey</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <link href="/dist/main.bundle.css" rel="stylesheet">
   </head>
   <body>
-    <h2 class="center-align">D3.js - Project</h2>
-
+    <h2 class="center-align">Visualization of the Stackoverflow Survey</h2>
+    <h5 class="center-align">Stefanie Habersatter & Vera Karl</h5>
+    <div class="barchart">
+      <h4>Distribution of devs around the world</h4>
+      <span>Filter: </span>
+      <label>
+        <input type="checkbox" name="highest" value="" id="filter-highest" />
+        Highest amount of devs
+      </label>
+      <label>
+        <input type="checkbox" name="lowest" value="1" id="filter-lowest" /> 
+        Lowest amount of devs
+      </label>
+    </div>
     <div id="root" class="center-align"></div>
-
     <script type="text/javascript" src="/dist/app.bundle.js"></script>
   </body>
 </html>
