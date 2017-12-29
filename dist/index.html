@@ -11,6 +11,29 @@
     <h2 class="center-align">D3.js - Project</h2>
 
     <div id="root" class="center-align"></div>
+    <div id="bubblechart" class="center-align">
+      <div>
+        <form>
+          <fieldset>
+            <strong>Filter:</strong>
+            <ul>
+              <li>
+                <label>
+                  <input type='checkbox' id='bubble-filter' name='US' value='1'>
+                  US only
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+
+
+
+      </div>
+      <!-- <div id="bubble" class="center-align"></div> -->
+      <svg id="bubble" width="960" height="960" font-family="sans-serif" font-size="10" text-anchor="middle"></svg>
+
+    </div>
 
     <script type="text/javascript" src="/dist/app.bundle.js"></script>
   </body>

@@ -1,0 +1,3596 @@
+"Country","HaveWorkedLanguage","Frequency"
+"ALL","Assembly",1823
+"ALL","C",6974
+"ALL","C#",12476
+"ALL","C++",8155
+"ALL","Clojure",391
+"ALL","CoffeeScript",1192
+"ALL","CommonLisp",273
+"ALL","Dart",145
+"ALL","Elixir",380
+"ALL","Erlang",281
+"ALL","F#",457
+"ALL","Go",1557
+"ALL","Groovy",1193
+"ALL","Hack",107
+"ALL","Haskell",649
+"ALL","Java",14524
+"ALL","JavaScript",22875
+"ALL","Julia",138
+"ALL","Lua",1039
+"ALL","Matlab",1569
+"ALL","Objective-C",2349
+"ALL","Perl",1585
+"ALL","PHP",10290
+"ALL","Python",11704
+"ALL","R",1634
+"ALL","Ruby",3324
+"ALL","Rust",416
+"ALL","Scala",1309
+"ALL","Smalltalk",327
+"ALL","SQL",18754
+"ALL","Swift",2368
+"ALL","TypeScript",3488
+"ALL","VB.NET",2273
+"ALL","VBA",1574
+"ALL","VisualBasic6",1071
+"United States","Swift",692
+"United Kingdom","JavaScript",2214
+"United Kingdom","Python",1038
+"United Kingdom","Ruby",307
+"United Kingdom","SQL",1849
+"United Kingdom","Java",940
+"United Kingdom","PHP",888
+"United States","Matlab",380
+"United States","Python",3348
+"United States","R",538
+"United States","SQL",4589
+"New Zealand","JavaScript",132
+"New Zealand","PHP",40
+"New Zealand","Rust",3
+"Poland","CoffeeScript",45
+"Poland","Clojure",11
+"Poland","Elixir",13
+"Poland","Erlang",11
+"Poland","Haskell",19
+"Poland","JavaScript",563
+"Poland","Python",292
+"Poland","Ruby",81
+"Colombia","C#",33
+"Colombia","JavaScript",79
+"France","Objective-C",66
+"France","Swift",66
+"United Kingdom","C",441
+"United Kingdom","C++",570
+"Germany","Java",1458
+"Germany","JavaScript",1770
+"Germany","Ruby",248
+"Germany","SQL",1450
+"United Kingdom","Assembly",113
+"United States","JavaScript",5699
+"United States","VB.NET",611
+"United States","C",1534
+"United States","Clojure",120
+"United States","Rust",128
+"Greece","Perl",12
+"Greece","Python",79
+"United Kingdom","C#",1386
+"Israel","Java",187
+"Italy","PHP",217
+"Italy","SQL",313
+"United States","Java",3191
+"United States","Scala",345
+"India","Java",1378
+"India","JavaScript",1580
+"India","Objective-C",186
+"India","Python",735
+"India","Swift",144
+"Israel","JavaScript",246
+"Israel","Python",156
+"Germany","C#",953
+"Brazil","JavaScript",361
+"Croatia","Assembly",6
+"Croatia","C",21
+"Italy","C#",164
+"Italy","JavaScript",376
+"Italy","Matlab",24
+"Italy","Python",158
+"Italy","R",18
+"Argentina","C#",51
+"Argentina","F#",2
+"Argentina","JavaScript",121
+"Argentina","SQL",91
+"Netherlands","C#",254
+"Netherlands","JavaScript",416
+"Netherlands","SQL",351
+"Netherlands","TypeScript",88
+"United States","C++",1837
+"United States","Lua",253
+"Ukraine","Java",75
+"Ukraine","JavaScript",136
+"Ukraine","SQL",103
+"United States","VBA",404
+"United States","Groovy",315
+"Sri Lanka","C++",25
+"Sri Lanka","C#",37
+"Sri Lanka","Java",67
+"Sri Lanka","JavaScript",73
+"Sri Lanka","Lua",2
+"Sri Lanka","SQL",64
+"Malaysia","JavaScript",92
+"Malaysia","Ruby",16
+"United States","C#",3100
+"United States","Assembly",418
+"United States","Perl",560
+"Brazil","Java",240
+"Brazil","PHP",161
+"Brazil","Ruby",57
+"Germany","PHP",937
+"Finland","Java",81
+"Finland","JavaScript",156
+"Finland","PHP",64
+"Finland","SQL",101
+"Finland","VB.NET",6
+"Italy","Go",16
+"Italy","Java",250
+"Turkey","C#",89
+"Turkey","JavaScript",121
+"Turkey","SQL",110
+"Canada","C#",647
+"India","C#",658
+"India","SQL",1373
+"Ukraine","PHP",54
+"United Kingdom","Swift",180
+"United Kingdom","VBA",214
+"Netherlands","C",98
+"Netherlands","C++",126
+"Netherlands","Java",247
+"Netherlands","Matlab",30
+"India","C++",694
+"Italy","CoffeeScript",19
+"Italy","Ruby",25
+"United States","CoffeeScript",304
+"United States","Ruby",1123
+"Finland","Python",92
+"Austria","Elixir",3
+"Austria","Java",184
+"Austria","JavaScript",224
+"Austria","SQL",207
+"France","Assembly",82
+"France","C",343
+"France","C++",342
+"France","Java",496
+"France","JavaScript",807
+"France","Perl",70
+"France","Python",437
+"France","Ruby",114
+"France","SQL",631
+"France","TypeScript",129
+"Israel","C#",143
+"Israel","PHP",65
+"Israel","SQL",187
+"Israel","TypeScript",52
+"Israel","VB.NET",10
+"Brazil","Python",164
+"Brazil","SQL",267
+"Brazil","Scala",10
+"Croatia","JavaScript",82
+"Croatia","Python",40
+"Germany","CoffeeScript",98
+"Germany","Haskell",81
+"Germany","Python",947
+"Poland","C#",292
+"India","C",817
+"Germany","Smalltalk",43
+"United States","VisualBasic6",233
+"Turkey","TypeScript",8
+"United States","Go",473
+"United States","Objective-C",655
+"Russian Federation","Java",184
+"Russian Federation","Scala",28
+"Germany","C++",868
+"Brazil","VB.NET",32
+"Brazil","VisualBasic6",18
+"United Kingdom","CommonLisp",20
+"United Kingdom","Clojure",41
+"United Kingdom","Go",128
+"United Kingdom","CoffeeScript",99
+"Mexico","C",48
+"Mexico","C++",43
+"Mexico","JavaScript",170
+"Mexico","Perl",10
+"Bulgaria","C#",68
+"Spain","Java",285
+"Spain","JavaScript",390
+"Spain","SQL",308
+"United Kingdom","VB.NET",307
+"United States","PHP",1827
+"Uruguay","C#",29
+"Uruguay","Java",27
+"Uruguay","JavaScript",38
+"Uruguay","Python",16
+"Uruguay","SQL",30
+"Uruguay","TypeScript",3
+"Denmark","Java",70
+"Denmark","JavaScript",147
+"Denmark","Lua",9
+"Denmark","PHP",58
+"Denmark","R",15
+"Denmark","SQL",119
+"Estonia","C#",21
+"Estonia","Java",33
+"Estonia","JavaScript",60
+"Estonia","Python",25
+"Estonia","SQL",46
+"Bangladesh","C#",28
+"Bangladesh","JavaScript",73
+"Bangladesh","Matlab",6
+"Bangladesh","PHP",63
+"Bangladesh","SQL",54
+"Finland","CoffeeScript",10
+"India","Matlab",107
+"United States","TypeScript",832
+"Lithuania","C",13
+"Lithuania","C#",54
+"Lithuania","JavaScript",83
+"United Kingdom","F#",85
+"United Kingdom","Haskell",57
+"Denmark","C#",114
+"Denmark","Python",62
+"Denmark","Scala",8
+"Denmark","VBA",11
+"Lithuania","SQL",61
+"France","PHP",439
+"Israel","Ruby",29
+"Israel","Scala",35
+"Germany","Go",136
+"Greece","Java",109
+"Greece","JavaScript",135
+"Greece","PHP",79
+"Greece","SQL",125
+"Ukraine","Elixir",4
+"United States","CommonLisp",71
+"India","PHP",885
+"Russian Federation","JavaScript",313
+"Russian Federation","TypeScript",56
+"United Kingdom","Perl",139
+"Sweden","CoffeeScript",16
+"Sweden","JavaScript",279
+"Sweden","PHP",83
+"Sweden","SQL",216
+"United States","F#",112
+"United Kingdom","Objective-C",181
+"Canada","CoffeeScript",70
+"Canada","Elixir",16
+"Canada","JavaScript",1104
+"Canada","Ruby",174
+"Canada","SQL",872
+"Romania","C++",113
+"Romania","Java",160
+"Romania","JavaScript",261
+"Canada","Groovy",63
+"Canada","Java",613
+"Poland","SQL",439
+"Netherlands","PHP",237
+"India","Go",55
+"India","Ruby",147
+"India","VBA",69
+"Serbia","C#",53
+"Slovenia","C#",72
+"Slovenia","Java",118
+"Slovenia","SQL",138
+"Poland","Groovy",49
+"Poland","Java",351
+"Costa Rica","C#",18
+"Costa Rica","Java",26
+"Costa Rica","JavaScript",33
+"Costa Rica","SQL",28
+"Poland","C++",228
+"Netherlands","Go",35
+"Netherlands","Python",214
+"Netherlands","Ruby",63
+"Netherlands","Rust",11
+"United States","Dart",39
+"Israel","Assembly",22
+"Israel","C",69
+"Israel","C++",85
+"Israel","CommonLisp",4
+"Israel","Perl",11
+"Argentina","PHP",54
+"Argentina","Python",39
+"Greece","C++",52
+"Canada","Objective-C",114
+"Canada","Swift",130
+"Canada","Lua",53
+"Canada","Python",620
+"Netherlands","Assembly",21
+"Costa Rica","Perl",2
+"United Kingdom","Rust",32
+"United Kingdom","TypeScript",361
+"Malaysia","C++",33
+"Malaysia","C#",44
+"Malaysia","Java",69
+"Malaysia","Lua",1
+"Malaysia","PHP",52
+"Malaysia","Python",27
+"Malaysia","SQL",68
+"Malaysia","VB.NET",19
+"Canada","C++",407
+"Dominican Republic","C#",29
+"Dominican Republic","SQL",27
+"Iran","Go",10
+"Iran","Groovy",3
+"Iran","Java",135
+"Iran","JavaScript",167
+"Iran","Python",96
+"Iran","Ruby",16
+"Iran","Scala",9
+"Iran","SQL",150
+"India","Assembly",167
+"Sweden","Assembly",27
+"Sweden","C",100
+"Sweden","Erlang",14
+"Sweden","Go",15
+"Sweden","Java",169
+"Sweden","Python",158
+"Poland","PHP",230
+"Serbia","Assembly",9
+"Serbia","C",21
+"Serbia","C++",28
+"Serbia","Java",75
+"Serbia","Matlab",8
+"Serbia","Python",29
+"Israel","Objective-C",25
+"Canada","VB.NET",135
+"Dominican Republic","Python",11
+"Dominican Republic","R",4
+"Dominican Republic","Ruby",5
+"Chile","C",17
+"Chile","Java",35
+"Chile","JavaScript",47
+"Chile","Lua",2
+"Chile","PHP",29
+"Chile","SQL",45
+"Chile","VBA",4
+"Chile","VisualBasic6",4
+"Germany","Scala",116
+"Ukraine","C#",72
+"Germany","Assembly",182
+"Germany","Matlab",146
+"Argentina","Erlang",1
+"Argentina","Java",61
+"Canada","C",308
+"Iran","Matlab",33
+"Slovenia","JavaScript",165
+"Russian Federation","Groovy",23
+"Russian Federation","SQL",263
+"Chile","C#",20
+"Chile","Objective-C",2
+"Chile","Swift",10
+"El Salvador","Java",6
+"El Salvador","JavaScript",10
+"El Salvador","SQL",10
+"Spain","PHP",194
+"Germany","C",688
+"Germany","Groovy",120
+"Germany","TypeScript",295
+"Germany","VBA",154
+"Argentina","CoffeeScript",4
+"Argentina","Elixir",5
+"Argentina","Ruby",12
+"Argentina","TypeScript",12
+"Germany","Swift",197
+"Finland","C#",75
+"Finland","TypeScript",18
+"Portugal","C++",34
+"Portugal","Java",79
+"Portugal","JavaScript",126
+"Portugal","Python",49
+"Portugal","TypeScript",19
+"Israel","Groovy",19
+"Mexico","C#",87
+"Mexico","SQL",141
+"Poland","C",147
+"Poland","CommonLisp",9
+"United States","Haskell",145
+"Albania","C#",15
+"Albania","JavaScript",26
+"Albania","PHP",20
+"Albania","SQL",26
+"South Africa","C#",143
+"South Africa","JavaScript",182
+"South Africa","TypeScript",44
+"Switzerland","C#",180
+"Switzerland","JavaScript",256
+"Switzerland","SQL",232
+"Sweden","C++",102
+"Sweden","C#",187
+"Sweden","F#",17
+"Brazil","C",123
+"Brazil","C++",111
+"Netherlands","Perl",24
+"New Zealand","C#",82
+"Russian Federation","C#",171
+"Russian Federation","Python",204
+"Brazil","Groovy",21
+"Finland","C",38
+"Uzbekistan","JavaScript",8
+"Uzbekistan","Python",2
+"Uzbekistan","SQL",10
+"United Kingdom","Scala",126
+"United Kingdom","Matlab",102
+"Moldavia","Assembly",4
+"Moldavia","C",11
+"Moldavia","C++",10
+"Moldavia","C#",11
+"Moldavia","Java",13
+"Moldavia","JavaScript",27
+"Moldavia","PHP",13
+"Moldavia","Python",12
+"Moldavia","Scala",3
+"Moldavia","SQL",19
+"Romania","C#",155
+"Canada","PHP",424
+"Norway","C#",72
+"Norway","JavaScript",115
+"Norway","SQL",91
+"Norway","TypeScript",13
+"Norway","VB.NET",8
+"Norway","VBA",5
+"United States","Elixir",102
+"Russian Federation","Matlab",13
+"Ireland","C",39
+"Ireland","CommonLisp",2
+"Ireland","Elixir",2
+"Ireland","Erlang",3
+"Ireland","Java",127
+"Ireland","JavaScript",174
+"Ireland","SQL",143
+"Sweden","TypeScript",47
+"Nepal","C#",24
+"Nepal","JavaScript",60
+"Nepal","PHP",48
+"Nepal","SQL",46
+"Poland","R",40
+"Poland","Scala",51
+"Mexico","Java",98
+"Pakistan","C++",75
+"Pakistan","C#",109
+"Pakistan","JavaScript",161
+"Pakistan","SQL",134
+"Slovak Republic","C",40
+"Slovak Republic","Swift",9
+"Lithuania","C++",27
+"Lithuania","Java",33
+"Lithuania","Objective-C",7
+"Lithuania","Swift",3
+"Lithuania","TypeScript",10
+"Austria","C#",139
+"Brazil","C#",173
+"France","VBA",54
+"Canada","Clojure",28
+"Canada","VBA",96
+"Belgium","JavaScript",211
+"Belgium","PHP",99
+"Belgium","SQL",165
+"Croatia","C#",48
+"Croatia","SQL",60
+"Croatia","TypeScript",10
+"United Arab Emirates","C",10
+"United Arab Emirates","C++",6
+"United Arab Emirates","Objective-C",8
+"United Arab Emirates","VBA",3
+"United Kingdom","Lua",82
+"Hungary","Groovy",9
+"Hungary","Java",114
+"Hungary","JavaScript",151
+"Hungary","SQL",134
+"India","Scala",68
+"Belarus","Assembly",1
+"Belarus","C++",12
+"Belarus","C#",14
+"Belarus","F#",2
+"Belarus","Java",19
+"Belarus","JavaScript",32
+"Belarus","PHP",9
+"Belarus","SQL",16
+"Belarus","TypeScript",4
+"Belarus","VB.NET",1
+"Belarus","VBA",1
+"Belarus","VisualBasic6",1
+"Egypt","Java",36
+"Egypt","JavaScript",52
+"Egypt","Python",27
+"Albania","Java",17
+"Albania","Matlab",1
+"Israel","VBA",8
+"Israel","VisualBasic6",5
+"Austria","C++",96
+"Austria","PHP",115
+"Romania","Ruby",21
+"Canada","TypeScript",176
+"Czech Republic","C++",87
+"Czech Republic","Matlab",16
+"Czech Republic","Python",95
+"Netherlands","F#",12
+"Australia","C#",298
+"Switzerland","C++",123
+"Switzerland","Matlab",35
+"Switzerland","Python",156
+"Belgium","C++",52
+"Belgium","Java",122
+"Belgium","Matlab",17
+"Belgium","Python",85
+"Spain","CoffeeScript",20
+"Spain","Ruby",44
+"Ukraine","Ruby",31
+"Germany","Perl",154
+"Mexico","PHP",79
+"Japan","Clojure",2
+"Japan","Java",79
+"Japan","Lua",6
+"Japan","Rust",5
+"Canada","Perl",93
+"I prefer not to say","Erlang",1
+"I prefer not to say","JavaScript",31
+"I prefer not to say","Scala",2
+"Sweden","Scala",11
+"South Korea","C",35
+"Sri Lanka","Python",29
+"Sri Lanka","VisualBasic6",8
+"Switzerland","Java",214
+"Brazil","Lua",33
+"Tunisia","C++",11
+"Tunisia","Java",19
+"Tunisia","JavaScript",27
+"Tunisia","PHP",20
+"Tunisia","SQL",19
+"Turkey","Java",99
+"Rwanda","JavaScript",4
+"Rwanda","Python",2
+"Rwanda","Ruby",1
+"Rwanda","VB.NET",2
+"Colombia","Assembly",2
+"Colombia","C",5
+"Colombia","C++",12
+"Colombia","Go",5
+"Colombia","Perl",1
+"Colombia","PHP",31
+"Colombia","SQL",46
+"Colombia","TypeScript",16
+"India","R",100
+"Luxembourg","Assembly",4
+"Luxembourg","C",5
+"Luxembourg","Erlang",2
+"Luxembourg","Java",12
+"Luxembourg","JavaScript",20
+"Germany","Clojure",30
+"India","TypeScript",158
+"Israel","R",21
+"I prefer not to say","C#",19
+"I prefer not to say","F#",1
+"I prefer not to say","Lua",6
+"Brazil","Elixir",7
+"Netherlands","CoffeeScript",23
+"Netherlands","Swift",41
+"Ireland","Python",92
+"Ireland","R",16
+"Belgium","C#",131
+"Kazakhstan","Java",11
+"Estonia","Assembly",4
+"Estonia","C",10
+"Estonia","CoffeeScript",4
+"Chile","Ruby",15
+"Spain","Groovy",19
+"Serbia","JavaScript",92
+"Serbia","PHP",51
+"Serbia","SQL",82
+"Russian Federation","Go",35
+"Russian Federation","Lua",28
+"Austria","TypeScript",47
+"Austria","VBA",21
+"Ireland","C++",32
+"Ireland","Ruby",32
+"Vietnam","CoffeeScript",3
+"Vietnam","JavaScript",38
+"Vietnam","Rust",2
+"Ireland","Objective-C",14
+"Ireland","Swift",13
+"Norway","C",33
+"Norway","C++",31
+"Norway","Java",67
+"Norway","PHP",48
+"Norway","Python",53
+"India","CommonLisp",13
+"India","Haskell",18
+"India","Rust",8
+"Spain","TypeScript",52
+"Poland","Assembly",44
+"Somalia","C",1
+"Somalia","C++",1
+"Somalia","PHP",1
+"Somalia","Python",1
+"Somalia","SQL",1
+"Croatia","C++",28
+"Croatia","CommonLisp",1
+"Croatia","Java",50
+"Croatia","Scala",1
+"Italy","C",124
+"Italy","VB.NET",46
+"Italy","VisualBasic6",27
+"Canada","Go",86
+"Switzerland","C",88
+"Switzerland","Groovy",26
+"Germany","VB.NET",130
+"Germany","VisualBasic6",71
+"Mexico","Dart",2
+"Mexico","Go",13
+"Mexico","Objective-C",15
+"Mexico","Python",70
+"Mexico","Swift",24
+"Austria","Ruby",22
+"New Zealand","C",24
+"New Zealand","Python",62
+"Romania","C",74
+"Romania","Perl",14
+"Romania","PHP",138
+"Romania","Python",89
+"Romania","Swift",29
+"United Arab Emirates","Python",10
+"New Zealand","C++",27
+"New Zealand","Objective-C",14
+"New Zealand","Java",66
+"Turkey","C",55
+"Turkey","C++",61
+"Turkey","Python",60
+"France","Matlab",47
+"Greece","Assembly",18
+"Greece","C",61
+"Greece","VBA",8
+"Saudi Arabia","Java",21
+"Saudi Arabia","JavaScript",21
+"Saudi Arabia","PHP",13
+"Saudi Arabia","Python",12
+"Saudi Arabia","SQL",22
+"Saudi Arabia","Swift",8
+"Czech Republic","CoffeeScript",9
+"Czech Republic","Java",121
+"Czech Republic","JavaScript",155
+"Czech Republic","PHP",82
+"Czech Republic","SQL",147
+"Pakistan","Assembly",29
+"Pakistan","C",58
+"Pakistan","Java",111
+"Pakistan","Perl",4
+"Pakistan","PHP",133
+"Pakistan","Python",47
+"Norway","R",7
+"Norway","Ruby",11
+"Serbia","TypeScript",17
+"Portugal","C#",70
+"Canada","Scala",60
+"Iran","PHP",114
+"Australia","Assembly",28
+"Australia","C",107
+"Australia","C++",126
+"Australia","Haskell",13
+"Australia","JavaScript",476
+"Australia","Rust",12
+"Denmark","Haskell",4
+"Denmark","Rust",1
+"Sweden","Ruby",30
+"Greece","Elixir",1
+"United States","Erlang",61
+"Canada","Matlab",59
+"Spain","C++",112
+"Poland","VB.NET",19
+"Iran","C",72
+"Iran","C++",116
+"Iran","C#",147
+"Iran","Erlang",5
+"Iran","Rust",3
+"Iran","TypeScript",26
+"France","C#",310
+"Bulgaria","Java",76
+"Bulgaria","Python",36
+"Bulgaria","R",3
+"United States","Julia",42
+"Mexico","Lua",4
+"Mexico","Ruby",27
+"Brazil","TypeScript",41
+"Denmark","C++",38
+"Switzerland","Haskell",12
+"Switzerland","PHP",136
+"Hungary","C#",97
+"Hungary","PHP",75
+"Hungary","Python",61
+"Hungary","TypeScript",36
+"Portugal","C",34
+"Portugal","Haskell",4
+"Portugal","SQL",112
+"Canada","Haskell",29
+"Romania","TypeScript",43
+"Russian Federation","CoffeeScript",29
+"Russian Federation","Ruby",50
+"Greece","C#",70
+"Greece","VB.NET",17
+"Bosnia-Herzegovina","Java",16
+"Bosnia-Herzegovina","JavaScript",31
+"Bosnia-Herzegovina","PHP",22
+"Bosnia-Herzegovina","Python",8
+"Bosnia-Herzegovina","Ruby",4
+"Algeria","C#",5
+"Algeria","JavaScript",10
+"Algeria","SQL",8
+"Algeria","TypeScript",2
+"Bosnia-Herzegovina","SQL",30
+"Germany","Elixir",30
+"Germany","Rust",54
+"Switzerland","Perl",14
+"United Kingdom","Groovy",104
+"Ukraine","C",47
+"Ukraine","C++",58
+"Ukraine","Objective-C",21
+"Turkey","Objective-C",17
+"Turkey","Ruby",13
+"Finland","Ruby",14
+"Cuba","C++",5
+"Cuba","JavaScript",16
+"Cuba","Python",7
+"Germany","R",152
+"Finland","Scala",11
+"Sweden","Lua",16
+"France","F#",14
+"Israel","Matlab",21
+"Israel","Swift",21
+"Australia","F#",11
+"Canada","R",65
+"Italy","Perl",13
+"Slovenia","C++",49
+"Slovenia","PHP",99
+"Ecuador","Java",10
+"Ecuador","JavaScript",11
+"Ecuador","SQL",8
+"Pakistan","Matlab",16
+"Pakistan","Ruby",18
+"Peru","Groovy",1
+"Peru","Java",24
+"Peru","JavaScript",33
+"Peru","PHP",15
+"Peru","Python",21
+"Peru","Ruby",7
+"Spain","Assembly",28
+"Spain","C",104
+"Spain","C#",141
+"Spain","Python",197
+"Canada","Rust",21
+"Netherlands","Julia",1
+"Israel","CoffeeScript",20
+"Germany","CommonLisp",25
+"Bosnia-Herzegovina","C++",13
+"Bosnia-Herzegovina","C#",23
+"Bosnia-Herzegovina","VB.NET",5
+"Poland","VBA",30
+"Russian Federation","C",102
+"Russian Federation","C++",149
+"Russian Federation","Objective-C",36
+"Russian Federation","Swift",32
+"Israel","Erlang",5
+"Israel","F#",5
+"Canada","F#",26
+"Germany","Objective-C",182
+"Turkey","PHP",60
+"Sweden","Swift",27
+"Bulgaria","Go",9
+"Belgium","TypeScript",41
+"Belgium","VB.NET",31
+"Croatia","Groovy",4
+"Morocco","C",12
+"Morocco","C++",10
+"Morocco","C#",10
+"Morocco","Java",22
+"Morocco","Matlab",1
+"Morocco","PHP",25
+"Morocco","Python",9
+"Morocco","SQL",26
+"India","Smalltalk",13
+"Mexico","R",11
+"Mexico","Scala",9
+"Nigeria","Java",54
+"Nigeria","JavaScript",71
+"Nigeria","PHP",67
+"Nigeria","Python",31
+"Romania","SQL",212
+"Nigeria","SQL",65
+"Ireland","C#",89
+"Ireland","PHP",54
+"Colombia","Python",22
+"Guatemala","C++",4
+"Guatemala","C#",11
+"Guatemala","CoffeeScript",1
+"Guatemala","JavaScript",15
+"Guatemala","PHP",8
+"Guatemala","Ruby",5
+"Guatemala","SQL",14
+"Guatemala","TypeScript",3
+"Spain","Swift",29
+"Switzerland","F#",9
+"Switzerland","TypeScript",54
+"Australia","Java",229
+"Australia","Python",211
+"Australia","SQL",384
+"Norway","Objective-C",9
+"Czech Republic","C#",116
+"Armenia","Objective-C",6
+"Armenia","SQL",13
+"Armenia","Swift",5
+"Austria","C",87
+"Austria","Swift",17
+"Lithuania","PHP",47
+"Switzerland","Go",26
+"Hungary","R",13
+"Bulgaria","JavaScript",126
+"Bulgaria","SQL",98
+"Australia","Scala",21
+"Virgin Islands (USA)","C",1
+"Virgin Islands (USA)","Java",2
+"Virgin Islands (USA)","Objective-C",1
+"Virgin Islands (USA)","SQL",4
+"Virgin Islands (USA)","Swift",1
+"Italy","Swift",38
+"United Kingdom","Elixir",38
+"United Kingdom","R",123
+"Australia","TypeScript",91
+"Nigeria","Swift",7
+"Belgium","VBA",18
+"Poland","F#",18
+"Poland","TypeScript",100
+"Italy","Assembly",35
+"Italy","C++",126
+"Israel","Go",16
+"Brazil","Haskell",7
+"Guatemala","Python",6
+"South Africa","SQL",176
+"New Zealand","Swift",13
+"United Kingdom","Hack",13
+"New Zealand","SQL",101
+"Denmark","C",30
+"Denmark","Perl",8
+"Denmark","TypeScript",36
+"Morocco","Haskell",1
+"Morocco","JavaScript",25
+"Finland","Assembly",8
+"Finland","C++",44
+"Finland","Lua",10
+"Lebanon","C",6
+"Lebanon","C#",17
+"Lebanon","Java",18
+"Lebanon","SQL",27
+"Bermuda","PHP",1
+"Bermuda","SQL",1
+"Bermuda","Swift",1
+"Nigeria","C",14
+"Germany","Lua",123
+"Norway","CommonLisp",1
+"Norway","Smalltalk",3
+"Greece","Ruby",21
+"Switzerland","Dart",3
+"United Kingdom","VisualBasic6",110
+"Finland","Groovy",7
+"France","Lua",39
+"France","R",53
+"New Zealand","TypeScript",21
+"I prefer not to say","Assembly",7
+"I prefer not to say","C",20
+"I prefer not to say","C++",28
+"Estonia","PHP",20
+"Norway","Go",13
+"Norway","Lua",11
+"Turkey","Scala",6
+"France","CoffeeScript",51
+"Italy","Groovy",11
+"United Kingdom","Erlang",34
+"France","Go",61
+"Netherlands","Objective-C",50
+"Romania","Scala",7
+"Belgium","C",46
+"Egypt","C",17
+"Egypt","C++",20
+"Egypt","CoffeeScript",2
+"Australia","CoffeeScript",27
+"Australia","R",23
+"Hungary","Assembly",14
+"Hungary","C",42
+"Sweden","Matlab",29
+"New Zealand","Ruby",20
+"Czech Republic","C",60
+"Czech Republic","TypeScript",26
+"Austria","Python",83
+"Austria","R",16
+"Austria","Scala",16
+"Australia","PHP",177
+"Chile","C++",11
+"Chile","Python",34
+"Armenia","C",6
+"Armenia","Python",6
+"Armenia","Ruby",1
+"Poland","Go",51
+"Denmark","Objective-C",12
+"Croatia","PHP",37
+"France","Groovy",47
+"Guatemala","C",2
+"Guatemala","VB.NET",5
+"Bulgaria","Objective-C",13
+"Bulgaria","Smalltalk",1
+"New Zealand","CoffeeScript",11
+"New Zealand","F#",3
+"New Zealand","VB.NET",10
+"China","C",53
+"France","Scala",57
+"Pakistan","Groovy",5
+"Pakistan","Julia",2
+"Pakistan","VB.NET",22
+"Singapore","C",24
+"Singapore","C++",32
+"Singapore","Java",69
+"Singapore","Python",44
+"Switzerland","R",26
+"Switzerland","Scala",27
+"Georgia","C",5
+"Georgia","C++",8
+"Canada","VisualBasic6",52
+"Portugal","PHP",58
+"Romania","Objective-C",26
+"Dominican Republic","C++",8
+"Dominican Republic","Java",22
+"Dominican Republic","JavaScript",34
+"Dominican Republic","PHP",12
+"Dominican Republic","TypeScript",11
+"Russian Federation","PHP",134
+"Thailand","C",11
+"Thailand","C++",11
+"Thailand","Java",30
+"Thailand","JavaScript",45
+"Thailand","Perl",3
+"Thailand","PHP",25
+"Thailand","Python",25
+"Thailand","SQL",34
+"Brazil","Clojure",7
+"Brazil","Go",19
+"Australia","Ruby",66
+"Austria","CoffeeScript",8
+"Australia","Lua",26
+"Japan","JavaScript",91
+"Japan","Python",78
+"Japan","Scala",13
+"Japan","Swift",19
+"Japan","TypeScript",20
+"Australia","VBA",37
+"Australia","VisualBasic6",18
+"Australia","VB.NET",47
+"Ireland","TypeScript",27
+"Australia","Objective-C",45
+"Argentina","VBA",4
+"Argentina","VisualBasic6",9
+"I prefer not to say","Clojure",3
+"I prefer not to say","R",2
+"I prefer not to say","Rust",2
+"I prefer not to say","Swift",3
+"I prefer not to say","Java",24
+"I prefer not to say","Objective-C",3
+"I prefer not to say","Python",28
+"Iran","R",8
+"Norway","Haskell",4
+"Norway","Rust",5
+"Costa Rica","Ruby",4
+"Puerto Rico","Java",7
+"Puerto Rico","JavaScript",8
+"Puerto Rico","Python",4
+"Puerto Rico","R",1
+"Austria","Go",11
+"Austria","Objective-C",20
+"Austria","Rust",3
+"China","Java",62
+"China","SQL",53
+"China","Swift",7
+"Australia","Groovy",23
+"Australia","Swift",58
+"Indonesia","C#",53
+"Indonesia","JavaScript",114
+"Indonesia","SQL",98
+"Canada","CommonLisp",9
+"Philippines","SQL",119
+"Philippines","VB.NET",33
+"Philippines","VisualBasic6",21
+"Indonesia","C++",41
+"Indonesia","PHP",104
+"Indonesia","VB.NET",22
+"Indonesia","VBA",7
+"Hong Kong","Java",46
+"Hong Kong","JavaScript",57
+"Hong Kong","SQL",47
+"Hong Kong","Swift",16
+"Uruguay","Assembly",2
+"Uruguay","C++",13
+"Uruguay","Haskell",6
+"Australia","Elixir",11
+"Australia","Go",24
+"Japan","PHP",43
+"Japan","C",35
+"Japan","C++",44
+"Japan","C#",41
+"Indonesia","Python",39
+"Estonia","Scala",1
+"Australia","Matlab",20
+"China","JavaScript",78
+"Portugal","Matlab",10
+"Nepal","Java",38
+"South Korea","Java",47
+"South Korea","SQL",26
+"Slovak Republic","Assembly",13
+"Slovak Republic","C++",36
+"Slovak Republic","Java",50
+"Slovak Republic","Python",34
+"Singapore","Objective-C",18
+"Singapore","PHP",35
+"Singapore","SQL",60
+"Singapore","Swift",14
+"Philippines","C",33
+"Philippines","C++",39
+"Philippines","C#",63
+"Netherlands","Haskell",24
+"China","CoffeeScript",5
+"United States","Hack",27
+"New Zealand","VisualBasic6",3
+"Italy","F#",5
+"Italy","Rust",6
+"Malaysia","Assembly",10
+"Malaysia","Perl",4
+"Colombia","Scala",4
+"Cape Verde","Assembly",1
+"Cape Verde","C",1
+"Cape Verde","C++",1
+"Cape Verde","C#",1
+"Cape Verde","Java",1
+"Cape Verde","JavaScript",1
+"Cape Verde","Matlab",1
+"Cape Verde","PHP",1
+"Cape Verde","Python",1
+"Cape Verde","SQL",1
+"Indonesia","C",27
+"Philippines","Java",91
+"Philippines","JavaScript",134
+"Australia","Julia",4
+"Hong Kong","PHP",32
+"Hong Kong","Python",26
+"Uruguay","Go",2
+"Hong Kong","C#",21
+"Hong Kong","Haskell",2
+"Hong Kong","Ruby",9
+"Singapore","JavaScript",70
+"South Africa","C++",50
+"South Africa","PHP",81
+"China","C++",48
+"Taiwan","Ruby",5
+"Taiwan","SQL",23
+"Taiwan","C#",12
+"Taiwan","JavaScript",32
+"Taiwan","Objective-C",7
+"Malaysia","C",27
+"Malaysia","Matlab",7
+"Serbia","Scala",11
+"Canada","Julia",5
+"United States","Smalltalk",83
+"Canada","Assembly",86
+"China","C#",29
+"China","PHP",25
+"Malaysia","TypeScript",8
+"Canada","Dart",10
+"China","Objective-C",8
+"Singapore","C#",31
+"Thailand","C#",22
+"Romania","CoffeeScript",8
+"Trinidad and Tobago","JavaScript",10
+"Trinidad and Tobago","PHP",8
+"Trinidad and Tobago","SQL",7
+"Malaysia","CoffeeScript",6
+"Malaysia","CommonLisp",2
+"Malaysia","Go",4
+"Malaysia","Julia",1
+"Malaysia","Scala",2
+"Taiwan","C",13
+"Taiwan","C++",16
+"Taiwan","Python",22
+"Mongolia","Java",8
+"Mongolia","JavaScript",10
+"Mongolia","PHP",7
+"Mongolia","SQL",9
+"New Zealand","Erlang",1
+"New Zealand","Hack",2
+"Malaysia","Elixir",2
+"India","Groovy",46
+"Vietnam","Java",22
+"Vietnam","TypeScript",6
+"Vietnam","PHP",14
+"New Zealand","Go",6
+"Japan","F#",3
+"Lithuania","Python",36
+"Myanmar","C#",4
+"Bangladesh","Assembly",10
+"Bangladesh","C",29
+"Georgia","C#",13
+"Georgia","JavaScript",22
+"Georgia","SQL",18
+"India","VB.NET",150
+"India","VisualBasic6",115
+"Hong Kong","CoffeeScript",4
+"Hong Kong","Go",4
+"Sri Lanka","PHP",44
+"Taiwan","Java",21
+"Spain","Scala",19
+"Norway","Assembly",9
+"Portugal","Assembly",9
+"Portugal","Erlang",5
+"Latvia","Scala",9
+"Slovak Republic","R",7
+"Hong Kong","F#",2
+"Hong Kong","VB.NET",5
+"Vietnam","C#",20
+"Vietnam","Swift",5
+"India","Elixir",12
+"Australia","Perl",31
+"China","Python",51
+"Sri Lanka","Groovy",2
+"Sri Lanka","Scala",2
+"Mexico","Groovy",7
+"Netherlands","Groovy",23
+"Hong Kong","C++",20
+"Poland","Objective-C",50
+"United Arab Emirates","Java",23
+"United Arab Emirates","JavaScript",39
+"United Arab Emirates","SQL",29
+"Russian Federation","Haskell",15
+"India","CoffeeScript",34
+"Latvia","Java",36
+"Latvia","PHP",31
+"Latvia","SQL",51
+"Ukraine","CoffeeScript",10
+"Philippines","CoffeeScript",7
+"Philippines","PHP",92
+"South Africa","Java",104
+"South Africa","Python",64
+"South Africa","Swift",10
+"South Africa","VBA",16
+"India","Perl",61
+"Indonesia","Java",72
+"Bangladesh","Java",51
+"Bangladesh","Objective-C",6
+"Bangladesh","Scala",1
+"Thailand","VB.NET",6
+"Ukraine","Python",56
+"Netherlands","Lua",21
+"Spain","Perl",25
+"Afghanistan","C#",5
+"Afghanistan","JavaScript",7
+"Afghanistan","SQL",5
+"Vietnam","C++",20
+"Singapore","R",5
+"New Zealand","Haskell",2
+"Brazil","R",34
+"Austria","VB.NET",11
+"Japan","SQL",68
+"Turkey","CoffeeScript",3
+"Turkey","Haskell",4
+"Turkey","Lua",7
+"Turkey","Perl",2
+"Spain","Dart",2
+"Spain","Rust",6
+"Sweden","VB.NET",19
+"Liechtenstein","C++",1
+"Liechtenstein","Java",2
+"Liechtenstein","Matlab",1
+"Liechtenstein","Python",1
+"Japan","Assembly",9
+"Japan","Matlab",11
+"Israel","Lua",11
+"Spain","Matlab",26
+"South Korea","C++",32
+"South Korea","JavaScript",40
+"South Korea","Perl",1
+"South Korea","PHP",15
+"South Korea","Python",33
+"South Africa","C",39
+"Japan","Haskell",4
+"Japan","R",7
+"Slovenia","Python",91
+"Hong Kong","Objective-C",13
+"Hong Kong","TypeScript",10
+"Pakistan","Objective-C",21
+"Pakistan","Swift",14
+"Luxembourg","C#",11
+"Luxembourg","PHP",12
+"Luxembourg","SQL",19
+"Luxembourg","VB.NET",3
+"Luxembourg","VBA",5
+"Spain","Go",27
+"Spain","Objective-C",34
+"Botswana","Java",3
+"Botswana","JavaScript",2
+"Botswana","PHP",3
+"Botswana","Swift",1
+"Singapore","Elixir",4
+"Italy","Haskell",8
+"Denmark","Swift",17
+"Sri Lanka","Assembly",5
+"Sri Lanka","C",19
+"Sri Lanka","Objective-C",7
+"Sri Lanka","Swift",5
+"Finland","Haskell",2
+"China","Assembly",11
+"China","VisualBasic6",1
+"South Africa","Ruby",23
+"Greece","TypeScript",21
+"Latvia","CoffeeScript",5
+"Latvia","Groovy",3
+"Hungary","Ruby",15
+"Hong Kong","Assembly",5
+"Hong Kong","C",11
+"Poland","Perl",29
+"Czech Republic","Swift",15
+"Hungary","C++",65
+"Poland","Swift",48
+"Italy","TypeScript",39
+"Netherlands","Erlang",5
+"Greece","CoffeeScript",4
+"Austria","Haskell",9
+"Poland","Rust",8
+"Indonesia","Go",9
+"Indonesia","Perl",5
+"Sweden","VisualBasic6",10
+"Netherlands","Scala",31
+"Belgium","Swift",20
+"I prefer not to say","TypeScript",2
+"Croatia","VisualBasic6",4
+"Russian Federation","Rust",10
+"South Africa","CoffeeScript",10
+"China","Matlab",14
+"China","R",10
+"China","Ruby",9
+"Malaysia","VisualBasic6",10
+"South Africa","R",10
+"Latvia","JavaScript",53
+"Latvia","TypeScript",8
+"Slovak Republic","C#",34
+"Slovak Republic","JavaScript",71
+"Slovak Republic","SQL",66
+"Australia","Hack",2
+"France","CommonLisp",18
+"Latvia","Python",14
+"Switzerland","Assembly",23
+"Bulgaria","TypeScript",20
+"I prefer not to say","SQL",27
+"Latvia","C#",25
+"Slovak Republic","PHP",53
+"India","F#",7
+"China","Julia",1
+"Japan","Perl",10
+"Japan","Ruby",26
+"Hong Kong","Perl",4
+"Ireland","Go",11
+"Switzerland","VB.NET",26
+"Switzerland","VBA",39
+"Finland","VBA",3
+"Netherlands","VB.NET",28
+"Greece","Haskell",5
+"Nigeria","Haskell",2
+"Latvia","VBA",6
+"Latvia","VisualBasic6",4
+"Switzerland","Objective-C",25
+"Switzerland","Swift",27
+"Netherlands","R",33
+"Pakistan","R",5
+"Spain","R",29
+"Sweden","R",25
+"France","VB.NET",45
+"Austria","Groovy",17
+"Ireland","VB.NET",15
+"Poland","Matlab",42
+"Denmark","Matlab",10
+"Kenya","JavaScript",40
+"Kenya","PHP",34
+"Kenya","SQL",33
+"Pakistan","Elixir",1
+"Kenya","VisualBasic6",6
+"Belgium","Objective-C",17
+"Australia","Clojure",8
+"Lebanon","JavaScript",18
+"Serbia","Perl",1
+"I prefer not to say","Elixir",1
+"I prefer not to say","Haskell",2
+"I prefer not to say","PHP",23
+"I prefer not to say","Ruby",3
+"Switzerland","Ruby",32
+"Turkey","Assembly",12
+"Finland","Swift",11
+"Austria","CommonLisp",2
+"Austria","Smalltalk",2
+"Macedonia","Java",18
+"Macedonia","SQL",25
+"Tunisia","C",11
+"Tunisia","C#",11
+"Slovenia","C",52
+"Poland","Lua",30
+"Japan","Groovy",7
+"Poland","Dart",3
+"Poland","Hack",1
+"Poland","Julia",7
+"Poland","Smalltalk",2
+"Poland","VisualBasic6",8
+"Italy","Elixir",4
+"Italy","Erlang",7
+"Ukraine","Rust",3
+"Italy","Objective-C",51
+"Estonia","Matlab",3
+"Estonia","VBA",3
+"Estonia","VisualBasic6",3
+"Sweden","Objective-C",23
+"Sweden","Haskell",16
+"Netherlands","VBA",24
+"Czech Republic","Perl",17
+"Hungary","Objective-C",13
+"Hungary","Swift",9
+"Slovenia","R",14
+"Taiwan","Swift",6
+"Slovenia","Haskell",6
+"South Africa","Assembly",18
+"South Africa","Matlab",6
+"Netherlands","Elixir",8
+"Taiwan","PHP",14
+"Netherlands","Clojure",6
+"Egypt","Matlab",8
+"Armenia","Java",8
+"Armenia","JavaScript",18
+"United Arab Emirates","C#",17
+"Ghana","JavaScript",19
+"Ghana","Python",17
+"Ghana","SQL",15
+"Ghana","TypeScript",5
+"China","Go",12
+"Romania","Go",17
+"Greece","F#",3
+"Greece","Matlab",15
+"Aland Islands","JavaScript",2
+"Aland Islands","PHP",2
+"Aland Islands","TypeScript",4
+"Aland Islands","VB.NET",4
+"Sweden","Groovy",28
+"Sweden","Perl",20
+"Brazil","Matlab",20
+"Brazil","Objective-C",30
+"Brazil","VBA",20
+"I prefer not to say","VB.NET",7
+"Vietnam","C",16
+"Vietnam","Python",15
+"Vietnam","R",3
+"Malta","C#",18
+"Malta","JavaScript",16
+"Malta","TypeScript",6
+"Austria","Perl",16
+"Netherlands","VisualBasic6",7
+"Trinidad and Tobago","Java",5
+"India","Dart",6
+"India","Lua",21
+"France","VisualBasic6",18
+"Zambia","Python",2
+"Zambia","R",1
+"Germany","Erlang",20
+"Sweden","VBA",16
+"Portugal","Ruby",13
+"Iceland","C#",12
+"Iceland","JavaScript",15
+"Iceland","Matlab",2
+"Iceland","SQL",12
+"Iceland","TypeScript",3
+"Portugal","VB.NET",13
+"Portugal","VisualBasic6",4
+"Zimbabwe","C++",3
+"Zimbabwe","C#",5
+"Zimbabwe","SQL",8
+"Croatia","Ruby",8
+"Iran","VBA",6
+"Hungary","Scala",9
+"Bosnia-Herzegovina","TypeScript",12
+"Norway","F#",4
+"Russian Federation","R",20
+"India","Erlang",10
+"Bulgaria","C++",38
+"Egypt","C#",28
+"Egypt","SQL",39
+"Egypt","TypeScript",4
+"Egypt","VB.NET",8
+"Bosnia-Herzegovina","CoffeeScript",4
+"Bosnia-Herzegovina","Elixir",1
+"Bosnia-Herzegovina","Swift",1
+"Armenia","PHP",10
+"Bulgaria","PHP",54
+"South Africa","VB.NET",28
+"Austria","Assembly",21
+"Philippines","TypeScript",13
+"Germany","Julia",13
+"Sweden","CommonLisp",7
+"Austria","F#",3
+"Ecuador","PHP",7
+"Slovak Republic","TypeScript",16
+"Estonia","C++",12
+"Latvia","Assembly",3
+"Latvia","C",13
+"Latvia","C++",12
+"Latvia","Go",3
+"Latvia","Lua",4
+"Latvia","Ruby",4
+"Latvia","Rust",1
+"United Kingdom","Julia",11
+"Costa Rica","Python",19
+"Costa Rica","R",2
+"Norway","Perl",7
+"Uruguay","C",9
+"Uruguay","PHP",11
+"Uruguay","VB.NET",5
+"Uruguay","VisualBasic6",3
+"Vietnam","Objective-C",4
+"Lithuania","Erlang",1
+"Iran","Assembly",31
+"Georgia","Assembly",1
+"Belgium","Groovy",13
+"France","Smalltalk",23
+"Peru","C#",15
+"Peru","Go",4
+"Peru","SQL",29
+"Lebanon","Assembly",3
+"Lebanon","C++",6
+"Lebanon","PHP",16
+"Lebanon","VB.NET",11
+"Lebanon","VBA",6
+"Venezuela","Assembly",3
+"Venezuela","C",12
+"Venezuela","C++",13
+"Venezuela","C#",13
+"Venezuela","Java",24
+"Venezuela","Julia",1
+"Venezuela","SQL",29
+"Estonia","TypeScript",14
+"Italy","Scala",12
+"Ireland","Perl",12
+"Greece","R",10
+"Chile","R",8
+"Paraguay","JavaScript",13
+"Paraguay","Lua",1
+"Paraguay","PHP",10
+"Paraguay","Python",4
+"Paraguay","SQL",11
+"Ireland","Groovy",8
+"Belarus","Python",13
+"Spain","Lua",18
+"Spain","VB.NET",35
+"S. Georgia & S. Sandwich Isls.","C#",1
+"S. Georgia & S. Sandwich Isls.","JavaScript",1
+"Nigeria","C++",12
+"Nigeria","Go",2
+"Ukraine","Scala",8
+"Japan","Objective-C",21
+"Paraguay","C++",2
+"Paraguay","Java",5
+"Paraguay","Ruby",3
+"Paraguay","Swift",2
+"Paraguay","C",3
+"Paraguay","Objective-C",2
+"Slovak Republic","Perl",4
+"Germany","Dart",13
+"Netherlands","Hack",2
+"Belgium","Erlang",2
+"Belgium","Lua",11
+"I prefer not to say","Smalltalk",1
+"Panama","C++",4
+"Panama","Java",10
+"Panama","JavaScript",13
+"Panama","Lua",1
+"Panama","PHP",8
+"Panama","SQL",13
+"Bulgaria","Assembly",9
+"Bulgaria","C",24
+"Bulgaria","Matlab",4
+"Aland Islands","CoffeeScript",2
+"Aland Islands","Dart",2
+"Aland Islands","Erlang",2
+"Aland Islands","Groovy",2
+"Aland Islands","VBA",3
+"China","Lua",8
+"Bulgaria","VB.NET",10
+"Bulgaria","VBA",6
+"Nicaragua","JavaScript",5
+"Nicaragua","Python",3
+"Nicaragua","SQL",4
+"Nigeria","C#",34
+"Canada","Smalltalk",18
+"Portugal","VBA",8
+"Ukraine","Go",10
+"Peru","CommonLisp",1
+"Spain","VBA",23
+"Spain","VisualBasic6",25
+"Colombia","Java",41
+"Bolivia","Assembly",1
+"Bolivia","C#",7
+"Bolivia","JavaScript",10
+"Bolivia","SQL",9
+"Bolivia","VB.NET",3
+"Bolivia","VBA",2
+"Bolivia","VisualBasic6",3
+"Finland","Objective-C",10
+"Estonia","Swift",3
+"Germany","F#",28
+"Kenya","Python",25
+"Chile","Smalltalk",1
+"Finland","Smalltalk",3
+"Argentina","VB.NET",8
+"United Kingdom","Smalltalk",16
+"Czech Republic","Smalltalk",3
+"Slovenia","Smalltalk",3
+"Ukraine","Swift",17
+"Switzerland","Smalltalk",9
+"Italy","Smalltalk",3
+"Spain","Haskell",14
+"Lithuania","Ruby",8
+"Romania","Matlab",22
+"Romania","Smalltalk",4
+"Israel","Smalltalk",3
+"Argentina","Perl",3
+"Argentina","Smalltalk",16
+"Netherlands","Smalltalk",10
+"Myanmar","Java",13
+"Myanmar","Python",3
+"Myanmar","SQL",12
+"Netherlands","Dart",2
+"Norway","Swift",11
+"Ireland","Lua",7
+"Netherlands","CommonLisp",5
+"Finland","Matlab",1
+"Vietnam","Matlab",2
+"Czech Republic","VB.NET",9
+"Taiwan","R",1
+"Ireland","Scala",18
+"Brazil","Assembly",28
+"Mexico","TypeScript",14
+"Finland","Go",12
+"Argentina","Assembly",6
+"Argentina","C",19
+"Argentina","C++",24
+"Argentina","Groovy",7
+"Argentina","Haskell",3
+"Argentina","Scala",6
+"Cayman Islands","JavaScript",2
+"Cayman Islands","Python",2
+"Cayman Islands","Ruby",1
+"Cayman Islands","SQL",1
+"Philippines","Python",49
+"Serbia","Ruby",11
+"Ukraine","Lua",8
+"Ukraine","R",6
+"Hungary","Smalltalk",2
+"Switzerland","Lua",15
+"Ukraine","Smalltalk",2
+"South Africa","F#",3
+"Estonia","Smalltalk",1
+"Finland","VisualBasic6",2
+"Finland","R",11
+"Azerbaidjan","C#",8
+"Azerbaidjan","Java",6
+"Azerbaidjan","JavaScript",6
+"Azerbaidjan","SQL",9
+"Ethiopia","C++",5
+"Ethiopia","Go",1
+"Ethiopia","Java",11
+"Ethiopia","JavaScript",5
+"Ethiopia","PHP",12
+"Ethiopia","Python",4
+"Ethiopia","TypeScript",1
+"Russian Federation","Assembly",21
+"Russian Federation","Smalltalk",3
+"Mexico","CommonLisp",3
+"Mexico","Haskell",4
+"Panama","Go",1
+"Panama","Objective-C",3
+"Bolivia","PHP",9
+"Denmark","Smalltalk",1
+"Ecuador","Scala",1
+"Uruguay","Smalltalk",2
+"Belgium","Smalltalk",8
+"Iran","Objective-C",18
+"Iran","Swift",24
+"Brazil","CoffeeScript",19
+"Brazil","Rust",5
+"Mexico","Assembly",11
+"Austria","Matlab",29
+"Venezuela","Python",14
+"Ukraine","Assembly",5
+"Ukraine","TypeScript",22
+"Jordan","C#",15
+"Jordan","Go",1
+"Jordan","JavaScript",19
+"Jordan","Matlab",2
+"Jordan","TypeScript",2
+"Argentina","Lua",4
+"Greece","Go",7
+"Mexico","VB.NET",22
+"Israel","Clojure",6
+"Israel","Elixir",3
+"Israel","Haskell",6
+"France","Clojure",10
+"Spain","Clojure",4
+"Portugal","Objective-C",7
+"Portugal","R",4
+"Portugal","Swift",8
+"Turkey","Go",13
+"Uruguay","Perl",2
+"Uruguay","Ruby",4
+"Ireland","Julia",2
+"Croatia","CoffeeScript",2
+"Bosnia-Herzegovina","Go",1
+"Bosnia-Herzegovina","Rust",1
+"New Zealand","Matlab",8
+"Vietnam","SQL",18
+"Honduras","C++",3
+"Honduras","C#",4
+"Honduras","Java",4
+"Honduras","SQL",3
+"Australia","CommonLisp",4
+"Czech Republic","R",9
+"Turkey","R",12
+"Turkey","Swift",15
+"Indonesia","VisualBasic6",13
+"Australia","Smalltalk",5
+"Argentina","Matlab",4
+"Trinidad and Tobago","Ruby",1
+"United Arab Emirates","Go",3
+"United Arab Emirates","Swift",5
+"India","Clojure",10
+"Myanmar","JavaScript",11
+"Indonesia","Elixir",4
+"Malaysia","Hack",2
+"South Africa","Objective-C",14
+"South Africa","Smalltalk",2
+"United Arab Emirates","Clojure",1
+"Thailand","TypeScript",9
+"Japan","VB.NET",4
+"Pakistan","CoffeeScript",6
+"Iran","VB.NET",14
+"Nepal","Lua",2
+"Nepal","Objective-C",6
+"Nepal","Swift",8
+"Lebanon","Perl",3
+"Switzerland","Elixir",6
+"Spain","Smalltalk",2
+"Bangladesh","C++",25
+"Bangladesh","Swift",6
+"Bangladesh","VB.NET",6
+"Romania","Assembly",27
+"France","Haskell",18
+"Pakistan","TypeScript",11
+"South Korea","Groovy",2
+"Belgium","Go",12
+"Sri Lanka","Ruby",3
+"Belarus","C",7
+"Venezuela","Scala",2
+"Indonesia","CoffeeScript",5
+"Iran","Lua",4
+"Iran","Perl",7
+"Ghana","PHP",11
+"Egypt","PHP",36
+"Norway","VisualBasic6",1
+"Indonesia","Objective-C",4
+"Indonesia","Swift",8
+"Estonia","F#",2
+"Estonia","Ruby",9
+"Iran","VisualBasic6",13
+"Pakistan","CommonLisp",1
+"Italy","Lua",16
+"Andorra","C++",2
+"Andorra","Python",1
+"Finland","Clojure",6
+"India","Hack",6
+"Sweden","Elixir",8
+"Slovak Republic","Objective-C",7
+"Belarus","Objective-C",2
+"Belarus","Swift",2
+"Croatia","Rust",3
+"Pakistan","Scala",5
+"Chile","Go",2
+"United Arab Emirates","CoffeeScript",2
+"United Arab Emirates","TypeScript",8
+"Greece","CommonLisp",3
+"Pakistan","VisualBasic6",10
+"Belgium","Assembly",14
+"Belgium","R",11
+"Mexico","VisualBasic6",4
+"Indonesia","Haskell",3
+"Kenya","C++",9
+"Kenya","Java",21
+"Iran","CommonLisp",3
+"Iran","F#",3
+"Sri Lanka","Matlab",4
+"Sri Lanka","R",4
+"Ethiopia","VisualBasic6",6
+"Greece","Lua",6
+"Madagascar","Java",2
+"Madagascar","TypeScript",2
+"Cameroon","C",4
+"Cameroon","Java",7
+"Cameroon","SQL",5
+"Ghana","C",2
+"Iceland","Java",11
+"Ireland","VisualBasic6",5
+"Russian Federation","VB.NET",17
+"Russian Federation","VBA",20
+"Russian Federation","VisualBasic6",7
+"Ghana","Java",16
+"Greece","VisualBasic6",9
+"Russian Federation","F#",8
+"Russian Federation","Perl",19
+"Croatia","Swift",10
+"Greece","Objective-C",5
+"Nigeria","Matlab",7
+"Nigeria","VBA",8
+"Nigeria","VisualBasic6",11
+"Tanzania","JavaScript",6
+"Tanzania","Python",8
+"Tanzania","TypeScript",2
+"Kuwait","SQL",6
+"Kenya","R",1
+"Belgium","Scala",7
+"Ethiopia","C#",6
+"Ethiopia","CommonLisp",1
+"Ethiopia","SQL",8
+"Ethiopia","VB.NET",5
+"Ukraine","CommonLisp",4
+"Luxembourg","Go",3
+"Slovak Republic","Haskell",4
+"Ireland","Matlab",10
+"Slovenia","Go",14
+"Slovenia","Perl",10
+"Slovenia","Ruby",22
+"Thailand","Erlang",2
+"Thailand","F#",1
+"Thailand","Go",4
+"Thailand","Groovy",1
+"Thailand","Smalltalk",2
+"Thailand","VBA",5
+"Thailand","VisualBasic6",4
+"Ecuador","TypeScript",2
+"Kuwait","Python",1
+"Colombia","R",5
+"Colombia","VB.NET",6
+"Indonesia","Ruby",13
+"Nepal","C",26
+"Nepal","C++",24
+"Romania","VBA",8
+"Nepal","Python",16
+"Nepal","VB.NET",7
+"Bangladesh","Python",27
+"United Arab Emirates","Groovy",2
+"Venezuela","JavaScript",31
+"Venezuela","Lua",2
+"Ireland","Assembly",10
+"Taiwan","Go",2
+"Mozambique","JavaScript",6
+"Mozambique","Python",2
+"Mozambique","SQL",5
+"Mozambique","VisualBasic6",1
+"Lebanon","CommonLisp",1
+"Israel","Rust",3
+"South Africa","Perl",7
+"Kenya","Go",2
+"Japan","Smalltalk",1
+"Cameroon","Haskell",1
+"Cameroon","Smalltalk",1
+"Cameroon","VBA",1
+"Thailand","Scala",7
+"Brazil","Swift",27
+"Belgium","VisualBasic6",7
+"Singapore","TypeScript",7
+"Belgium","F#",3
+"Qatar","C#",4
+"Qatar","JavaScript",3
+"Czech Republic","Assembly",14
+"Czech Republic","Groovy",13
+"Myanmar","PHP",6
+"Slovenia","Matlab",22
+"Slovenia","Swift",13
+"Slovenia","TypeScript",32
+"Czech Republic","Lua",10
+"Bulgaria","Swift",5
+"Serbia","Groovy",8
+"Croatia","Matlab",3
+"Greece","Erlang",1
+"Bosnia-Herzegovina","Assembly",3
+"Bosnia-Herzegovina","VBA",3
+"Sweden","Clojure",9
+"Sweden","Dart",5
+"Sweden","Hack",2
+"Sweden","Julia",2
+"Sweden","Rust",5
+"Sweden","Smalltalk",5
+"Ukraine","Matlab",6
+"Japan","CoffeeScript",7
+"Japan","Erlang",2
+"Belgium","Haskell",6
+"Puerto Rico","C#",5
+"Puerto Rico","SQL",8
+"Puerto Rico","VB.NET",2
+"Japan","Elixir",4
+"Japan","Go",12
+"Mauritius","Java",4
+"Mauritius","JavaScript",4
+"India","Julia",8
+"Philippines","Ruby",4
+"Singapore","Ruby",14
+"Singapore","Scala",6
+"Kazakhstan","C#",5
+"Kazakhstan","SQL",9
+"Singapore","CoffeeScript",5
+"Singapore","VBA",8
+"Azerbaidjan","PHP",9
+"Azerbaidjan","Swift",2
+"Azerbaidjan","Python",4
+"Azerbaidjan","Ruby",3
+"Hong Kong","Scala",5
+"Hong Kong","VBA",8
+"Hong Kong","VisualBasic6",2
+"Taiwan","Matlab",5
+"United Arab Emirates","Haskell",1
+"United Arab Emirates","PHP",21
+"Croatia","VB.NET",2
+"United Arab Emirates","VB.NET",8
+"United Arab Emirates","VisualBasic6",4
+"Romania","VB.NET",15
+"China","VBA",4
+"Armenia","C++",8
+"Armenia","Perl",2
+"Croatia","VBA",4
+"Portugal","Scala",6
+"Russian Federation","Erlang",9
+"Uganda","C#",9
+"Uganda","PHP",10
+"Uganda","SQL",9
+"China","TypeScript",8
+"Egypt","Groovy",1
+"Portugal","Elixir",3
+"Portugal","Go",6
+"Portugal","Rust",3
+"Czech Republic","VisualBasic6",3
+"Bangladesh","TypeScript",8
+"Moldavia","TypeScript",7
+"Brazil","Perl",15
+"Estonia","Groovy",5
+"Indonesia","Dart",1
+"Oman","Python",1
+"Denmark","F#",7
+"Montenegro","C++",4
+"Montenegro","C#",5
+"Japan","VisualBasic6",2
+"Belgium","Rust",4
+"Uruguay","Groovy",3
+"Liechtenstein","C#",2
+"Liechtenstein","JavaScript",2
+"Panama","C#",8
+"Panama","Python",6
+"Saudi Arabia","C",8
+"Saudi Arabia","C++",10
+"Saudi Arabia","C#",16
+"Saudi Arabia","Ruby",5
+"Bulgaria","VisualBasic6",6
+"Greece","Groovy",3
+"Greece","Swift",3
+"Kenya","C#",13
+"South Korea","Go",1
+"Liechtenstein","Smalltalk",1
+"Finland","Rust",5
+"Norway","Scala",6
+"Canada","Hack",3
+"I prefer not to say","Go",3
+"Romania","Rust",4
+"Ukraine","F#",4
+"Ukraine","VB.NET",5
+"Taiwan","CoffeeScript",2
+"Taiwan","CommonLisp",1
+"Taiwan","Haskell",2
+"Chile","Perl",4
+"Mexico","VBA",11
+"Hungary","Go",7
+"Canada","Erlang",10
+"South Korea","Scala",3
+"Switzerland","CoffeeScript",15
+"New Caledonia (French)","JavaScript",3
+"New Caledonia (French)","PHP",3
+"New Caledonia (French)","SQL",3
+"Singapore","Matlab",6
+"New Zealand","Scala",4
+"Chile","Assembly",1
+"Chile","Matlab",2
+"Colombia","CoffeeScript",5
+"Colombia","Groovy",6
+"Colombia","Ruby",8
+"Philippines","Assembly",14
+"Philippines","CommonLisp",1
+"Philippines","Clojure",2
+"Philippines","Dart",1
+"Philippines","Elixir",2
+"Philippines","Erlang",1
+"Philippines","F#",1
+"Philippines","Go",6
+"Philippines","Groovy",5
+"Philippines","Hack",2
+"Philippines","Haskell",3
+"Philippines","Julia",1
+"Philippines","Lua",5
+"Philippines","Matlab",3
+"Philippines","Objective-C",16
+"Philippines","Perl",8
+"Philippines","R",6
+"Philippines","Rust",1
+"Philippines","Scala",2
+"Philippines","Smalltalk",1
+"Philippines","Swift",15
+"Philippines","VBA",10
+"Nepal","CoffeeScript",4
+"Nepal","TypeScript",5
+"Sri Lanka","VB.NET",9
+"Cyprus","JavaScript",13
+"Cyprus","PHP",11
+"Cyprus","SQL",12
+"South Korea","C#",19
+"Czech Republic","Ruby",12
+"Czech Republic","VBA",11
+"Mozambique","C#",4
+"Mozambique","Java",3
+"Mozambique","PHP",2
+"Mozambique","VB.NET",2
+"Turkey","Matlab",19
+"Estonia","VB.NET",4
+"Hong Kong","Matlab",4
+"Hungary","CoffeeScript",11
+"Hungary","Clojure",5
+"Macedonia","C#",20
+"Macedonia","JavaScript",30
+"Macedonia","Python",8
+"Macedonia","TypeScript",5
+"United Arab Emirates","Matlab",2
+"France","Hack",6
+"Ireland","VBA",5
+"South Korea","Objective-C",6
+"South Korea","Swift",3
+"Malaysia","Clojure",1
+"Ukraine","Erlang",1
+"Ukraine","Haskell",3
+"Nepal","VisualBasic6",7
+"Lebanon","CoffeeScript",1
+"Lebanon","Ruby",3
+"Lebanon","Scala",1
+"Russian Federation","Clojure",9
+"China","Clojure",3
+"China","Scala",7
+"Belgium","Ruby",19
+"Italy","VBA",20
+"Hungary","Lua",7
+"Lebanon","VisualBasic6",6
+"Hungary","Julia",1
+"Hungary","Perl",13
+"Hungary","VBA",13
+"Romania","Groovy",8
+"Macedonia","Ruby",2
+"Colombia","Objective-C",10
+"Uzbekistan","C#",5
+"Uzbekistan","Java",9
+"Uzbekistan","Swift",2
+"Colombia","Elixir",2
+"Jordan","SQL",20
+"Argentina","Hack",1
+"Luxembourg","TypeScript",3
+"Jamaica","C#",7
+"Jamaica","SQL",6
+"Colombia","Matlab",6
+"Hungary","VB.NET",8
+"Serbia","Swift",8
+"Kuwait","Java",2
+"Kuwait","JavaScript",4
+"Georgia","Java",7
+"Georgia","Python",4
+"Jamaica","Java",6
+"Jamaica","JavaScript",8
+"Jamaica","PHP",5
+"Jamaica","TypeScript",1
+"Finland","Perl",9
+"Morocco","VBA",4
+"Algeria","Java",8
+"Algeria","Python",5
+"Guatemala","Smalltalk",1
+"Estonia","Perl",5
+"Malaysia","Groovy",3
+"Pakistan","Smalltalk",1
+"Turkey","F#",1
+"Turkey","VB.NET",4
+"Turkey","VBA",5
+"Mexico","CoffeeScript",4
+"Jordan","PHP",10
+"Slovenia","Elixir",3
+"Iceland","Objective-C",2
+"Finland","Elixir",3
+"Finland","Erlang",1
+"Czech Republic","Dart",1
+"Czech Republic","Rust",6
+"Macedonia","C",6
+"Peru","Assembly",1
+"Peru","C",4
+"Peru","C++",12
+"Peru","Lua",1
+"Peru","Matlab",5
+"Denmark","CoffeeScript",6
+"Denmark","Dart",1
+"Czech Republic","Haskell",6
+"Bulgaria","Elixir",3
+"Bulgaria","Ruby",17
+"Ecuador","C",3
+"Ecuador","C++",3
+"Ecuador","C#",4
+"Argentina","R",2
+"Brazil","Julia",1
+"Ecuador","Haskell",3
+"Ecuador","Python",8
+"Czech Republic","Elixir",1
+"Czech Republic","Go",5
+"Namibia","C",1
+"Namibia","C++",2
+"Namibia","C#",2
+"Namibia","Java",1
+"Namibia","JavaScript",3
+"Namibia","PHP",3
+"Namibia","SQL",4
+"Namibia","TypeScript",1
+"Serbia","Lua",1
+"Belgium","CoffeeScript",10
+"Hungary","Matlab",11
+"Singapore","Assembly",6
+"Singapore","VB.NET",3
+"Tunisia","Swift",4
+"Switzerland","CommonLisp",4
+"Switzerland","VisualBasic6",11
+"Guatemala","Java",11
+"Peru","Erlang",2
+"Singapore","Perl",6
+"Indonesia","R",4
+"Estonia","Go",3
+"Syria","C#",6
+"Syria","JavaScript",6
+"Syria","SQL",5
+"Syria","TypeScript",1
+"Iran","Smalltalk",1
+"Lesotho","Java",1
+"Lesotho","Ruby",1
+"Denmark","Ruby",13
+"Denmark","Go",7
+"Slovenia","Scala",9
+"Slovenia","Objective-C",15
+"Kazakhstan","CoffeeScript",2
+"Kazakhstan","Ruby",1
+"Ukraine","Perl",7
+"Turkey","Groovy",3
+"Vietnam","Smalltalk",3
+"Vietnam","Ruby",8
+"Afghanistan","PHP",4
+"Turkey","VisualBasic6",7
+"Slovenia","Assembly",6
+"Slovenia","Lua",7
+"Slovak Republic","CoffeeScript",6
+"Belgium","Perl",9
+"Russian Federation","Elixir",8
+"Slovenia","CommonLisp",3
+"Slovenia","CoffeeScript",10
+"Serbia","Haskell",4
+"Slovenia","Groovy",9
+"Algeria","PHP",4
+"Slovak Republic","Matlab",8
+"Saudi Arabia","Matlab",4
+"Saudi Arabia","Objective-C",3
+"Saudi Arabia","R",1
+"Saudi Arabia","Scala",1
+"Slovenia","VB.NET",10
+"Tanzania","PHP",8
+"Ireland","CoffeeScript",9
+"Ireland","Clojure",12
+"Paraguay","C#",3
+"Paraguay","Matlab",1
+"Dominican Republic","Scala",2
+"Malta","Java",11
+"Malta","PHP",8
+"Malta","SQL",18
+"Malta","VB.NET",2
+"Czech Republic","Hack",3
+"France","Dart",7
+"Egypt","Assembly",4
+"Austria","Clojure",3
+"Austria","Erlang",2
+"Denmark","Groovy",2
+"Croatia","Perl",1
+"Iceland","C",3
+"Iceland","C++",7
+"Iceland","Python",5
+"Zimbabwe","Python",4
+"Macedonia","PHP",10
+"Portugal","Groovy",4
+"Morocco","Ruby",3
+"Slovenia","VBA",7
+"Slovenia","VisualBasic6",2
+"Lebanon","TypeScript",3
+"Cuba","PHP",10
+"Nepal","Matlab",1
+"Bangladesh","VisualBasic6",5
+"Nepal","CommonLisp",2
+"Vietnam","Lua",3
+"Hungary","Haskell",3
+"Denmark","VisualBasic6",1
+"France","Rust",12
+"Hungary","Elixir",2
+"Lithuania","Matlab",6
+"Romania","R",8
+"Malta","Python",5
+"Moldavia","CoffeeScript",4
+"Fiji","Java",2
+"Fiji","JavaScript",2
+"Fiji","PHP",2
+"Fiji","Ruby",1
+"Fiji","SQL",2
+"Fiji","VB.NET",2
+"Fiji","VisualBasic6",2
+"Cyprus","C#",7
+"France","Elixir",14
+"Egypt","Clojure",1
+"Egypt","Objective-C",8
+"Egypt","VisualBasic6",3
+"Peru","VB.NET",8
+"Peru","VisualBasic6",8
+"Kenya","TypeScript",5
+"Czech Republic","Objective-C",13
+"Czech Republic","Scala",9
+"New Zealand","Perl",9
+"Nicaragua","CoffeeScript",1
+"Nicaragua","Ruby",1
+"Ghana","C#",6
+"Guyana","Java",1
+"Guyana","JavaScript",1
+"Guyana","SQL",2
+"Macedonia","Objective-C",6
+"Macedonia","Swift",5
+"Mongolia","C++",2
+"Mongolia","C#",5
+"Mongolia","Ruby",2
+"Albania","C",7
+"Albania","CoffeeScript",3
+"Albania","Python",5
+"Albania","Ruby",1
+"Singapore","Clojure",2
+"Singapore","Go",5
+"Singapore","Haskell",5
+"New Zealand","Groovy",5
+"Dominican Republic","CoffeeScript",1
+"Mongolia","CommonLisp",1
+"Mongolia","Python",1
+"Bangladesh","Lua",2
+"Switzerland","Clojure",4
+"Mongolia","VB.NET",1
+"Dominican Republic","C",5
+"Dominican Republic","Swift",4
+"Tanzania","R",1
+"Tanzania","SQL",8
+"Georgia","TypeScript",6
+"Taiwan","F#",1
+"Taiwan","Groovy",1
+"China","Groovy",2
+"Armenia","C#",7
+"Armenia","TypeScript",4
+"Malawi","Python",1
+"Malawi","SQL",1
+"Ukraine","Groovy",8
+"Laos","C++",1
+"Laos","C#",1
+"Laos","Java",1
+"Laos","JavaScript",1
+"Laos","Perl",1
+"Laos","PHP",1
+"Laos","Python",1
+"Laos","R",1
+"Laos","SQL",1
+"Laos","Swift",1
+"Laos","VB.NET",1
+"Laos","VBA",1
+"Uganda","Python",4
+"Thailand","Swift",6
+"Mauritius","C#",3
+"Mauritius","PHP",2
+"Mauritius","Python",1
+"Mauritius","SQL",3
+"Mauritius","VB.NET",2
+"Uganda","C",5
+"Uganda","Java",9
+"Uganda","JavaScript",10
+"Sri Lanka","VBA",2
+"Moldavia","Swift",6
+"Austria","Lua",10
+"Denmark","Elixir",3
+"Tanzania","Ruby",3
+"Luxembourg","Python",11
+"Kazakhstan","C++",5
+"Kazakhstan","JavaScript",14
+"Kazakhstan","Python",6
+"Kazakhstan","Scala",1
+"Gabon","C#",1
+"Gabon","JavaScript",1
+"Gabon","PHP",1
+"Gabon","SQL",1
+"Gabon","VB.NET",1
+"Kazakhstan","VB.NET",2
+"Kazakhstan","VisualBasic6",2
+"Nigeria","TypeScript",13
+"Moldavia","Objective-C",6
+"Tunisia","Assembly",5
+"Tunisia","VB.NET",4
+"Tunisia","VBA",3
+"Tunisia","VisualBasic6",1
+"Austria","VisualBasic6",4
+"Antarctica","Assembly",1
+"Antarctica","C",3
+"Antarctica","Go",3
+"Antarctica","Haskell",1
+"Antarctica","JavaScript",6
+"Macedonia","C++",8
+"Switzerland","Rust",3
+"Honduras","JavaScript",2
+"Serbia","CoffeeScript",1
+"Argentina","Objective-C",4
+"Argentina","Swift",4
+"Nigeria","CoffeeScript",4
+"Ecuador","Ruby",4
+"Kazakhstan","Assembly",1
+"Kazakhstan","PHP",8
+"Liechtenstein","Groovy",1
+"Liechtenstein","PHP",2
+"South Africa","Go",9
+"Spain","F#",3
+"Albania","C++",11
+"Iraq","Java",4
+"Colombia","Lua",1
+"Kazakhstan","Matlab",1
+"Slovak Republic","Go",3
+"Slovak Republic","Groovy",3
+"Slovak Republic","Lua",8
+"Slovak Republic","Scala",3
+"Serbia","Go",5
+"Macedonia","Groovy",1
+"Romania","Lua",11
+"New Zealand","Assembly",5
+"Slovak Republic","Ruby",5
+"Venezuela","Perl",3
+"Venezuela","PHP",20
+"Venezuela","Ruby",6
+"Norway","Elixir",4
+"South Africa","Rust",3
+"Mexico","Julia",1
+"Mexico","Matlab",5
+"Colombia","VBA",2
+"El Salvador","C#",4
+"El Salvador","PHP",6
+"Malaysia","VBA",4
+"Brazil","F#",5
+"Jordan","C++",6
+"Jordan","Java",12
+"Jordan","VisualBasic6",3
+"Afghanistan","C",5
+"Afghanistan","C++",5
+"Afghanistan","Groovy",2
+"Afghanistan","Hack",2
+"Afghanistan","Java",4
+"Dominican Republic","VisualBasic6",2
+"Portugal","Perl",5
+"Costa Rica","C",8
+"Spain","Elixir",2
+"Spain","Erlang",3
+"Sri Lanka","Elixir",1
+"Rwanda","Objective-C",1
+"Rwanda","Swift",2
+"Thailand","CommonLisp",1
+"Thailand","Rust",2
+"Hungary","Erlang",4
+"Czech Republic","F#",3
+"Switzerland","Julia",1
+"Romania","Erlang",1
+"Romania","F#",1
+"South Africa","Groovy",5
+"South Korea","Assembly",2
+"South Korea","Lua",2
+"Tunisia","Ruby",4
+"Croatia","Haskell",2
+"Croatia","R",3
+"Macedonia","CommonLisp",2
+"Ireland","Hack",1
+"Belarus","R",1
+"United Arab Emirates","Smalltalk",1
+"Venezuela","VisualBasic6",6
+"Brazil","Erlang",3
+"Jordan","VB.NET",7
+"Oman","Assembly",1
+"Oman","C++",1
+"Oman","Java",1
+"Oman","JavaScript",3
+"Oman","PHP",2
+"Oman","SQL",3
+"Hungary","F#",3
+"Bulgaria","Perl",5
+"I prefer not to say","Matlab",8
+"Costa Rica","Matlab",3
+"Costa Rica","PHP",13
+"Costa Rica","VB.NET",7
+"Chile","VB.NET",6
+"Senegal","JavaScript",2
+"Senegal","SQL",2
+"Nicaragua","PHP",2
+"United Kingdom","Dart",9
+"Portugal","Julia",2
+"Croatia","Lua",3
+"Guatemala","Swift",4
+"Zimbabwe","Java",5
+"Zimbabwe","JavaScript",5
+"Zimbabwe","PHP",3
+"Hong Kong","R",3
+"Kyrgyzstan","C#",3
+"Kyrgyzstan","SQL",2
+"Vietnam","CommonLisp",2
+"Lithuania","Clojure",1
+"Lithuania","Scala",3
+"Afghanistan","Elixir",2
+"Afghanistan","Objective-C",2
+"Afghanistan","Python",2
+"Afghanistan","Swift",1
+"Afghanistan","TypeScript",1
+"China","Erlang",1
+"Slovenia","Rust",1
+"Hungary","VisualBasic6",4
+"Mongolia","Lua",1
+"Italy","CommonLisp",3
+"New Zealand","Lua",6
+"Lithuania","Groovy",4
+"Serbia","VisualBasic6",2
+"Oman","TypeScript",1
+"Reunion (French)","Java",2
+"Peru","CoffeeScript",4
+"Peru","TypeScript",4
+"France","Julia",3
+"Bulgaria","F#",2
+"El Salvador","Python",7
+"El Salvador","Ruby",3
+"Croatia","Go",4
+"Puerto Rico","Matlab",1
+"Latvia","R",2
+"Serbia","Clojure",3
+"Turkey","Rust",1
+"Bosnia-Herzegovina","C",9
+"Slovak Republic","VB.NET",5
+"China","Rust",1
+"Venezuela","CommonLisp",1
+"Venezuela","R",3
+"Nigeria","VB.NET",12
+"Vietnam","VBA",4
+"Albania","Assembly",2
+"New Zealand","Dart",3
+"Kazakhstan","C",3
+"Kazakhstan","VBA",1
+"Australia","Dart",5
+"New Zealand","Clojure",1
+"Romania","VisualBasic6",10
+"Nigeria","F#",2
+"Nigeria","Objective-C",2
+"Nigeria","Ruby",5
+"Indonesia","F#",1
+"Indonesia","TypeScript",8
+"South Korea","CommonLisp",2
+"South Korea","Matlab",6
+"Serbia","VB.NET",3
+"China","Haskell",4
+"China","Perl",1
+"South Africa","Scala",6
+"Zaire","CoffeeScript",1
+"Zaire","JavaScript",2
+"Zaire","PHP",1
+"Zaire","Python",1
+"Zaire","SQL",2
+"Saudi Arabia","Assembly",1
+"Saudi Arabia","VB.NET",6
+"Lithuania","Lua",3
+"Lithuania","Perl",3
+"Lithuania","Smalltalk",1
+"Lithuania","Assembly",3
+"Serbia","Objective-C",6
+"Paraguay","CoffeeScript",1
+"Paraguay","TypeScript",1
+"South Korea","VB.NET",2
+"South Korea","VBA",1
+"South Korea","VisualBasic6",2
+"Thailand","Objective-C",5
+"Bangladesh","Go",3
+"South Korea","Haskell",1
+"South Korea","Ruby",2
+"United Arab Emirates","Ruby",3
+"Trinidad and Tobago","C++",3
+"Trinidad and Tobago","Python",5
+"Mongolia","Objective-C",1
+"Belarus","Go",4
+"Puerto Rico","C++",2
+"Puerto Rico","Objective-C",1
+"Puerto Rico","Swift",1
+"Costa Rica","Lua",1
+"Estonia","R",1
+"Venezuela","TypeScript",3
+"Jordan","C",4
+"Jordan","Python",3
+"Luxembourg","C++",6
+"Luxembourg","CoffeeScript",3
+"Luxembourg","Matlab",2
+"Luxembourg","Ruby",3
+"Cuba","SQL",8
+"Thailand","Ruby",7
+"Norway","Erlang",2
+"Cuba","C#",7
+"Cuba","Objective-C",1
+"Cuba","Swift",2
+"South Africa","VisualBasic6",9
+"Croatia","F#",3
+"Singapore","Dart",1
+"Georgia","Haskell",2
+"Georgia","PHP",12
+"Cambodia","Java",3
+"Cambodia","Objective-C",2
+"Cambodia","SQL",3
+"Cambodia","Swift",1
+"Cambodia","VB.NET",4
+"Cambodia","VBA",4
+"Slovak Republic","VBA",2
+"Taiwan","Clojure",1
+"I prefer not to say","Perl",6
+"Japan","VBA",3
+"Romania","Clojure",3
+"Romania","Haskell",8
+"Rwanda","Assembly",1
+"Rwanda","C",2
+"Rwanda","C++",2
+"Rwanda","C#",1
+"Rwanda","Haskell",1
+"Rwanda","Java",4
+"Rwanda","Julia",1
+"Rwanda","Lua",1
+"Rwanda","Matlab",2
+"Rwanda","PHP",3
+"Rwanda","SQL",4
+"Rwanda","VisualBasic6",1
+"Cyprus","C",3
+"Cyprus","Java",5
+"Cyprus","Objective-C",3
+"Cyprus","TypeScript",2
+"Armenia","VisualBasic6",1
+"Lebanon","Swift",3
+"Tunisia","Python",9
+"Latvia","Objective-C",2
+"Latvia","Perl",3
+"Israel","Julia",5
+"Bolivia","CoffeeScript",1
+"Bolivia","Elixir",1
+"Bolivia","Ruby",4
+"Thailand","Assembly",1
+"Netherlands Antilles","JavaScript",2
+"Netherlands Antilles","Scala",1
+"Netherlands Antilles","SQL",2
+"Romania","CommonLisp",4
+"Ireland","Rust",1
+"Norway","CoffeeScript",6
+"Norway","Groovy",5
+"Madagascar","JavaScript",4
+"Madagascar","PHP",4
+"Madagascar","Python",2
+"Madagascar","SQL",4
+"Ghana","Groovy",1
+"Ghana","Objective-C",1
+"Ghana","Swift",3
+"Chile","TypeScript",2
+"Nepal","Go",1
+"Nepal","Haskell",1
+"Nepal","Perl",3
+"Nepal","R",3
+"Nepal","Ruby",6
+"Serbia","VBA",2
+"Bulgaria","CoffeeScript",4
+"Dominican Republic","VB.NET",5
+"Venezuela","VB.NET",3
+"Moldavia","Elixir",1
+"Moldavia","Lua",2
+"Moldavia","Matlab",2
+"Moldavia","Perl",1
+"Moldavia","Ruby",6
+"Cuba","Go",1
+"Cuba","Haskell",1
+"Lebanon","Lua",1
+"Lebanon","Python",4
+"Portugal","Lua",7
+"Chile","Scala",2
+"Moldavia","Haskell",1
+"Slovenia","Dart",1
+"Malta","C",2
+"Malta","C++",2
+"Malta","Perl",1
+"Malta","Ruby",1
+"Iceland","Lua",1
+"Iceland","Swift",5
+"Saint Lucia","C#",2
+"France","Erlang",12
+"Guatemala","Elixir",1
+"Morocco","CoffeeScript",2
+"Morocco","Elixir",1
+"Armenia","VBA",1
+"China","Smalltalk",1
+"Bolivia","Objective-C",3
+"Bolivia","Swift",3
+"Nepal","Groovy",1
+"Thailand","Clojure",1
+"Kenya","Objective-C",3
+"Kenya","VB.NET",5
+"Iran","CoffeeScript",5
+"Spain","Julia",2
+"South Korea","R",4
+"Ukraine","Clojure",1
+"Sri Lanka","Erlang",4
+"United Arab Emirates","Assembly",1
+"Algeria","C",4
+"Algeria","C++",6
+"Kyrgyzstan","C++",1
+"Czech Republic","Erlang",1
+"Monaco","Assembly",1
+"Luxembourg","Lua",2
+"Fiji","C++",1
+"Fiji","C#",2
+"Fiji","Python",1
+"Ukraine","VisualBasic6",4
+"Morocco","Assembly",3
+"Ghana","Ruby",4
+"Vietnam","VisualBasic6",4
+"Malaysia","Objective-C",10
+"Malaysia","Swift",6
+"Costa Rica","C++",9
+"Switzerland","Erlang",1
+"Cuba","Java",8
+"Uruguay","CoffeeScript",1
+"Chile","Groovy",3
+"Colombia","VisualBasic6",2
+"Bangladesh","Ruby",4
+"Costa Rica","TypeScript",9
+"Denmark","Hack",1
+"Denmark","VB.NET",3
+"Guatemala","Objective-C",1
+"Argentina","Go",2
+"Uruguay","Swift",3
+"Moldavia","Groovy",2
+"Polynesia (French)","Java",1
+"Polynesia (French)","Objective-C",1
+"Polynesia (French)","Ruby",1
+"Polynesia (French)","Swift",1
+"Croatia","Erlang",2
+"Belarus","CoffeeScript",2
+"Belarus","Haskell",1
+"Belarus","Perl",2
+"Belarus","Ruby",8
+"Belarus","Rust",2
+"Belarus","Scala",1
+"Tunisia","Matlab",2
+"Cambodia","C",2
+"Cambodia","C++",1
+"Cambodia","C#",1
+"Cambodia","F#",1
+"Cambodia","JavaScript",6
+"Cambodia","PHP",3
+"Cambodia","Ruby",1
+"Cambodia","VisualBasic6",1
+"Aland Islands","C",4
+"Aland Islands","C++",2
+"Aland Islands","Go",2
+"Aland Islands","Java",3
+"New Caledonia (French)","Groovy",1
+"New Caledonia (French)","Java",1
+"New Caledonia (French)","Perl",1
+"New Caledonia (French)","Python",2
+"New Caledonia (French)","Ruby",1
+"Myanmar","VB.NET",3
+"Bahrain","Java",3
+"Bahrain","JavaScript",5
+"Bahrain","PHP",3
+"Bahrain","SQL",3
+"Bahrain","Swift",1
+"Japan","Hack",1
+"Malaysia","R",2
+"New Zealand","R",5
+"Lithuania","CoffeeScript",3
+"Lithuania","R",2
+"Lithuania","VBA",4
+"Serbia","CommonLisp",1
+"Greece","Scala",3
+"Sri Lanka","TypeScript",6
+"Italy","Dart",2
+"Norway","Matlab",7
+"South Africa","Lua",3
+"Romania","Elixir",2
+"Qatar","C",3
+"Qatar","Java",3
+"Brazil","CommonLisp",2
+"Nepal","Elixir",1
+"Haiti","JavaScript",1
+"Haiti","PHP",1
+"Haiti","SQL",1
+"Montenegro","Python",3
+"Bolivia","Groovy",1
+"Bolivia","Java",8
+"Egypt","Swift",6
+"Algeria","Assembly",2
+"Algeria","Matlab",3
+"Kenya","Swift",1
+"Peru","Objective-C",2
+"Peru","Swift",2
+"Colombia","Swift",9
+"Uganda","C++",3
+"Uganda","Objective-C",1
+"Uganda","Ruby",1
+"Uganda","VB.NET",3
+"Puerto Rico","VBA",1
+"Ghana","Scala",1
+"Colombia","Haskell",4
+"Peru","F#",1
+"Egypt","Go",1
+"Peru","Clojure",1
+"Peru","Perl",1
+"Egypt","Rust",1
+"Tunisia","Objective-C",3
+"Slovenia","Clojure",3
+"Malaysia","Erlang",2
+"Azerbaidjan","C",3
+"Azerbaidjan","C++",3
+"Azerbaidjan","TypeScript",1
+"Thailand","CoffeeScript",1
+"Bulgaria","Erlang",1
+"Bulgaria","Haskell",3
+"Bahrain","C#",2
+"Bahrain","VB.NET",1
+"Luxembourg","CommonLisp",1
+"Luxembourg","Clojure",1
+"Luxembourg","Dart",1
+"Luxembourg","Elixir",1
+"Luxembourg","F#",1
+"Luxembourg","Groovy",1
+"Luxembourg","Hack",1
+"Luxembourg","Haskell",1
+"Luxembourg","Julia",1
+"Luxembourg","Objective-C",2
+"Luxembourg","Perl",1
+"Luxembourg","R",1
+"Luxembourg","Rust",2
+"Luxembourg","Scala",2
+"Luxembourg","Smalltalk",1
+"Luxembourg","Swift",1
+"Luxembourg","VisualBasic6",2
+"Afghanistan","Assembly",5
+"Lebanon","Objective-C",2
+"Pitcairn Island","Python",1
+"Pitcairn Island","SQL",1
+"Pitcairn Island","VBA",1
+"Seychelles","JavaScript",1
+"Seychelles","PHP",1
+"Seychelles","SQL",1
+"China","CommonLisp",2
+"Lithuania","Go",4
+"Cyprus","C++",4
+"Cyprus","Python",3
+"Sri Lanka","Go",1
+"Singapore","Smalltalk",1
+"South Africa","Erlang",2
+"Colombia","Clojure",2
+"Guinea","C#",1
+"Guinea","Java",1
+"Guinea","JavaScript",1
+"Guinea","PHP",1
+"Guinea","Python",1
+"Guinea","SQL",1
+"Aland Islands","Assembly",1
+"Aland Islands","C#",1
+"Aland Islands","CommonLisp",1
+"Aland Islands","Clojure",2
+"Aland Islands","Elixir",1
+"Aland Islands","F#",1
+"Aland Islands","Hack",1
+"Aland Islands","Haskell",2
+"Aland Islands","Julia",1
+"Aland Islands","Lua",1
+"Aland Islands","Matlab",1
+"Aland Islands","Objective-C",1
+"Aland Islands","Perl",1
+"Aland Islands","Python",1
+"Aland Islands","R",1
+"Aland Islands","Ruby",1
+"Aland Islands","Rust",1
+"Aland Islands","Scala",2
+"Aland Islands","Smalltalk",1
+"Aland Islands","SQL",2
+"Aland Islands","Swift",2
+"Aland Islands","VisualBasic6",1
+"Jamaica","Python",4
+"Morocco","Dart",2
+"Morocco","Lua",2
+"Morocco","Rust",1
+"Morocco","VB.NET",3
+"Egypt","Lua",3
+"Mozambique","C",1
+"Mozambique","C++",1
+"Croatia","Objective-C",9
+"Jamaica","C",3
+"Denmark","Julia",1
+"Costa Rica","Swift",5
+"Nigeria","Assembly",6
+"Ecuador","CoffeeScript",1
+"Ecuador","Objective-C",2
+"Ecuador","Swift",2
+"Lebanon","F#",1
+"Benin","C",1
+"Benin","C++",1
+"Benin","JavaScript",2
+"Benin","PHP",2
+"Benin","Python",2
+"Benin","SQL",2
+"Peru","R",3
+"Peru","VBA",5
+"Singapore","CommonLisp",3
+"Cuba","CommonLisp",1
+"Honduras","TypeScript",1
+"Belgium","CommonLisp",1
+"Belgium","Clojure",3
+"Bangladesh","CoffeeScript",1
+"Bangladesh","Hack",1
+"Ukraine","VBA",2
+"Slovak Republic","VisualBasic6",2
+"South Korea","CoffeeScript",3
+"Bulgaria","Clojure",1
+"Cameroon","C#",2
+"Cameroon","JavaScript",5
+"Cameroon","PHP",4
+"Cameroon","VB.NET",1
+"Singapore","Groovy",5
+"Italy","Clojure",3
+"Algeria","VisualBasic6",2
+"Georgia","Objective-C",3
+"Georgia","Swift",2
+"Finland","F#",2
+"Saudi Arabia","VBA",1
+"Montenegro","JavaScript",5
+"Montenegro","PHP",4
+"Montenegro","SQL",5
+"Belarus","Groovy",1
+"Colombia","Julia",1
+"Costa Rica","Objective-C",4
+"Somalia","Assembly",1
+"Somalia","Smalltalk",1
+"Somalia","VB.NET",1
+"Saudi Arabia","Groovy",1
+"Saudi Arabia","Lua",1
+"Uzbekistan","Assembly",2
+"Uzbekistan","C",3
+"Uzbekistan","C++",4
+"Uzbekistan","CoffeeScript",2
+"Uzbekistan","CommonLisp",1
+"Uzbekistan","Clojure",1
+"Uzbekistan","Dart",1
+"Uzbekistan","Ruby",1
+"Uzbekistan","Rust",1
+"Uzbekistan","TypeScript",1
+"New Zealand","VBA",6
+"Mozambique","Ruby",1
+"Montenegro","Assembly",2
+"Montenegro","C",2
+"Pakistan","Lua",4
+"Nigeria","Lua",2
+"Croatia","Elixir",2
+"I prefer not to say","VisualBasic6",4
+"Georgia","CoffeeScript",2
+"Hong Kong","Rust",1
+"Syria","Assembly",1
+"Syria","C",1
+"Syria","C++",2
+"Syria","PHP",3
+"Syria","VBA",2
+"Kyrgyzstan","JavaScript",2
+"Macedonia","VB.NET",4
+"Norway","Clojure",1
+"Norway","Julia",1
+"Tunisia","Groovy",2
+"Malta","Go",1
+"Cyprus","R",1
+"South Africa","CommonLisp",1
+"South Africa","Elixir",2
+"Latvia","Matlab",2
+"Venezuela","Dart",1
+"Venezuela","Go",1
+"Angola","JavaScript",1
+"Angola","PHP",1
+"Angola","SQL",1
+"Kuwait","C#",3
+"Kuwait","TypeScript",2
+"Indonesia","Rust",1
+"United Arab Emirates","R",1
+"Singapore","F#",3
+"Lebanon","Groovy",1
+"Ethiopia","Assembly",2
+"Ethiopia","C",1
+"Iraq","C#",3
+"Iraq","JavaScript",3
+"Iraq","PHP",2
+"Iraq","SQL",3
+"Jordan","Objective-C",3
+"Jordan","Swift",2
+"Panama","CoffeeScript",1
+"Panama","Ruby",2
+"Panama","TypeScript",1
+"Ireland","Haskell",8
+"Venezuela","VBA",3
+"Kazakhstan","TypeScript",1
+"Indonesia","Groovy",2
+"Lebanon","Go",1
+"Nigeria","Perl",3
+"Hungary","CommonLisp",1
+"Bulgaria","Groovy",3
+"Bulgaria","Scala",3
+"Antarctica","C++",2
+"Antarctica","C#",2
+"Antarctica","SQL",3
+"Thailand","Haskell",1
+"Ethiopia","Groovy",3
+"Ethiopia","Ruby",2
+"Belgium","Elixir",4
+"Madagascar","Assembly",2
+"Madagascar","C",2
+"Madagascar","C++",2
+"Estonia","Lua",2
+"Trinidad and Tobago","C#",1
+"Trinidad and Tobago","VB.NET",1
+"Reunion (French)","C#",1
+"Reunion (French)","JavaScript",2
+"Reunion (French)","PHP",1
+"Reunion (French)","SQL",1
+"Reunion (French)","VB.NET",1
+"Reunion (French)","VBA",1
+"Reunion (French)","VisualBasic6",1
+"Germany","Hack",5
+"Guyana","C#",1
+"Guyana","Python",2
+"Niger","VBA",1
+"Niger","VisualBasic6",1
+"Montenegro","Groovy",1
+"Montenegro","Java",3
+"Montenegro","Objective-C",1
+"Montenegro","R",3
+"Guam","C#",1
+"Guam","JavaScript",1
+"Guam","SQL",1
+"Guam","TypeScript",1
+"Guam","VB.NET",1
+"Guam","VisualBasic6",1
+"Antigua and Barbuda","C",2
+"Antigua and Barbuda","PHP",2
+"Antigua and Barbuda","SQL",1
+"Uganda","TypeScript",2
+"Uganda","VisualBasic6",2
+"Costa Rica","Scala",2
+"Belize","C",2
+"Belize","C++",2
+"Belize","Java",3
+"Belize","JavaScript",3
+"Belize","PHP",2
+"Belize","VB.NET",1
+"Chile","Haskell",1
+"Singapore","Lua",1
+"Singapore","VisualBasic6",2
+"Saudi Arabia","VisualBasic6",2
+"Slovenia","Erlang",1
+"Taiwan","VB.NET",1
+"Taiwan","VisualBasic6",1
+"Thailand","Lua",3
+"Kenya","C",4
+"Nigeria","Elixir",2
+"Romania","Hack",1
+"Togo","C",1
+"Togo","C++",1
+"Togo","Java",4
+"Togo","JavaScript",1
+"Togo","PHP",2
+"Togo","SQL",3
+"Kuwait","C",1
+"Kuwait","C++",1
+"Kuwait","CommonLisp",1
+"Kuwait","PHP",1
+"Kuwait","VB.NET",1
+"Qatar","SQL",4
+"Saudi Arabia","CoffeeScript",1
+"Saudi Arabia","TypeScript",2
+"Georgia","CommonLisp",1
+"Georgia","Clojure",1
+"Georgia","Erlang",1
+"Georgia","Go",1
+"Georgia","Ruby",1
+"Georgia","Rust",1
+"Netherlands Antilles","C#",1
+"Netherlands Antilles","F#",1
+"Netherlands Antilles","TypeScript",1
+"Montenegro","CommonLisp",1
+"Montenegro","Lua",1
+"Montenegro","Matlab",1
+"Montenegro","VB.NET",2
+"Montenegro","VBA",3
+"Azerbaidjan","Assembly",3
+"Azerbaidjan","CommonLisp",1
+"Azerbaidjan","Perl",1
+"Azerbaidjan","Rust",1
+"Romania","Julia",1
+"Senegal","Java",2
+"Iran","Hack",7
+"Guyana","Go",1
+"El Salvador","VB.NET",2
+"Mexico","Elixir",1
+"Egypt","Ruby",5
+"Brazil","Smalltalk",1
+"Trinidad and Tobago","TypeScript",1
+"Costa Rica","Assembly",3
+"Kyrgyzstan","Java",3
+"Kyrgyzstan","PHP",1
+"Kyrgyzstan","Python",1
+"Kyrgyzstan","Swift",2
+"Malaysia","Dart",1
+"Malaysia","F#",1
+"Malaysia","Rust",1
+"Malaysia","Smalltalk",1
+"South Korea","Elixir",1
+"South Korea","Erlang",1
+"Ghana","C++",3
+"Ghana","R",3
+"Rwanda","Scala",1
+"Jordan","VBA",1
+"Portugal","CoffeeScript",1
+"Morocco","VisualBasic6",2
+"Ireland","F#",1
+"Ghana","Matlab",2
+"Ghana","VBA",2
+"Kazakhstan","Go",1
+"Zambia","Java",2
+"Zambia","JavaScript",2
+"Zambia","PHP",1
+"Zambia","SQL",3
+"Uruguay","Objective-C",3
+"Chile","Julia",1
+"Malta","Objective-C",1
+"Ivory Coast (Cote D'Ivoire)","Java",1
+"Ivory Coast (Cote D'Ivoire)","JavaScript",1
+"Ivory Coast (Cote D'Ivoire)","PHP",1
+"Bolivia","TypeScript",1
+"Uruguay","Lua",1
+"Barbados","C#",2
+"Barbados","JavaScript",2
+"Barbados","PHP",2
+"Barbados","SQL",2
+"Anguilla","JavaScript",1
+"Anguilla","TypeScript",1
+"Jamaica","C++",2
+"Jamaica","CoffeeScript",1
+"Jamaica","Go",3
+"Jamaica","Swift",2
+"Jamaica","VB.NET",4
+"Jamaica","VBA",1
+"Saudi Arabia","Go",1
+"Pakistan","Go",1
+"Bolivia","C++",3
+"Bolivia","Python",3
+"Japan","CommonLisp",1
+"Afghanistan","VisualBasic6",4
+"Vietnam","Go",3
+"Lithuania","Haskell",1
+"Georgia","Perl",1
+"Georgia","Scala",1
+"Tunisia","Perl",3
+"Hong Kong","Groovy",2
+"Moldavia","Go",2
+"Tunisia","Go",1
+"Tunisia","Haskell",1
+"Tunisia","Lua",1
+"Tunisia","TypeScript",1
+"Nigeria","Scala",4
+"Lebanon","R",1
+"Algeria","CoffeeScript",1
+"Algeria","Erlang",2
+"Qatar","PHP",2
+"Dominican Republic","Matlab",1
+"Colombia","Rust",1
+"Venezuela","CoffeeScript",3
+"Ecuador","Matlab",2
+"Panama","VB.NET",2
+"Bahrain","Go",1
+"Albania","VB.NET",1
+"Kazakhstan","Objective-C",1
+"Kazakhstan","Swift",1
+"Puerto Rico","Groovy",1
+"Cuba","Ruby",1
+"Denmark","Assembly",4
+"Sudan","C",2
+"Sudan","C++",2
+"Sudan","C#",1
+"Sudan","Go",1
+"Sudan","Java",4
+"Sudan","Matlab",1
+"Sudan","Perl",1
+"Sudan","PHP",4
+"Sudan","SQL",4
+"Sudan","VB.NET",1
+"Sudan","VBA",1
+"Sudan","VisualBasic6",2
+"Costa Rica","F#",1
+"Mexico","Smalltalk",1
+"Vietnam","Clojure",2
+"Vietnam","Scala",2
+"Zimbabwe","VB.NET",1
+"Bosnia-Herzegovina","Objective-C",1
+"Albania","Objective-C",2
+"Syria","Java",1
+"Syria","Objective-C",1
+"Syria","Swift",1
+"Indonesia","Matlab",5
+"Panama","VBA",1
+"Panama","VisualBasic6",1
+"Cameroon","C++",3
+"Cameroon","Matlab",1
+"Cameroon","Python",1
+"El Salvador","C",1
+"Togo","Groovy",2
+"Puerto Rico","C",1
+"Puerto Rico","Haskell",1
+"Denmark","Erlang",1
+"El Salvador","C++",1
+"Bangladesh","Perl",1
+"Bangladesh","VBA",1
+"Zambia","VB.NET",2
+"Vietnam","Dart",2
+"Antarctica","Java",1
+"Antarctica","Objective-C",1
+"Turkey","Dart",2
+"Kenya","VBA",2
+"Denmark","Clojure",2
+"Algeria","Perl",1
+"Turkey","Hack",1
+"Qatar","Python",2
+"Qatar","Smalltalk",2
+"U.S. Minor Outlying Islands","C",1
+"U.S. Minor Outlying Islands","Java",1
+"Libya","C",1
+"Libya","C++",1
+"Libya","C#",1
+"Libya","F#",1
+"Libya","Java",1
+"Libya","JavaScript",1
+"Libya","Matlab",1
+"Libya","PHP",1
+"Libya","Python",1
+"Libya","SQL",1
+"Libya","VB.NET",1
+"Panama","Scala",1
+"Thailand","Matlab",3
+"Thailand","R",5
+"Indonesia","Assembly",3
+"Indonesia","Clojure",1
+"Indonesia","Lua",3
+"Barbados","C",1
+"Barbados","C++",1
+"Barbados","Java",1
+"Barbados","Objective-C",1
+"Barbados","Swift",1
+"Barbados","VB.NET",1
+"Pakistan","VBA",3
+"South Korea","Dart",1
+"South Korea","Hack",1
+"Pakistan","Haskell",1
+"Honduras","Swift",1
+"Mauritius","C++",1
+"Latvia","Swift",2
+"Vietnam","VB.NET",3
+"Estonia","Elixir",1
+"Estonia","Erlang",1
+"Estonia","Haskell",1
+"Northern Mariana Islands","JavaScript",1
+"Northern Mariana Islands","SQL",1
+"Northern Mariana Islands","VB.NET",1
+"Uzbekistan","PHP",3
+"Saint Vincent & Grenadines","Java",1
+"Saint Vincent & Grenadines","Objective-C",1
+"Switzerland","Hack",1
+"Tanzania","Java",5
+"Zaire","Java",1
+"Senegal","PHP",1
+"Senegal","Python",1
+"Morocco","Clojure",1
+"Morocco","Go",1
+"Morocco","Objective-C",1
+"Morocco","Swift",1
+"Martinique (French)","JavaScript",1
+"Martinique (French)","Ruby",1
+"Sudan","Assembly",1
+"Sudan","JavaScript",2
+"Sudan","Objective-C",1
+"Sudan","Python",2
+"Sudan","Swift",1
+"Vietnam","Assembly",2
+"Vietnam","Perl",2
+"Taiwan","Scala",2
+"Finland","Dart",1
+"Oman","C#",1
+"Belarus","Erlang",1
+"Syria","Go",1
+"Syria","Python",1
+"Syria","Scala",1
+"Yemen","C++",2
+"Yemen","Java",2
+"Yemen","Python",1
+"Yemen","SQL",2
+"Yemen","Swift",1
+"Turkmenistan","C",1
+"Turkmenistan","C++",1
+"Turkmenistan","C#",1
+"Turkmenistan","CoffeeScript",1
+"Turkmenistan","Java",1
+"Turkmenistan","JavaScript",1
+"Turkmenistan","Matlab",1
+"Turkmenistan","PHP",1
+"Turkmenistan","Python",1
+"Turkmenistan","R",1
+"Turkmenistan","SQL",1
+"Turkmenistan","VB.NET",1
+"Turkmenistan","VisualBasic6",1
+"Nepal","VBA",2
+"Armenia","Assembly",1
+"Armenia","Erlang",1
+"Indonesia","Hack",1
+"Indonesia","Scala",2
+"I prefer not to say","VBA",1
+"Venezuela","Objective-C",3
+"Nigeria","R",2
+"Bosnia-Herzegovina","F#",1
+"Bosnia-Herzegovina","R",2
+"Austria","Dart",1
+"Iceland","Ruby",1
+"Paraguay","VB.NET",1
+"Paraguay","VisualBasic6",1
+"Greece","Smalltalk",1
+"Macau","C++",1
+"Macau","Java",1
+"Macau","JavaScript",1
+"Macau","Objective-C",1
+"Macau","PHP",1
+"Macau","Python",1
+"Macau","R",1
+"Macau","Ruby",1
+"Macau","Smalltalk",1
+"Macau","SQL",1
+"Macau","Swift",1
+"Colombia","CommonLisp",1
+"Colombia","Dart",1
+"Colombia","Erlang",1
+"Colombia","F#",1
+"Colombia","Hack",1
+"Hong Kong","Lua",1
+"Zambia","VisualBasic6",1
+"Bulgaria","Lua",2
+"Bulgaria","Rust",1
+"New Zealand","Elixir",3
+"Myanmar","TypeScript",1
+"Nepal","Assembly",1
+"Morocco","TypeScript",2
+"Chad","Java",1
+"Togo","C#",2
+"Togo","VB.NET",2
+"Togo","VisualBasic6",1
+"Kenya","CoffeeScript",3
+"Kenya","Ruby",3
+"Czech Republic","Clojure",3
+"Kazakhstan","Haskell",1
+"Cyprus","CoffeeScript",1
+"Cyprus","VisualBasic6",1
+"Venezuela","Swift",2
+"Slovenia","F#",1
+"Iraq","C",1
+"Iraq","Haskell",1
+"Iraq","Objective-C",1
+"Iraq","Ruby",1
+"Iraq","Swift",1
+"Iraq","VB.NET",1
+"Iraq","VisualBasic6",1
+"Bangladesh","R",1
+"Costa Rica","Go",1
+"Guatemala","Go",1
+"Guatemala","Scala",1
+"Guatemala","Matlab",1
+"Virgin Islands (USA)","C#",1
+"Virgin Islands (USA)","CoffeeScript",2
+"Virgin Islands (USA)","Go",1
+"Virgin Islands (USA)","JavaScript",3
+"Virgin Islands (USA)","Python",2
+"Virgin Islands (USA)","TypeScript",1
+"Belarus","Elixir",1
+"Georgia","Groovy",1
+"South Africa","Haskell",1
+"Greece","Clojure",1
+"Panama","C",2
+"Panama","Swift",1
+"Tunisia","CoffeeScript",1
+"Tunisia","Clojure",1
+"Azerbaidjan","Clojure",1
+"Nigeria","Smalltalk",1
+"Suriname","C#",1
+"Suriname","Java",1
+"Suriname","JavaScript",1
+"Suriname","Objective-C",1
+"Suriname","Swift",1
+"Suriname","VB.NET",1
+"Cayman Islands","C#",1
+"Cayman Islands","Objective-C",1
+"Cayman Islands","Swift",1
+"Bangladesh","Groovy",2
+"Ethiopia","VBA",1
+"Latvia","VB.NET",2
+"Antarctica","Python",4
+"Zambia","C++",1
+"Zambia","C#",1
+"Burundi","Assembly",1
+"Burundi","C",1
+"Burundi","C++",1
+"Burundi","C#",1
+"Burundi","CoffeeScript",1
+"Burundi","CommonLisp",1
+"Burundi","Clojure",1
+"Burundi","Dart",1
+"Burundi","Elixir",1
+"Burundi","Erlang",1
+"Burundi","F#",1
+"Burundi","Go",1
+"Burundi","Groovy",1
+"Burundi","Hack",1
+"Burundi","Haskell",1
+"Burundi","Java",1
+"Burundi","JavaScript",1
+"Burundi","Julia",1
+"Burundi","Lua",1
+"Burundi","Matlab",1
+"Burundi","Objective-C",1
+"Burundi","Perl",1
+"Burundi","PHP",1
+"Burundi","Python",1
+"Burundi","R",1
+"Burundi","Ruby",1
+"Burundi","Rust",1
+"Burundi","Scala",1
+"Burundi","Smalltalk",1
+"Burundi","SQL",1
+"Burundi","Swift",1
+"Burundi","TypeScript",1
+"Burundi","VB.NET",1
+"Burundi","VBA",1
+"Burundi","VisualBasic6",1
+"Latvia","Elixir",1
+"Ethiopia","Julia",1
+"Ethiopia","Lua",1
+"Ethiopia","R",1
+"Tanzania","Assembly",1
+"Tanzania","Perl",3
+"Belize","Python",1
+"Belize","R",1
+"Belize","SQL",2
+"Ghana","F#",1
+"Ghana","VB.NET",3
+"Ghana","VisualBasic6",1
+"Iceland","R",1
+"Nigeria","CommonLisp",1
+"Nigeria","Clojure",1
+"Nigeria","Dart",1
+"Nigeria","Erlang",1
+"Nigeria","Groovy",1
+"Nigeria","Hack",1
+"Nigeria","Julia",1
+"Nigeria","Rust",1
+"Botswana","C#",1
+"Botswana","Matlab",1
+"Botswana","Python",1
+"Botswana","SQL",1
+"Botswana","TypeScript",1
+"Falkland Islands","C#",1
+"Falkland Islands","SQL",1
+"Afghanistan","VB.NET",3
+"Macedonia","CoffeeScript",1
+"Macedonia","F#",1
+"Zimbabwe","C",1
+"Greece","Rust",2
+"Denmark","CommonLisp",1
+"Croatia","Dart",1
+"Iceland","CoffeeScript",2
+"Chile","Dart",1
+"Virgin Islands (USA)","Ruby",1
+"Serbia","Julia",1
+"Serbia","R",1
+"Portugal","F#",1
+"Dominican Republic","Lua",1
+"Dominican Republic","Perl",1
+"Mexico","Erlang",1
+"Taiwan","Assembly",1
+"Ethiopia","Swift",1
+"Israel","Dart",2
+"Israel","Hack",2
+"Jordan","Assembly",1
+"Cameroon","TypeScript",2
+"Panama","R",1
+"Saint Lucia","Assembly",1
+"Saint Lucia","C",1
+"Saint Lucia","C++",1
+"Saint Lucia","CoffeeScript",1
+"Saint Lucia","CommonLisp",1
+"Saint Lucia","Clojure",1
+"Saint Lucia","Dart",1
+"Saint Lucia","Elixir",1
+"Saint Lucia","Erlang",1
+"Saint Lucia","F#",1
+"Saint Lucia","Go",1
+"Saint Lucia","Groovy",1
+"Saint Lucia","Hack",1
+"Saint Lucia","Haskell",1
+"Saint Lucia","Java",1
+"Saint Lucia","JavaScript",1
+"Saint Lucia","Julia",1
+"Saint Lucia","Lua",1
+"Saint Lucia","Matlab",1
+"Saint Lucia","Objective-C",1
+"Saint Lucia","Perl",1
+"Saint Lucia","PHP",1
+"Saint Lucia","Python",1
+"Saint Lucia","R",1
+"Saint Lucia","Ruby",1
+"Saint Lucia","Rust",1
+"Saint Lucia","Scala",1
+"Saint Lucia","Smalltalk",1
+"Saint Lucia","SQL",1
+"Saint Lucia","Swift",1
+"Saint Lucia","TypeScript",1
+"Saint Lucia","VB.NET",1
+"Saint Lucia","VBA",1
+"Saint Lucia","VisualBasic6",1
+"Yemen","VisualBasic6",1
+"Montserrat","Java",1
+"Montserrat","JavaScript",1
+"Costa Rica","CoffeeScript",2
+"Iceland","Go",1
+"Afghanistan","CommonLisp",2
+"Afghanistan","R",1
+"Afghanistan","Rust",1
+"Afghanistan","Smalltalk",1
+"Algeria","Go",1
+"Costa Rica","CommonLisp",1
+"Costa Rica","Groovy",1
+"Cameroon","Assembly",1
+"Sri Lanka","Perl",1
+"Ecuador","R",1
+"Albania","Smalltalk",1
+"Albania","VisualBasic6",1
+"Venezuela","Smalltalk",1
+"Guatemala","VBA",1
+"Guatemala","VisualBasic6",1
+"Kenya","Assembly",1
+"Antigua and Barbuda","JavaScript",1
+"Antigua and Barbuda","TypeScript",1
+"Fiji","VBA",1
+"Chile","CoffeeScript",3
+"Taiwan","Dart",1
+"Taiwan","TypeScript",2
+"Uganda","Assembly",1
+"Uganda","CoffeeScript",1
+"Uganda","Erlang",1
+"Uganda","Lua",1
+"Cuba","Assembly",1
+"Cuba","C",1
+"Cuba","Matlab",1
+"Puerto Rico","PHP",1
+"Spain","CommonLisp",2
+"Tanzania","C",2
+"Tanzania","C++",2
+"Tanzania","C#",1
+"Tanzania","Go",1
+"Tanzania","Julia",1
+"Tanzania","Rust",1
+"Tanzania","Swift",1
+"Singapore","Rust",1
+"Chile","Elixir",1
+"Venezuela","Rust",1
+"Zambia","Go",1
+"Kenya","Perl",2
+"Lithuania","VB.NET",1
+"Cyprus","Swift",2
+"Mexico","F#",1
+"Egypt","Scala",1
+"Uzbekistan","Groovy",1
+"Uzbekistan","Scala",1
+"U.S. Minor Outlying Islands","Go",1
+"U.S. Minor Outlying Islands","JavaScript",1
+"Saint Vincent & Grenadines","PHP",1
+"Saint Vincent & Grenadines","SQL",1
+"Albania","Elixir",1
+"Nicaragua","C",1
+"Tanzania","VisualBasic6",1
+"Russian Federation","CommonLisp",1
+"Uganda","VBA",1
+"Turkey","Clojure",1
+"Dominican Republic","Groovy",1
+"Dominican Republic","VBA",1
+"Uzbekistan","Objective-C",1
+"Niger","C#",1
+"Niger","Groovy",1
+"Niger","Java",1
+"Niger","Python",1
+"Niger","SQL",1
+"Egypt","Julia",1
+"Madagascar","C#",2
+"Jamaica","Lua",2
+"Benin","C#",1
+"Benin","Java",1
+"Benin","Ruby",1
+"Myanmar","Assembly",1
+"Myanmar","VisualBasic6",2
+"Taiwan","Perl",1
+"Macedonia","VisualBasic6",1
+"Cyprus","Lua",1
+"Cyprus","VBA",1
+"Serbia","Erlang",1
+"Myanmar","C++",2
+"Reunion (French)","C++",1
+"Zimbabwe","Erlang",1
+"Zimbabwe","VisualBasic6",1
+"Eritrea","Java",1
+"Eritrea","SQL",1
+"Qatar","Assembly",1
+"Qatar","C++",1
+"Qatar","CoffeeScript",1
+"Qatar","CommonLisp",1
+"Qatar","Clojure",1
+"Qatar","Dart",1
+"Qatar","Elixir",1
+"Qatar","Erlang",1
+"Qatar","F#",1
+"Qatar","Go",1
+"Qatar","Groovy",1
+"Qatar","Hack",1
+"Qatar","Haskell",1
+"Qatar","Julia",1
+"Qatar","Lua",1
+"Qatar","Matlab",1
+"Qatar","Objective-C",1
+"Qatar","Perl",1
+"Qatar","R",1
+"Qatar","Ruby",1
+"Qatar","Rust",1
+"Qatar","Scala",1
+"Qatar","Swift",1
+"Qatar","TypeScript",1
+"Qatar","VB.NET",1
+"Qatar","VBA",1
+"Qatar","VisualBasic6",1
+"Angola","Assembly",1
+"Angola","C#",1
+"Angola","CommonLisp",1
+"Angola","Elixir",1
+"Angola","F#",1
+"Pakistan","Dart",1
+"Yemen","C#",1
+"Yemen","JavaScript",1
+"Yemen","PHP",1
+"Peru","Elixir",1
+"Albania","Swift",1
+"Czech Republic","CommonLisp",1
+"Antarctica","PHP",1
+"Madagascar","Haskell",1
+"Madagascar","Ruby",1
+"Lithuania","VisualBasic6",1
+"Iceland","PHP",2
+"Malta","Haskell",1
+"Trinidad and Tobago","F#",1
+"Guatemala","R",1
+"Nicaragua","Java",1
+"Ghana","Lua",1
+"Thailand","Julia",1
+"Estonia","CommonLisp",1
+"Latvia","Dart",1
+"Serbia","Rust",1
+"Guatemala","Perl",1
+"Ukraine","Dart",1
+"Iceland","Hack",1
+"Afghanistan","Haskell",1
+"Armenia","Go",1
+"Greece","Julia",1
+"Vietnam","Elixir",1
+"Vietnam","Erlang",1
+"Vietnam","F#",1
+"Vietnam","Groovy",1
+"Vietnam","Hack",1
+"Vietnam","Haskell",1
+"Vietnam","Julia",1
+"Venezuela","Matlab",2
+"Indonesia","Julia",1
+"Antigua and Barbuda","C++",1
+"Ukraine","Hack",1
+"Cambodia","TypeScript",1
+"Bangladesh","Smalltalk",1
+"Australia","Erlang",1
+"Brunei Darussalam","Java",1
+"Tadjikistan","TypeScript",1
+"Trinidad and Tobago","C",1
+"Trinidad and Tobago","Objective-C",1
+"Liechtenstein","SQL",1
+"Liechtenstein","Swift",1
+"Uruguay","R",1
+"Jamaica","Assembly",1
+"Jamaica","Elixir",1
+"Jamaica","Erlang",1
+"Jamaica","Matlab",1
+"Jamaica","Objective-C",1
+"Jamaica","Perl",1
+"Jamaica","R",1
+"Jamaica","Scala",1
+"Hungary","Rust",1
+"Azerbaidjan","Lua",1
+"Azerbaidjan","Objective-C",1
+"Azerbaidjan","Scala",1
+"Antarctica","CommonLisp",1
+"Antarctica","Elixir",1
+"Antarctica","Rust",1
+"Comoros","Assembly",1
+"Comoros","CoffeeScript",1
+"Comoros","Matlab",1
+"Comoros","PHP",1
+"Comoros","Smalltalk",1
+"Comoros","SQL",1
+"Comoros","VB.NET",1
+"Comoros","VBA",1
+"Comoros","VisualBasic6",1
+"Swaziland","C",1
+"Swaziland","C++",1
+"Swaziland","C#",1
+"Swaziland","Haskell",1
+"Swaziland","Java",1
+"Swaziland","JavaScript",1
+"Swaziland","Matlab",1
+"Swaziland","Perl",1
+"Swaziland","PHP",1
+"Swaziland","Python",1
+"Swaziland","Ruby",1
+"Swaziland","Scala",1
+"Swaziland","SQL",1
+"Swaziland","Swift",1
+"Swaziland","TypeScript",1
+"Hong Kong","Julia",1
+"Malta","Matlab",1
+"Malta","R",1
+"Saint Helena","Java",1
+"Saint Helena","JavaScript",1
