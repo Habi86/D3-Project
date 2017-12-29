@@ -1,5 +1,16 @@
 // main styles
+@import 'reset';
 @import 'colors';
 @import 'mixins';
 
+
+//Show checkbox in chrome
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+  -webkit-appearance: checkbox;
+  opacity: 1;
+  position: inherit;
+}
+
 //styles for charts
+
+
