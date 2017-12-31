@@ -60,6 +60,7 @@ function bubbleChart() {
             .attr('cy', function(d){ return d.y; });
         
         text
+            .text(function(d){ return d.data.HaveWorkedLanguage + '' + d.data.Frequency; })
             .transition(t)
             .attr('x', function(d){ return d.x; })
             .attr('y', function(d){ return d.y; });
