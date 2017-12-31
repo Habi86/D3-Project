@@ -1,5 +1,5 @@
 import * as d3 from 'd3';
-import { bubbleChart } from './bubble';
+import { bubbleChart } from './bubble2';
 
 
 //Check if d3 is working properly :) TODO: REMOVE ME
