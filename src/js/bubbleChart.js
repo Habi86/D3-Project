@@ -2,7 +2,6 @@ import * as d3 from 'd3';
 
 function bubbleChart() {
     
-    // Global letiable for all data
     let dataset;
     let dataALL;
     
@@ -59,12 +58,23 @@ function bubbleChart() {
     
     
         //ENTER
-        
         circle.enter().append('circle')
             .attr('r', 1e-6)
             .attr('cx', function(d){ return d.x; })
             .attr('cy', function(d){ return d.y; })
             .style('fill', '#fff')
+            .on('mouseover',function() {
+                d3.select(this)
+                    .transition()
+                    .duration(500)
+                    .style('fill-opacity', 0.5);
+            })
+            .on('mouseout',function() {
+                d3.select(this)
+                    .transition()
+                    .duration(500)
+                    .style('fill-opacity', 1);
+            })
             .transition(t)
             .style('fill', '#56b256')
             .attr('r', function(d){ return d.r;})
@@ -72,8 +82,7 @@ function bubbleChart() {
                 d3.select(this).append('title')
                     .text(d.data.HaveWorkedLanguage + ': ' + d.data.Frequency);
             });
-    
-    
+        
         text.enter().append('text')
             .attr('opacity', 1e-6)
             .attr('x', function(d){ return d.x; })
@@ -88,14 +97,31 @@ function bubbleChart() {
             .transition(t)
             .attr('opacity', 1);
     
+        
         //UPDATE
         circle
+            .on('mouseover',function() {
+                d3.select(this)
+                    .transition()
+                    .duration(500)
+                    .style('fill-opacity', 0.5);
+            })
+            .on('mouseout',function() {
+                d3.select(this)
+                    .transition()
+                    .duration(500)
+                    .style('fill-opacity', 1);
+            })
             .transition(t)
             .style('fill', '#3a403d')
             .attr('r', function(d){ return d.r;})
             .attr('cx', function(d){ return d.x; })
             .attr('cy', function(d){ return d.y; });
-        
+    
+        title
+            .text(function(d) {
+                return d.data.HaveWorkedLanguage + ': ' + d.data.Frequency;
+            });
     
         text
             .text(function(d) {
@@ -122,14 +148,7 @@ function bubbleChart() {
             .attr('opacity', 1e-6)
             .remove();
         
-        
-        
-        
-        
-        
-        
     }
-    
     
     
     //interactivity
@@ -138,7 +157,7 @@ function bubbleChart() {
         let filteredData = dataset.filter((row) => row['Country'] === pickedCategory);
         update(filteredData);  // Update the chart with the filtered data
     });
-
+    
 
 }
 export { bubbleChart };
