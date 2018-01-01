@@ -2,31 +2,85 @@
 @import 'reset';
 @import 'colors';
 @import 'mixins';
+h4 {
+    color: $primary-color;
+    margin: 20px;
+    font-size: 30px;
+}
 
-//general
 body {
-  font-family: "Helvetica", sans-serif;
+    font-family: "Helvetica", sans-serif;
 }
 
-h1, h2, p, label {
-  color: $primary-color;
-  text-align: center;
+h1,
+h2,
+p,
+label {
+    color: $primary-color;
+    text-align: center;
 }
 
-h1, h2 {
-  font-size: 30px;
-  margin: 10px;
- }
-
+h1,
+h2 {
+    font-size: 30px;
+    margin: 10px;
+    color: $third-color;
+}
 
 //styles for charts
 //bubbleChart
 #bubble {
-  text-align: center;
-  text {
-    text-anchor: middle;
-    fill: #fff;
-  }
+    //text-align: center;
+    width: 50%;
+    float: left;
+    text {
+        text-anchor: middle;
+        fill: #fff;
+    }
 }
 
 //barChart
+.barchart {
+    width: 50%;
+    float: right;
+}
+
+rect {
+    fill: $third-color;
+    fill-opacity: 0.8;
+    &:hover {
+        fill-opacity: 1;
+        fill: $secondary-color;
+    }
+}
+
+.axis {
+    font-size: smaller;
+}
+
+.x-axis,
+.y-axis {
+    text-anchor: middle;
+    fill: $text-color;
+    font-size: 18px;
+}
+
+label,
+span {
+    font-size: 20px;
+    margin-left: 20px;
+    color: $label-color;
+    input[type='checkbox'] {
+        opacity: 1 !important;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+        position: relative !important;
+    }
+}
+
+select {
+    display: block !important;
+    float: right;
+    width: 50%;
+}
