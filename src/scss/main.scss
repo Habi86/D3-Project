@@ -6,6 +6,10 @@ h4 {
     margin: 20px;
 }
 
+.barchart {
+    margin: 50px;
+}
+
 //styles for charts
 rect {
     fill: $primary-color;
@@ -14,15 +18,24 @@ rect {
 
 rect:hover {
     fill-opacity: 1;
+    fill: $secondary-color;
 }
 
 .axis {
     font-size: smaller;
 }
 
-label , span{
+.x-axis, .y-axis {
+    text-anchor: middle;
+    fill: $text-color;
+    font-size: 18px;
+}
+
+label,
+span {
     font-size: 20px;
     margin-left: 20px;
+    color: $label-color;
     input[type='checkbox'] {
         opacity: 1 !important;
         margin: 10px;
