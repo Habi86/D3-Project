@@ -27,10 +27,11 @@ function bubbleChart() {
         });
         
         update(dataALL);
+        update_table(dataALL);
     });
     
     
-    let width = 1000, height = 700;
+    let width = 900, height = 700;
     let svg = d3.select('#bubbleChart').append('svg').attr('width', width).attr('height', height);
     let pack = d3.pack()
         .size([width, height])
@@ -151,11 +152,74 @@ function bubbleChart() {
     }
     
     
+    //table
+    var table = d3.select('#bubbleTable').append('table');
+    var thead = table.append('thead');
+    var tbody = table.append('tbody');
+
+    // append header row
+    thead.append('tr')
+        .selectAll('th')
+        .data(['Country', 'HaveWorkedLanguage', 'Frequency']).enter()
+        .append('th')
+        .text(function(col_names) {
+            return col_names;
+        });
+
+    // update function
+    function update_table(data) {
+        // update data to display
+        //data = newdata();
+        
+        // remove existing rows
+        // this basically resets the table element
+        // but is not the right way
+        //tbody.selectAll('tr').remove();
+        
+        // join new data with old elements, if any
+        var rows = tbody.selectAll('tr')
+            .data(data);
+        
+        var rowsEnter = rows.enter()
+            .append('tr');
+        
+        rowsEnter.append('td')
+            .attr("class", "countryColumn")
+            .text(function(d) {
+                return d.id;
+            });
+        rowsEnter.append('td')
+            .attr("class", "languageColumn")
+            .text(function(d) {
+                return d.val;
+            });
+        rowsEnter.append('td')
+            .attr("class", "frequencyColumn")
+            .text(function(d) {
+                return d.val;
+            });
+        
+        d3.selectAll(".countryColumn").data(data).text(function(d) {
+            return d.Country;
+        });
+        d3.selectAll(".languageColumn").data(data).text(function(d) {
+            return d.HaveWorkedLanguage;
+        });
+        d3.selectAll(".frequencyColumn").data(data).text(function(d) {
+            return d.Frequency;
+        });
+        rows.exit().remove();
+        
+    }
+    
+    
     //interactivity
     d3.select('#bubbleDropdown').on('change', function() {
         const pickedCategory = d3.select(this).property('value');
         let filteredData = dataset.filter((row) => row['Country'] === pickedCategory);
         update(filteredData);  // Update the chart with the filtered data
+        update_table(filteredData);  // Update the table with the filtered data
+    
     });
     
 
