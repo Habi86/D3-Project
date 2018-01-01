@@ -25,7 +25,7 @@
             "always"
         ],
         "no-console": 0,
-        "ignoreComments": true,
+        "ignoreComments": 1,
         "keyword-spacing":
         ["error", { "before": true ,  "after": true }],
         "eqeqeq" : 1,

@@ -12,12 +12,9 @@ body {
     font-family: "Helvetica", sans-serif;
 }
 
-h1,
-h2,
-p,
-label {
-    color: $primary-color;
-    text-align: center;
+h1, h2, p, label, th, td {
+  color: $primary-color;
+  text-align: center;
 }
 
 h1,
@@ -63,6 +60,26 @@ rect {
     text-anchor: middle;
     fill: $text-color;
     font-size: 18px;
+  }
+  
+#bubbleDropdown {
+    margin-bottom: 20px;
+}
+
+#bubbleChart {
+    float: left;
+}
+
+#bubbleTable {
+    table {
+      margin: 0 auto;
+      td, th {
+        padding: 1px 4px;
+      }
+      th {
+        font-weight: bold;
+      }
+    }
 }
 
 label,
