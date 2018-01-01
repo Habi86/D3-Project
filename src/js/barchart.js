@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 //import * as _ from 'underscore';
+
 var surveyResults;
 let devsPerCountry;
 let clicked = false;
@@ -149,6 +150,11 @@ function barChart() {
         const filterLengths = devsPerCountry.map((d) => d.values.length);
         let edgeVal = (max) ? Math.max(...filterLengths) : Math.min(...filterLengths);
         const filterData = devsPerCountry.filter(d => d.values.length === edgeVal);
+        updateChart(filterData);
+    }
+
+    function onCountryChange(country) {
+        const filterData = devsPerCountry.filter(d => d.key === country);
         updateChart(filterData);
     }
 

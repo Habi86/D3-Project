@@ -1,10 +1,15 @@
 import * as d3 from 'd3';
+import { barChart } from './barchart';
+
+let country = "";
+
+const observers = [];
 
 function bubbleChart() {
     
     let dataset;
     let dataALL;
-    
+
     d3.csv('/data/dataset4bubblechart.csv', function(data) {
         dataset = data;
         dataALL = data.filter(function(row) {
@@ -213,7 +218,6 @@ function bubbleChart() {
         
     }
     
-    
     //interactivity
     d3.select('#bubbleDropdown').on('change', function() {
         const pickedCategory = d3.select(this).property('value');
@@ -221,8 +225,20 @@ function bubbleChart() {
         update(filteredData);  // Update the chart with the filtered data
         console.log(filteredData);
         updateTable(filteredData);  // Update the table with the filtered data
+        observers.forEach((callback) => callback(pickedCategory));
     });
-    
 
 }
-export { bubbleChart };
+
+function onChangeBubbleChart(callback){
+    observers.push(callback);
+}
+
+function updateBarchart(){
+    d3.select('.bubbleDropdownUpdate').on('change', function() {
+        country =  d3.select(this).property('value');
+        console.log(country);
+    }); 
+}
+
+export { bubbleChart, updateBarchart, onChangeBubbleChart};
