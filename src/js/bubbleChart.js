@@ -25,6 +25,7 @@ function bubbleChart() {
             let select = document.getElementById('bubbleDropdown');
             select.appendChild(option);
         });
+        console.log(dataALL);
         
         update(dataALL);
     });
@@ -138,7 +139,7 @@ function bubbleChart() {
     
         //EXIT
         circle.exit()
-            .style('fill', '#b25230')
+            .style('fill', 'orange')
             .transition(t)
             .attr('r', 1e-6)
             .remove();
@@ -156,6 +157,7 @@ function bubbleChart() {
         const pickedCategory = d3.select(this).property('value');
         let filteredData = dataset.filter((row) => row['Country'] === pickedCategory);
         update(filteredData);  // Update the chart with the filtered data
+        console.log(filteredData);
     });
     
 
