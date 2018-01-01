@@ -16,11 +16,8 @@ function bubbleChart() {
         data.forEach( function(v) {
             foo.push(v.Country);
         });
-        console.log(foo);
+        
         let getCountries = [...new Set(foo)];
-    
-        console.log(getCountries);
-    
         getCountries = getCountries.sort();
         getCountries.forEach( function(c) {
             let option = document.createElement('option');
@@ -35,11 +32,10 @@ function bubbleChart() {
     
     
     let width = 1000, height = 700;
-    let svg = d3.select('#bubblechart').append('svg').attr('width', width).attr('height', height);
+    let svg = d3.select('#bubbleChart').append('svg').attr('width', width).attr('height', height);
     let pack = d3.pack()
         .size([width, height])
         .padding(2.5);
-    
     
     function update(classes){
         
@@ -53,11 +49,67 @@ function bubbleChart() {
         
         //JOIN
         let circle = svg.selectAll('circle')
-            .data(pack(h).leaves(), function(d){ return d.data.HaveWorkedLanguage + '?'; });
+            .data(pack(h).leaves(), function(d){ return d.data.HaveWorkedLanguage; });
+    
+        let title = svg.selectAll('title')
+            .data(pack(h).leaves(), function(d){ return d.data.HaveWorkedLanguage; });
         
         let text = svg.selectAll('text')
-            .data(pack(h).leaves(), function(d){ return d.data.HaveWorkedLanguage + 'test'; });
+            .data(pack(h).leaves(), function(d){ return d.data.HaveWorkedLanguage; });
+    
+    
+        //ENTER
         
+        circle.enter().append('circle')
+            .attr('r', 1e-6)
+            .attr('cx', function(d){ return d.x; })
+            .attr('cy', function(d){ return d.y; })
+            .style('fill', '#fff')
+            .transition(t)
+            .style('fill', '#56b256')
+            .attr('r', function(d){ return d.r;})
+            .each(function(d) {
+                d3.select(this).append('title')
+                    .text(d.data.HaveWorkedLanguage + ': ' + d.data.Frequency);
+            });
+    
+    
+        text.enter().append('text')
+            .attr('opacity', 1e-6)
+            .attr('x', function(d){ return d.x; })
+            .attr('y', function(d){ return d.y; })
+            .text(function(d) {
+                return d.data.HaveWorkedLanguage.substring(0, d.r / 3);
+            })
+            .attr('font-family', 'sans-serif')
+            .attr('font-size', function(d){
+                return d.r / 4;
+            })
+            .transition(t)
+            .attr('opacity', 1);
+    
+        //UPDATE
+        circle
+            .transition(t)
+            .style('fill', '#3a403d')
+            .attr('r', function(d){ return d.r;})
+            .attr('cx', function(d){ return d.x; })
+            .attr('cy', function(d){ return d.y; });
+        
+    
+        text
+            .text(function(d) {
+                return d.data.HaveWorkedLanguage.substring(0, d.r / 3);
+            })
+            .attr('font-family', 'sans-serif')
+            .attr('font-size', function(d){
+                return d.r / 4;
+            })
+            .transition(t)
+            .attr('x', function(d){ return d.x; })
+            .attr('y', function(d){ return d.y; });
+    
+    
         //EXIT
         circle.exit()
             .style('fill', '#b25230')
@@ -70,70 +122,11 @@ function bubbleChart() {
             .attr('opacity', 1e-6)
             .remove();
         
-        //UPDATE
-        circle
-            .transition(t)
-            .style('fill', '#3a403d')
-            .attr('r', function(d){ return d.r;})
-            .attr('cx', function(d){ return d.x; })
-            .attr('cy', function(d){ return d.y; });
         
-        text
-            .text(function(d) {
-                return d.data.HaveWorkedLanguage.substring(0, d.r / 3);
-            })
-            .attr('font-family', 'sans-serif')
-            .attr('font-size', function(d){
-                return d.r / 5;
-            })            .transition(t)
-            .attr('x', function(d){ return d.x; })
-            .attr('y', function(d){ return d.y; });
         
-        //ENTER
-        // circle.enter().append('title')
-        //     .text(function(d) {
-        //         return d.data.HaveWorkedLanguage + ': ' + d.data.Frequency;
-        //     });
-    
-    
-    
-        circle.enter().append('circle')
-            .attr('r', 1e-6)
-            .attr('cx', function(d){ return d.x; })
-            .attr('cy', function(d){ return d.y; })
-            .style('fill', '#fff')
-            .transition(t)
-            .style('fill', '#56b256')
-            .attr('r', function(d){ return d.r;});
-    
-        text.enter().append('text')
-            .attr('opacity', 1e-6)
-            .attr('x', function(d){ return d.x; })
-            .attr('y', function(d){ return d.y; })
-            //.text(function(d){ return d.data.HaveWorkedLanguage + ': ' + d.data.Frequency; })
-            .text(function(d) {
-                return d.data.HaveWorkedLanguage.substring(0, d.r / 3);
-            })
-            .attr('font-family', 'sans-serif')
-            .attr('font-size', function(d){
-                return d.r / 5;
-            })
-            .transition(t)
-            .attr('opacity', 1);
-    
-        // text.enter().append('text')
-        //     .attr('opacity', 1e-6)
-        //     .attr('x', function(d){ return d.x; })
-        //     .attr('y', function(d){ return d.y; })
-        //     .text(function(d) {
-        //         return d.data.Frequency;
-        //     })
-        //     .attr('font-family', 'sans-serif')
-        //     .attr('font-size', function(d){
-        //         return d.r / 5;
-        //     })
-        //     .transition(t)
-        //     .attr('opacity', 1);
+        
+        
+        
         
     }
     
