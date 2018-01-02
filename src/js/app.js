@@ -1,11 +1,15 @@
 import * as d3 from 'd3';
-import * as _ from 'underscore';
-import { bubbleChart } from './bubbleChart';
-import { barChart } from './barchart';
+import BubbleChart from './bubbleChart';
+import Barchart from './barchart';
 
-// call charts
-// let barchart = new barChart();
-let bubblechart = new bubbleChart();
+// call charts and listen for change events
+Barchart.onChange((newValue) => {
+    BubbleChart.setCountry(newValue);
+    console.log('onChangeBarchart',newValue);
+});
 
-//onChangeBubbleChart( (newValue) => console.log('onChange',newValue) );
+BubbleChart.onChange((newValue) => {
+    Barchart.setCountry(newValue);
+    console.log('onChangeBubblechart',newValue);
+});
 

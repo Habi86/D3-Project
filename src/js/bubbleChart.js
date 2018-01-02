@@ -1,9 +1,10 @@
 import * as d3 from 'd3';
 
 
-class bubbleChart {
+class BubbleChart {
 
     constructor() {
+        this.observers = [];
         this.createChart();
     }
     
@@ -46,12 +47,12 @@ class bubbleChart {
         this.createTable();
         
         const filterData = (pickedCategory) => this.filterData(pickedCategory);
-
+        const observers = this.observers;
         //interactivity
         d3.select('#bubbleDropdown').on('change', function() {
             const pickedCategory = d3.select(this).property('value');
+            observers.forEach((callback) => callback((pickedCategory === 'ALL') ? null : pickedCategory));
             filterData(pickedCategory);
-           
         });
     }
 
@@ -214,6 +215,27 @@ class bubbleChart {
         this.rows.exit().remove();
     }
 
+    setCountry(country) {
+        d3.select('#bubbleDropdown').selectAll('option').select(function() {
+            const d = d3.select(this);
+            if ( this.value === country){
+                d.property('selected',true);
+            } 
+            else {
+                d.property('selected',false);
+            }
+        });
+        if  (country){
+            this.filterData(country);
+        } 
+        else {
+            this.filterData('ALL');
+        }
+    }
+
+    onChange(callback) {
+        this.observers.push(callback);
+    }
 }
 
-export { bubbleChart};
+export default new BubbleChart();

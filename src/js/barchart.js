@@ -1,11 +1,13 @@
 import * as d3 from 'd3';
 
-class barChart {
+class BarChart {
 
     constructor() {
         this.createChart();
+        this.observers = [];
     }
-
+    // load data for barchart and group it by countries 
+    // with their amount of devs to better display the data
     loadData() {
         d3.csv('/data/survey_results_public.csv', (error, csv) => {
             if (error) {
@@ -20,7 +22,7 @@ class barChart {
                     })
                     .entries(this.surveyResults);
                 // filter only data over  a certain amount of devs 
-                this.devsPerCountry = this.devsPerCountry.filter(this.greaterThanEdgeValue);
+                // this.devsPerCountry = this.devsPerCountry.filter(this.greaterThanEdgeValue);
                 this.filteredDevsPerCountry = this.devsPerCountry;
                 console.log(this.devsPerCountry);
             }
@@ -28,9 +30,10 @@ class barChart {
         });
     }
 
+    // draw the chart
     createChart() {
         this.loadData();
-        
+        // margin best practices
         this.margin = {
             top: 40,
             bottom: 40,
@@ -39,7 +42,7 @@ class barChart {
         };
 
         this.width = 800 - this.margin.left - this.margin.right;
-        this.height = 1500 - this.margin.top - this.margin.bottom;
+        this.height = 2500 - this.margin.top - this.margin.bottom;
 
         // Creates sources <svg> element
         this.svg = d3.select('#barChart').append('svg')
@@ -51,7 +54,6 @@ class barChart {
             .attr('transform', `translate(${this.margin.left},${this.margin.top})`);
         
         this.setupScalesAndAxes();
-        // this.updateChart(devsPerCountry);
         
         // filter for highest amount of devs
         const filterData = (max) => this.filterData(max);
@@ -76,7 +78,6 @@ class barChart {
                 unfilterData();
             }
         });
-
     }
 
     setupScalesAndAxes() {
@@ -105,6 +106,7 @@ class barChart {
             .attr('class', 'y-axis') 
             .text('Countries'); 
     }
+
     // update the chart
     updateChart() {
         //update the scales
@@ -144,15 +146,22 @@ class barChart {
     }
 
     filterData(max) {
-        console.log(this.devsPerCountry);
         const filterLengths = this.devsPerCountry.map((d) => d.values.length);
         let edgeVal = (max) ? Math.max(...filterLengths) : Math.min(...filterLengths);
         this.filteredDevsPerCountry = this.devsPerCountry.filter(d => d.values.length === edgeVal);
+        this.observers.forEach((callback)=> callback(this.filteredDevsPerCountry[0].key));
+        this.updateChart();
+    }
+
+    filterDataByCountry(country, triggedByExternal) {
+        this.filteredDevsPerCountry = this.devsPerCountry.filter(d => d.key === country);
+        (!triggedByExternal) && this.observers.forEach((callback)=> callback(this.filteredDevsPerCountry[0].key));
         this.updateChart();
     }
 
     unfilterData(){
         this.filteredDevsPerCountry = this.devsPerCountry;
+        this.observers.forEach((callback)=> callback(null));
         this.updateChart();
     }
 
@@ -168,6 +177,21 @@ class barChart {
         // we had more than 200 countries which was not really useful in 
         // the diagram to show so we reduced it 
     }
+
+    // function to set country in barchart if triggered externally
+    setCountry(country) {
+        if (country) {
+            this.filterDataByCountry(country, true);
+        } 
+        else {
+            this.unfilterData();
+        }
+    }
+
+    // function to trigger observers
+    onChange(callback) {
+        this.observers.push(callback);
+    }
     
 }
-export { barChart };
+export default new BarChart();
