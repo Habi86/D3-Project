@@ -1,19 +1,9 @@
 import * as d3 from 'd3';
-//import * as _ from 'underscore';
 
-let surveyResults;
-let devsPerCountry;
-let clicked = false;
-
-// http://bl.ocks.org/ejb/774b87bf0f7482599419d1e7da9ed918
 class barChart {
 
-    constructor(){
-        this.surveyResults = surveyResults;
-        this.devsPerCountry = devsPerCountry;
-        this.clicked = false;
+    constructor() {
         this.createChart();
-        //this.filterData(true);
     }
 
     loadData() {
@@ -31,6 +21,7 @@ class barChart {
                     .entries(this.surveyResults);
                 // filter only data over  a certain amount of devs 
                 this.devsPerCountry = this.devsPerCountry.filter(this.greaterThanEdgeValue);
+                this.filteredDevsPerCountry = this.devsPerCountry;
                 console.log(this.devsPerCountry);
             }
             this.updateChart(this.devsPerCountry);
@@ -60,9 +51,32 @@ class barChart {
             .attr('transform', `translate(${this.margin.left},${this.margin.top})`);
         
         this.setupScalesAndAxes();
-        //this.updateChart(this.devsPerCountry);
-        // this.highestFilter();
-        // this.lowestFilter();
+        // this.updateChart(devsPerCountry);
+        
+        // filter for highest amount of devs
+        const filterData = (max) => this.filterData(max);
+        const unfilterData = () => this.unfilterData();
+
+        d3.select('#filter-highest').on('change', function() {
+            const checked = d3.select(this).property('checked');
+            if (checked === true) {
+                filterData(true); // update with highest amount of devs
+            }
+            else {
+                unfilterData();
+            }
+        });
+
+        d3.select('#filter-lowest').on('change', function() {
+            const checked = d3.select(this).property('checked');
+            if (checked === true) {
+                filterData(false); // update with lowest amount of devs
+            }
+            else {
+                unfilterData();
+            }
+        });
+
     }
 
     setupScalesAndAxes() {
@@ -92,18 +106,19 @@ class barChart {
             .text('Countries'); 
     }
     // update the chart
-    updateChart(devsPerCountry) {
+    updateChart() {
         //update the scales
+        console.log(this.devsPerCountry);
+        console.log(this.filteredDevsPerCountry);
         this.xscale.domain([0, 14000]); // to amount of devs (length of survey arr)
-        this.yscale.domain(devsPerCountry.map((d) => d.key));
+        this.yscale.domain(this.filteredDevsPerCountry.map((d) => d.key));
         
         //render the axis
         this.gXaxis.call(this.xaxis);
         this.gYaxis.call(this.yaxis);  
 
         // Render the chart with new data
-        const rect = this.g.selectAll('rect').data(devsPerCountry, (d) => d);
-
+        const rect = this.g.selectAll('rect').data(this.filteredDevsPerCountry, (d) => d);
         // ENTER
         // new elements
         const rectEnter = rect.enter()
@@ -113,70 +128,33 @@ class barChart {
     
         rect.merge(rectEnter).select('title').text((d) => `${d.values.length} developers in ${d.key}`);
         
-        if (clicked) {
-            // ENTER + UPDATE
-            // only if filter is set
-            rect.merge(rectEnter)
-                .transition()
-                .duration(3000)
-                .style('fill', 'rgb(86, 178, 86)')
-                .attr('height', this.yscale.bandwidth())
-                .attr('width', (d) => this.xscale(d.values.length)) // amount of devs per country 
-                .attr('y', (d) => this.yscale(d.key));
-        }
-        else {
-            // ENTER + UPDATE
-            // only if filter is not set
-            rect.merge(rectEnter)
-                .attr('height', this.yscale.bandwidth())
-                .attr('width', (d) => this.xscale(d.values.length)) // amount of devs per country 
-                .attr('y', (d) => this.yscale(d.key));
-
-        }
+        // ENTER + UPDATE
+        // only if filter is set
+        rect.merge(rectEnter)
+            .transition()
+            .duration(3000)
+            .style('fill', 'rgb(86, 178, 86)')
+            .attr('height', this.yscale.bandwidth())
+            .attr('width', (d) => this.xscale(d.values.length)) // amount of devs per country 
+            .attr('y', (d) => this.yscale(d.key));
+        
         // EXIT
         // elements that aren't associated with data
         rect.exit().remove();
     }
 
-    // highestFilter() {
-    //     // filter possibility
-    //     // filter for highest amount of devs
-    //     d3.select('#filter-highest').on('change', function() {
-    //         clicked = true;
-    //         const checked = d3.select(this).property('checked');
-    //         if (checked === true) {
-    //             this.filterData(true); // update with highest amount of devs
-    //             clicked = false;
-    //         }
-    //         else {
-    //             this.updateChart(devsPerCountry);  // Update with all data
-    //         }
-    //     });
-    // }
+    filterData(max) {
+        console.log(this.devsPerCountry);
+        const filterLengths = this.devsPerCountry.map((d) => d.values.length);
+        let edgeVal = (max) ? Math.max(...filterLengths) : Math.min(...filterLengths);
+        this.filteredDevsPerCountry = this.devsPerCountry.filter(d => d.values.length === edgeVal);
+        this.updateChart();
+    }
 
-    // lowestFilter(){
-    //     // filter for lowest amount of devsl
-    //     d3.select('#filter-lowest').on('change', function() {
-    //         clicked = true;
-    //         const checked = d3.select(this).property('checked');
-    //         if (checked === true) {
-    //             this.filterData(false); // update with lowest amount of devs
-    //             clicked = false;
-    //         }
-    //         else {
-    //             this.updateChart(this.devsPerCountry);  // Update with all data
-    //         }
-    //     });
-    // }
-
-    // filterData(max) {
-    //     console.log(devsPerCountry);
-    //     console.log(this.devsPerCountry);
-    //     const filterLengths = devsPerCountry.map((d) => d.values.length);
-    //     let edgeVal = (max) ? Math.max(...filterLengths) : Math.min(...filterLengths);
-    //     const filterData = devsPerCountry.filter(d => d.values.length === edgeVal);
-    //     this.updateChart(filterData);
-    // }
+    unfilterData(){
+        this.filteredDevsPerCountry = this.devsPerCountry;
+        this.updateChart();
+    }
 
     onCountryChange(country) {
         const filterData = this.devsPerCountry.filter(d => d.key === country);
