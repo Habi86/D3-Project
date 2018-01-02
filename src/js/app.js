@@ -4,8 +4,8 @@ import { bubbleChart, onChangeBubbleChart } from './bubbleChart';
 import { barChart } from './barchart';
 
 // call charts
-bubbleChart();
-barChart();
+let barchart = new barChart();
+let bubblechart = new bubbleChart();
 
-onChangeBubbleChart( (newValue) => console.log('onChange',newValue) );
+//onChangeBubbleChart( (newValue) => console.log('onChange',newValue) );
 
