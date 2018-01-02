@@ -1,89 +1,108 @@
 import * as d3 from 'd3';
 //import * as _ from 'underscore';
 
-var surveyResults;
+let surveyResults;
 let devsPerCountry;
 let clicked = false;
 
+// http://bl.ocks.org/ejb/774b87bf0f7482599419d1e7da9ed918
+class barChart {
 
-function barChart() {
+    constructor(){
+        this.surveyResults = surveyResults;
+        this.devsPerCountry = devsPerCountry;
+        this.clicked = false;
+        this.createChart();
+        //this.filterData(true);
+    }
 
-    d3.csv('/data/survey_results_public.csv', (error, csv) => {
-        if (error) {
-            console.error(error);
-        }
-        else {
-            surveyResults = csv;
-            // group devs by country
-            devsPerCountry = d3.nest()
-                .key(function(d) {
-                    return d.Country;
-                })
-                .entries(surveyResults);
-            // filter only data over  a certain amount of devs 
-            devsPerCountry = devsPerCountry.filter(greaterThanEdgeValue);
-            console.log(devsPerCountry);
-        }
-        updateChart(devsPerCountry);
-    });
+    loadData() {
+        d3.csv('/data/survey_results_public.csv', (error, csv) => {
+            if (error) {
+                console.error(error);
+            }
+            else {
+                this.surveyResults = csv;
+                // group devs by country
+                this.devsPerCountry = d3.nest()
+                    .key(function(d) {
+                        return d.Country;
+                    })
+                    .entries(this.surveyResults);
+                // filter only data over  a certain amount of devs 
+                this.devsPerCountry = this.devsPerCountry.filter(this.greaterThanEdgeValue);
+                console.log(this.devsPerCountry);
+            }
+            this.updateChart(this.devsPerCountry);
+        });
+    }
 
-    const margin = {
-        top: 40,
-        bottom: 40,
-        left: 200,
-        right: 20
-    };
+    createChart() {
+        this.loadData();
+        
+        this.margin = {
+            top: 40,
+            bottom: 40,
+            left: 200,
+            right: 20
+        };
 
-    const width = 800 - margin.left - margin.right;
-    const height = 1500 - margin.top - margin.bottom;
+        this.width = 800 - this.margin.left - this.margin.right;
+        this.height = 1500 - this.margin.top - this.margin.bottom;
 
-    // Creates sources <svg> element
-    const svg = d3.select('#barChart').append('svg')
-        .attr('width', width + margin.left + margin.right)
-        .attr('height', height + margin.top + margin.bottom);
+        // Creates sources <svg> element
+        this.svg = d3.select('#barChart').append('svg')
+            .attr('width', this.width + this.margin.left + this.margin.right)
+            .attr('height', this.height + this.margin.top + this.margin.bottom);
 
-    // Group used to enforce margin
-    const g = svg.append('g')
-        .attr('transform', `translate(${margin.left},${margin.top})`);
+        // Group used to enforce margin
+        this.g = this.svg.append('g')
+            .attr('transform', `translate(${this.margin.left},${this.margin.top})`);
+        
+        this.setupScalesAndAxes();
+        //this.updateChart(this.devsPerCountry);
+        // this.highestFilter();
+        // this.lowestFilter();
+    }
 
-    // setup for the scales
-    const xscale = d3.scaleLinear().range([0, width]);
-    const yscale = d3.scaleBand().rangeRound([0, height]).paddingInner(0.5).paddingOuter(0.2);
+    setupScalesAndAxes() {
+        // setup for the scales
+        this.xscale = d3.scaleLinear().range([0, this.width]);
+        this.yscale = d3.scaleBand().rangeRound([0, this.height]).paddingInner(0.5).paddingOuter(0.2);
 
-    // setup for the axis
-    const xaxis = d3.axisTop().scale(xscale);
-    const gXaxis = g.append('g').attr('class', 'x axis');
-    const yaxis = d3.axisLeft().scale(yscale);
-    const gYaxis = g.append('g').attr('class', 'y axis');
+        // setup for the axis
+        this.xaxis = d3.axisTop().scale(this.xscale);
+        this.gXaxis = this.g.append('g').attr('class', 'x axis');
+        this.yaxis = d3.axisLeft().scale(this.yscale);
+        this.gYaxis = this.g.append('g').attr('class', 'y axis');
 
-    // add label for x-axis
-    svg.append('text')
-        .attr('x', 400)
-        .attr('y', 10)
-        .attr('class', 'x-axis')
-        .text('Amount of developers');     
+        // add label for x-axis
+        this.svg.append('text')
+            .attr('x', 400)
+            .attr('y', 10)
+            .attr('class', 'x-axis')
+            .text('Amount of developers');     
 
-    // add label for y-axis
-    svg.append('text')
-        .attr('x', -500)
-        .attr('y', 60)
-        .attr('transform', 'rotate(-90)')
-        .attr('class', 'y-axis') 
-        .text('Countries');     
-
+        // add label for y-axis
+        this.svg.append('text')
+            .attr('x', -500)
+            .attr('y', 60)
+            .attr('transform', 'rotate(-90)')
+            .attr('class', 'y-axis') 
+            .text('Countries'); 
+    }
     // update the chart
-    function updateChart(devsPerCountry) {
-    
+    updateChart(devsPerCountry) {
         //update the scales
-        xscale.domain([0, 14000]); // to amount of devs (length of survey arr)
-        yscale.domain(devsPerCountry.map((d) => d.key));
+        this.xscale.domain([0, 14000]); // to amount of devs (length of survey arr)
+        this.yscale.domain(devsPerCountry.map((d) => d.key));
         
         //render the axis
-        gXaxis.call(xaxis);
-        gYaxis.call(yaxis);
+        this.gXaxis.call(this.xaxis);
+        this.gYaxis.call(this.yaxis);  
 
         // Render the chart with new data
-        const rect = g.selectAll('rect').data(devsPerCountry, (d) => d);
+        const rect = this.g.selectAll('rect').data(devsPerCountry, (d) => d);
 
         // ENTER
         // new elements
@@ -101,17 +120,17 @@ function barChart() {
                 .transition()
                 .duration(3000)
                 .style('fill', 'rgb(86, 178, 86)')
-                .attr('height', yscale.bandwidth())
-                .attr('width', (d) => xscale(d.values.length)) // amount of devs per country 
-                .attr('y', (d) => yscale(d.key));
+                .attr('height', this.yscale.bandwidth())
+                .attr('width', (d) => this.xscale(d.values.length)) // amount of devs per country 
+                .attr('y', (d) => this.yscale(d.key));
         }
         else {
             // ENTER + UPDATE
             // only if filter is not set
             rect.merge(rectEnter)
-                .attr('height', yscale.bandwidth())
-                .attr('width', (d) => xscale(d.values.length)) // amount of devs per country 
-                .attr('y', (d) => yscale(d.key));
+                .attr('height', this.yscale.bandwidth())
+                .attr('width', (d) => this.xscale(d.values.length)) // amount of devs per country 
+                .attr('y', (d) => this.yscale(d.key));
 
         }
         // EXIT
@@ -119,46 +138,52 @@ function barChart() {
         rect.exit().remove();
     }
 
-    // filter possibility
-    // filter for highest amount of devs
-    d3.select('#filter-highest').on('change', function() {
-        clicked = true;
-        const checked = d3.select(this).property('checked');
-        if (checked === true) {
-            filterData(true); // update with highest amount of devs
-            clicked = false;
-        }
-        else {
-            updateChart(devsPerCountry);  // Update with all data
-        }
-    });
+    // highestFilter() {
+    //     // filter possibility
+    //     // filter for highest amount of devs
+    //     d3.select('#filter-highest').on('change', function() {
+    //         clicked = true;
+    //         const checked = d3.select(this).property('checked');
+    //         if (checked === true) {
+    //             this.filterData(true); // update with highest amount of devs
+    //             clicked = false;
+    //         }
+    //         else {
+    //             this.updateChart(devsPerCountry);  // Update with all data
+    //         }
+    //     });
+    // }
 
-    // filter for lowest amount of devsl
-    d3.select('#filter-lowest').on('change', function() {
-        clicked = true;
-        const checked = d3.select(this).property('checked');
-        if (checked === true) {
-            filterData(false); // update with lowest amount of devs
-            clicked = false;
-        }
-        else {
-            updateChart(devsPerCountry);  // Update with all data
-        }
-    });
+    // lowestFilter(){
+    //     // filter for lowest amount of devsl
+    //     d3.select('#filter-lowest').on('change', function() {
+    //         clicked = true;
+    //         const checked = d3.select(this).property('checked');
+    //         if (checked === true) {
+    //             this.filterData(false); // update with lowest amount of devs
+    //             clicked = false;
+    //         }
+    //         else {
+    //             this.updateChart(this.devsPerCountry);  // Update with all data
+    //         }
+    //     });
+    // }
 
-    function filterData(max) {
-        const filterLengths = devsPerCountry.map((d) => d.values.length);
-        let edgeVal = (max) ? Math.max(...filterLengths) : Math.min(...filterLengths);
-        const filterData = devsPerCountry.filter(d => d.values.length === edgeVal);
-        updateChart(filterData);
+    // filterData(max) {
+    //     console.log(devsPerCountry);
+    //     console.log(this.devsPerCountry);
+    //     const filterLengths = devsPerCountry.map((d) => d.values.length);
+    //     let edgeVal = (max) ? Math.max(...filterLengths) : Math.min(...filterLengths);
+    //     const filterData = devsPerCountry.filter(d => d.values.length === edgeVal);
+    //     this.updateChart(filterData);
+    // }
+
+    onCountryChange(country) {
+        const filterData = this.devsPerCountry.filter(d => d.key === country);
+        this.updateChart(filterData);
     }
 
-    function onCountryChange(country) {
-        const filterData = devsPerCountry.filter(d => d.key === country);
-        updateChart(filterData);
-    }
-
-    function greaterThanEdgeValue(data) {
+    greaterThanEdgeValue(data) {
         return data.values.length > 140; 
         // used 140 as edgevalue (10% of maximum) as we have 14.000 as the maximum 
         // amount of devs in a country 
@@ -168,4 +193,3 @@ function barChart() {
     
 }
 export { barChart };
-
