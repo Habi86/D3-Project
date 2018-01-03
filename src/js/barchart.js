@@ -26,7 +26,7 @@ class BarChart {
                 this.filteredDevsPerCountry = this.devsPerCountry;
                 console.log(this.devsPerCountry);
             }
-            this.updateChart(this.devsPerCountry); // update chart with data
+            this.updateChart(); // update chart
         });
     }
 
