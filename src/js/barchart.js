@@ -121,8 +121,8 @@ class BarChart {
     updateChart() {
         
         //update the scales
-        console.log(this.devsPerCountry);
-        console.log(this.filteredDevsPerCountry);
+        // console.log(this.devsPerCountry);
+        // console.log(this.filteredDevsPerCountry);
         this.xscale.domain([0, 14000]); // to amount of devs (length of survey arr)
         this.yscale.domain(this.filteredDevsPerCountry.map((d) => d.key));
         
