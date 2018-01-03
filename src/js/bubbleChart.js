@@ -46,25 +46,23 @@ class BubbleChart {
     
         this.createTable();
         
-        const filterData = (pickedCategory) => this.filterData(pickedCategory);
+        const filterData = (pickedCountry) => this.filterData(pickedCountry);
         const observers = this.observers;
         //interactivity
         d3.select('#bubbleDropdown').on('change', function() {
-            const pickedCategory = d3.select(this).property('value');
-            observers.forEach((callback) => callback((pickedCategory === 'ALL') ? null : pickedCategory));
-            filterData(pickedCategory);
+            const pickedCountry = d3.select(this).property('value');
+            observers.forEach((callback) => callback((pickedCountry === 'ALL') ? null : pickedCountry));
+            filterData(pickedCountry);
         });
     }
 
-    filterData(pickedCategory){
-        this.filteredDataset = this.dataset.filter((row) => row['Country'] === pickedCategory);
+    filterData(pickedCountry){
+        this.filteredDataset = this.dataset.filter((row) => row['Country'] === pickedCountry);
         this.update();
         this.updateTable();  // Update the table with the filtered data
     }
     
     update(){
-
-        console.log(this.classes);
         // transition
         let t = d3.transition()
             .duration(2500);
@@ -215,6 +213,7 @@ class BubbleChart {
         this.rows.exit().remove();
     }
 
+    // function to set country in dropdown if triggered externally
     setCountry(country) {
         d3.select('#bubbleDropdown').selectAll('option').select(function() {
             const d = d3.select(this);
@@ -233,6 +232,7 @@ class BubbleChart {
         }
     }
 
+    // function to trigger observers
     onChange(callback) {
         this.observers.push(callback);
     }
