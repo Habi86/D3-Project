@@ -106,9 +106,12 @@ class ParallelSet {
             rightGroups.push(right[category2].values);
         }
         
+        let leftGroupsPartitioned = [];
+        leftGroups.forEach((item)  => leftGroupsPartitioned.push(item));
+
         // save the category partitions to create the intersections afterwards
-        const leftGroupsPartitioned = [leftGroups[0], leftGroups[1], leftGroups[2], leftGroups[3], leftGroups[4]];
-        const rightGroupsPartitioned = [rightGroups[0], rightGroups[1], rightGroups[2], rightGroups[3], rightGroups[4], rightGroups[5], rightGroups[6], rightGroups[7], rightGroups[8]];
+        let rightGroupsPartitioned = [];
+        rightGroups.forEach((item) => rightGroupsPartitioned.push(item));
 
         // call the function to render the data
         const leftDiv = d3.select('svg').select('g.left');
