@@ -1,6 +1,6 @@
 import BubbleChart from './bubbleChart';
-import Barchart from './barChart';
-import ParallelSet from './parallelSet';
+import Barchart from './barchart';
+import ParallelSet from './parallel';
 
 
 // call charts and listen for change events
