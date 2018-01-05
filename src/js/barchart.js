@@ -24,7 +24,7 @@ class BarChart {
                 // filter only data over a certain amount of devs 
                 // this.devsPerCountry = this.devsPerCountry.filter(this.greaterThanEdgeValue);
                 this.filteredDevsPerCountry = this.devsPerCountry;
-                console.log(this.devsPerCountry);
+                //console.log(this.devsPerCountry);
             }
             this.updateChart(); // update chart
         });
@@ -121,8 +121,8 @@ class BarChart {
     updateChart() {
         
         //update the scales
-        console.log(this.devsPerCountry);
-        console.log(this.filteredDevsPerCountry);
+        //console.log(this.devsPerCountry);
+        //console.log(this.filteredDevsPerCountry);
         this.xscale.domain([0, 14000]); // to amount of devs (length of survey arr)
         this.yscale.domain(this.filteredDevsPerCountry.map((d) => d.key));
         

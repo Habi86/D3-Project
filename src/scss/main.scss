@@ -12,9 +12,14 @@ body {
     font-family: "Helvetica", sans-serif;
 }
 
-h1, h2, p, label, th, td {
-  color: $primary-color;
-  text-align: center;
+h1,
+h2,
+p,
+label,
+th,
+td {
+    color: $primary-color;
+    text-align: center;
 }
 
 h1,
@@ -60,8 +65,8 @@ rect {
     text-anchor: middle;
     fill: $text-color;
     font-size: 18px;
-  }
-  
+}
+
 #bubbleDropdown {
     margin-bottom: 20px;
 }
@@ -72,13 +77,14 @@ rect {
 
 #bubbleTable {
     table {
-      margin: 0 auto;
-      td, th {
-        padding: 1px 4px;
-      }
-      th {
-        font-weight: bold;
-      }
+        margin: 0 auto;
+        td,
+        th {
+            padding: 1px 4px;
+        }
+        th {
+            font-weight: bold;
+        }
     }
 }
 
@@ -100,4 +106,14 @@ select {
     display: block !important;
     float: right;
     width: 50%;
+}
+
+#parallelSet {
+    path {
+        fill: $primary-color;
+        fill-opacity: 0.3;
+        &:hover {
+            fill: $third-color;
+        }
+    }
 }
