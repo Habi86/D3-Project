@@ -1,5 +1,5 @@
 import * as d3 from 'd3';
-import _ from 'underscore';
+//import _ from 'underscore';
 
 class ParallelSet {
 
@@ -17,22 +17,32 @@ class ParallelSet {
                 this.surveyResults = csv;
                 // group devs by payment, formal education and country
                 // to get the necessary categorical data levels to display in the parallelset
+                this.groupedByCountry = d3.nest()
+                    .key((d) => d.Country)
+                    .sortKeys(d3.ascending)
+                    .entries(this.surveyResults)
+                    .filter(this.greaterThanEdgeValue); // .filter((d) => d.key === 'Australia' || d.key === 'Canada' || d.key === 'France' || d.key === 'Germany' || d.key === 'India' || d.key === 'Netherlands' || d.key === 'Poland' || d.key === 'Russian Federation' || d.key === 'Spain' || d.key === 'United Kingdom' || d.key === 'United States');
+    
+    
                 this.groupedByEducation = d3.nest()
-                    //.key((d) => d.Overpaid)
                     .key((d) => d.FormalEducation)
-                    //.key((d) => d.Country)
-                    .entries(this.surveyResults);
+                    .sortKeys(d3.ascending)
+                    .entries(this.surveyResults)
+                    .filter((d) => d.key !== 'NA');
+    
+                //TODO: Filter groupedByEducation with greaterThanEdgeValue
+    
                 
-                this.groupedByPayment = d3.nest()
-                    .key((d) => d.Overpaid)
-                    //.key((d) => d.FormalEducation)
-                    //.key((d) => d.Country)
-                    .entries(this.surveyResults);
                 
-                this.groupedByEducation = this.groupedByEducation.filter((d) => d.key !== 'NA'); // filter only responds without NA
-                this.groupedByPayment = this.groupedByPayment.filter((d) => d.key !== 'NA');
-                //this.groupedByPaymentAndEducation = this.groupedByEducation;
-                //console.log(this.groupedByPaymentAndEducation);
+                //TODO: remove me: am just here to check if groupedByCountry and groupedByEducation have a correct connection
+                this.groupedByCountryNEducation = d3.nest()
+                    .key((d) => d.Country)
+                    .sortKeys(d3.ascending)
+                    .key((d) => d.FormalEducation)
+                    .sortKeys(d3.ascending)
+                    .entries(this.surveyResults)
+                    .filter((d) => d.key === 'Australia' || d.key === 'Canada' || d.key === 'France' || d.key === 'Germany' || d.key === 'India' || d.key === 'Netherlands' || d.key === 'Poland' || d.key === 'Russian Federation' || d.key === 'Spain' || d.key === 'United Kingdom' || d.key === 'United States');
+                
             }
             this.updateChart(); // update chart with data
         });
@@ -42,7 +52,7 @@ class ParallelSet {
         this.loadData();
         // define height and width of svg element
         this.width = 800;
-        this.height = 800;
+        this.height = 1000;
 
         // define color schema for ordinal scale (colors of different categories)
         // adjust to more appropriate colors
@@ -72,22 +82,12 @@ class ParallelSet {
             .append('g')
             .attr('class', 'bands')
             .attr('transform', 'translate(20,0)'); 
-        
-        // setup scale
-        this.yscale = d3.scaleLinear()
-            .domain([0, 50000])
-            .range([0, 800]);
-
     }
-
-    filterNA(data){
-        return data.key !== 'NA'; // filter all values with NA as value
-    }
+    
 
     updateChart(){
+        const left = this.groupedByCountry;
         const right = this.groupedByEducation;
-        const left = this.groupedByPayment;
-        //console.log(right);
         
         // get all the categories about payment
         let leftGroups = [];
@@ -95,7 +95,6 @@ class ParallelSet {
         for (var category in left) {
             categoryNamesLeft.push(left[category].key);
             leftGroups.push(left[category].values);
-            //console.log(categoryNamesLeft);
         }
         
         // get all the categories about educations
@@ -107,9 +106,26 @@ class ParallelSet {
         }
         
         // save the category partitions to create the intersections afterwards
-        const leftGroupsPartitioned = [leftGroups[0], leftGroups[1], leftGroups[2], leftGroups[3], leftGroups[4]];
-        const rightGroupsPartitioned = [rightGroups[0], rightGroups[1], rightGroups[2], rightGroups[3], rightGroups[4], rightGroups[5], rightGroups[6], rightGroups[7], rightGroups[8]];
-
+        let leftGroupsPartitioned = [];
+        leftGroups.forEach((item) => leftGroupsPartitioned.push(item));
+        
+        let rightGroupsPartitioned = [];
+        rightGroups.forEach((item) => rightGroupsPartitioned.push(item));
+    
+        // console.log("left + leftgroups");
+        // console.log(left);
+        // console.log(leftGroups);
+        // console.log("right + rightgroups");
+        // console.log(right);
+        // console.log(rightGroups);
+    
+        //setup scale
+        this.yscale = d3.scaleLinear()
+            .domain([0, 50000])
+            .range([0, 800]);
+        //this.yscale = d3.scaleLinear().domain([0, 10000]).range([0, 100]);
+        
+        
         // call the function to render the data
         const leftDiv = d3.select('svg').select('g.left');
         const rightDiv = d3.select('svg').select('g.right');
@@ -167,12 +183,20 @@ class ParallelSet {
             {x: 760, y: b.right + b.intersection},
             {x: 0, y: b.left + b.intersection}
         ]);
+    
+        this.selectBands = d3.select('g.bands');
+    
         // TODO render points using d3.line generator
+        this.linePaths = this.selectBands.selectAll('path').data(this.points);
+        this.linePaths.enter()
+            .append('path')
+            .attr('d', this.line);
     }
-
+    
+    
     renderGroup($g, group) {
         $g.selectAll('rect').data(group);
-        // ENTER + MERGE + UPDATE + EXIT missing
+        // ENTER + MERGE + UPDATE + EXIT missing <-- actually not needed anymore
         // TODO render group stacked on top of each other
     }
 
@@ -180,7 +204,14 @@ class ParallelSet {
         (!triggedByExternal) && this.observers.forEach((callback)=> callback(this)); // trigger observer only if it is not triggered by an external chart
         this.updateChart();
     }
-
+    
+    greaterThanEdgeValue(data) {
+        return data.values.length > 800;
+        // we had more than 200 countries which was not really useful in
+        // the diagram to show so we reduced it
+    }
+    
+    
     // function to trigger observers
     onChange(callback) {
         this.observers.push(callback); // store callbacks in observers array
