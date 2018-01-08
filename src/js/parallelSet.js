@@ -1,5 +1,4 @@
 import * as d3 from 'd3';
-//import _ from 'underscore';
 
 class ParallelSet {
 
@@ -30,18 +29,33 @@ class ParallelSet {
                     .entries(this.surveyResults)
                     .filter((d) => d.key !== 'NA');
     
-                //TODO: Filter groupedByEducation with greaterThanEdgeValue
+                // Filter groupedByEducation with greaterThanEdgeValue - check
+                this.filteredGroupedByEducation = [];
+                
+                for (var i = 0; i < this.groupedByEducation.length; i++ ){
+                    this.filteredGroupedByEducation[i] = {
+                        key: this.groupedByEducation[i].key,
+                        values: this.groupedByEducation[i].values
+                            .filter((d) => d.Country === 'Australia' || d.Country === 'Canada' || d.Country === 'France' || d.Country === 'Germany' || d.Country === 'India' || d.Country === 'Netherlands' || d.Country === 'Poland' || d.Country === 'Russian Federation' || d.Country === 'Spain' || d.Country === 'United Kingdom' || d.Country === 'United States')
+                    };
+                }
+                
+                // console.log("groupedByCountry");
+                // console.log(this.groupedByCountry);
+                // onsole.log("groupedByEducation");
+                // console.log(this.groupedByEducation);
+                // console.log("filteredGroupedByEducation");
+                // console.log(this.filteredGroupedByEducation);
     
                 
-                
                 //TODO: remove me: am just here to check if groupedByCountry and groupedByEducation have a correct connection
-                this.groupedByCountryNEducation = d3.nest()
-                    .key((d) => d.Country)
-                    .sortKeys(d3.ascending)
-                    .key((d) => d.FormalEducation)
-                    .sortKeys(d3.ascending)
-                    .entries(this.surveyResults)
-                    .filter((d) => d.key === 'Australia' || d.key === 'Canada' || d.key === 'France' || d.key === 'Germany' || d.key === 'India' || d.key === 'Netherlands' || d.key === 'Poland' || d.key === 'Russian Federation' || d.key === 'Spain' || d.key === 'United Kingdom' || d.key === 'United States');
+                // this.groupedByCountryNEducation = d3.nest()
+                //     .key((d) => d.Country)
+                //     .sortKeys(d3.ascending)
+                //     .key((d) => d.FormalEducation)
+                //     .sortKeys(d3.ascending)
+                //     .entries(this.surveyResults)
+                //     .filter((d) => d.key === 'Australia' || d.key === 'Canada' || d.key === 'France' || d.key === 'Germany' || d.key === 'India' || d.key === 'Netherlands' || d.key === 'Poland' || d.key === 'Russian Federation' || d.key === 'Spain' || d.key === 'United Kingdom' || d.key === 'United States');
                 
             }
             this.updateChart(); // update chart with data
@@ -51,8 +65,8 @@ class ParallelSet {
     createChart(){
         this.loadData();
         // define height and width of svg element
-        this.width = 1200;
-        this.height = 1000;
+        this.width = 560;
+        this.height = 360;
 
         // define color schema for ordinal scale (colors of different categories)
         // adjust to more appropriate colors
@@ -75,7 +89,7 @@ class ParallelSet {
         d3.select('svg')
             .append('g')
             .attr('class', 'right')
-            .attr('transform', 'translate(780,0)');
+            .attr('transform', 'translate(540,0)');
 
         // append bands class to later bind the rendered bands to
         d3.select('svg')
@@ -87,21 +101,21 @@ class ParallelSet {
 
     updateChart(){
         const left = this.groupedByCountry;
-        const right = this.groupedByEducation;
+        const right = this.filteredGroupedByEducation;
         
         // get all the categories about payment
         let leftGroups = [];
-        this.categoryNamesLeft = [];
+        const categoryNamesLeft = [];
         for (var category in left) {
-            this.categoryNamesLeft.push(left[category].key);
+            categoryNamesLeft.push(left[category].key);
             leftGroups.push(left[category].values);
         }
         
         // get all the categories about educations
         let rightGroups = [];
-        this.categoryNamesRight = [];
+        const categoryNamesRight = [];
         for (var category2 in right) {
-            this.categoryNamesRight.push(right[category2].key);
+            categoryNamesRight.push(right[category2].key);
             rightGroups.push(right[category2].values);
         }
 
@@ -111,11 +125,11 @@ class ParallelSet {
         
         let rightGroupsPartitioned = [];
         rightGroups.forEach((item) => rightGroupsPartitioned.push(item));
- 
+
         //setup scale
         this.yscale = d3.scaleLinear()
             .domain([0, 50000])
-            .range([0, 800]);
+            .range([0, 520]);
         //this.yscale = d3.scaleLinear().domain([0, 10000]).range([0, 100]);
     
         // call the function to render the data
@@ -139,6 +153,8 @@ class ParallelSet {
                 leftOffset += d.length;
                 return leftOffset - d.length; // prefix sum, i.e starting with 0
             });
+            // console.log(left);
+            // console.log(right);
 
             left.forEach((l, i) => {
                 const lset = new Set(l); // faster lookup
@@ -169,46 +185,50 @@ class ParallelSet {
         // create four points out of a band
         this.points = this.bands.map((b) => [
             {x: 0, y: b.left},
-            {x: 760, y: b.right},
-            {x: 760, y: b.right + b.intersection},
+            {x: 520, y: b.right},
+            {x: 520, y: b.right + b.intersection},
             {x: 0, y: b.left + b.intersection}
         ]);
     
         this.selectBands = d3.select('g.bands');
     
         // TODO render points using d3.line generator
-        this.linePaths = this.selectBands.selectAll('path').data(this.points);
+        this.linePaths = this.selectBands
+            .selectAll('path')
+            .data(this.points, this.categoryNamesLeft);
         this.linePaths.enter()
             .append('path')
+            .on('click', this.clicked)
             .attr('d', this.line);
     }
     
     
     renderGroup($g, group) {
+        // TODO: render group on top of each other
         const rects = $g.selectAll('rect');
-        // UPDATE
+        
+        // ENTER & UPDATE
         rects.data(group);
 
-        // ENTER
         const enterRects = rects.data(group)
             .enter()
             .append('rect');
-
+        
+        // add labels for rect
+        // enterRects.append('text')
+        //     .attr('class', 'bartext')
+        //     .attr('text-anchor', 'middle')
+        //     .attr('fill', 'blue')
+        //     .attr('transform', 'rotate(-90)')
+        //     .attr('y', 100)
+        //     .attr('x', -400)
+        //     .attr('dy', '1em')
+        //     .text(this.categoryNamesLeft.map((d) => d));
+        
         // styling for rects in enter phase
         enterRects
-            .attr('width', 50)
+            .attr('width', 20)
             .style('fill', this.colorSchema);
-
-        // add labels
-        enterRects.append('text')
-            .attr('class', 'bartext')
-            .attr('text-anchor', 'middle')
-            .attr('fill', 'blue')
-            .attr('transform', 'rotate(-90)')
-            .attr('y', 100)
-            .attr('x', -400)
-            .attr('dy', '1em')
-            .text(this.categoryNamesLeft.map((d) => d));
         
         // MERGE
         rects.data(group)
@@ -221,11 +241,63 @@ class ParallelSet {
             .exit()
             .remove();
     }
-
-    filterData(val, triggedByExternal) {
-        (!triggedByExternal) && this.observers.forEach((callback)=> callback(this)); // trigger observer only if it is not triggered by an external chart
-        this.updateChart();
+    
+    clickedRec(d, i) {
+        switch (i) {
+        case 0:
+            setNewCountry('Australia');
+            break;
+        case 1:
+            setNewCountry('Canada');
+            break;
+        case 2:
+            setNewCountry('France');
+            break;
+        case 3:
+            setNewCountry('Germany');
+            break;
+        case 4:
+            setNewCountry('India');
+            break;
+        case 5:
+            setNewCountry('Netherlands');
+            break;
+        case 6:
+            setNewCountry('Poland');
+            break;
+        case 7:
+            setNewCountry('Russian Federation');
+            break;
+        case 8:
+            setNewCountry('Spain');
+            break;
+        case 9:
+            setNewCountry('United Kingdom');
+            break;
+        case 10:
+            setNewCountry('United States');
+            break;
+        default:
+            console.log('switch case - default');
+        }
+    
+        function setNewCountry(value){
+            const dropdown = d3.select('#bubbleDropdown').node();
+            for (var i = 0; i < dropdown.length; i++) {
+                if (dropdown[i].value === value) {
+                    dropdown.selectedIndex = i;
+                    var evt = new MouseEvent('change');
+                    // way to dispatch the event using d3
+                    d3.select('#bubbleDropdown').node().dispatchEvent(evt);
+                }
+            }
+        }
     }
+    
+    clicked(d, i) {
+        console.log('cliiiicked');
+    }
+    
     
     greaterThanEdgeValue(data) {
         return data.values.length > 800;

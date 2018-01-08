@@ -37,8 +37,8 @@ class BubbleChart {
     createChart() {
         this.loadData();
     
-        this.width = 900;
-        this.height = 700;
+        this.width = 600;
+        this.height = 600;
         this.svg = d3.select('#bubbleChart').append('svg').attr('width', this.width).attr('height', this.height);
         this.pack = d3.pack()
             .size([this.width, this.height])
