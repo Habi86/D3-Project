@@ -2,11 +2,6 @@
 @import 'reset';
 @import 'colors';
 @import 'mixins';
-h4 {
-    color: $primary-color;
-    margin: 20px;
-    font-size: 30px;
-}
 
 body {
     font-family: "Helvetica", sans-serif;
@@ -28,6 +23,11 @@ h2 {
     margin: 10px;
     color: $third-color;
 }
+h4 {
+    color: $primary-color;
+    margin: 20px;
+    font-size: 20px;
+}
 
 //styles for charts
 //bubbleChart
@@ -38,6 +38,14 @@ h2 {
     text {
         text-anchor: middle;
         fill: #fff;
+    }
+    select {
+        float: none;
+        width: 43%;
+    }
+    label {
+        float: left;
+        margin: 15px 10px 0 20px
     }
 }
 
@@ -90,7 +98,7 @@ rect {
 
 label,
 span {
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 20px;
     color: $label-color;
     input[type='checkbox'] {
@@ -109,6 +117,10 @@ select {
 }
 
 #parallelSet {
+    svg {
+        display: block;
+        margin: 20px auto;
+    }
     path {
         fill: $primary-color;
         fill-opacity: 0.3;
