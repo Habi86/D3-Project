@@ -67,12 +67,14 @@ class BarChart {
             const checked = d3.select(this).property('checked');
             if (checked === true) {
                 filterData(true); // update with country with highest amount of devs
-                d3.select('#lowest-label').style('display', 'none'); // hide other filteroption
+                d3.select('#lowest-label')
+                    .style('display', 'none'); // hide other filteroption
 
             }
             else {
                 unfilterData(); // unfilter the data (display all)
-                d3.select('#lowest-label').style('display', 'inline-block'); // show other filteroption           
+                d3.select('#lowest-label')
+                    .style('display', 'inline-block'); // show other filteroption           
             }
         });
 
@@ -80,11 +82,13 @@ class BarChart {
             const checked = d3.select(this).property('checked');
             if (checked === true) {
                 filterData(false); // update with country with lowest amount of devs
-                d3.select('#highest-label').style('display', 'none'); // hide other filteroption
+                d3.select('#highest-label')
+                    .style('display', 'none'); // hide other filteroption
             }
             else {
                 unfilterData(); // unfilter the data (display all)
-                d3.select('#highest-label').style('display', 'inline-block'); // show other filteroption      
+                d3.select('#highest-label')
+                    .style('display', 'inline-block'); // show other filteroption      
             }
         });
     }

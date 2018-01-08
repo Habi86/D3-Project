@@ -51,7 +51,7 @@ class ParallelSet {
     createChart(){
         this.loadData();
         // define height and width of svg element
-        this.width = 800;
+        this.width = 1200;
         this.height = 1000;
 
         // define color schema for ordinal scale (colors of different categories)
@@ -91,17 +91,17 @@ class ParallelSet {
         
         // get all the categories about payment
         let leftGroups = [];
-        const categoryNamesLeft = [];
+        this.categoryNamesLeft = [];
         for (var category in left) {
-            categoryNamesLeft.push(left[category].key);
+            this.categoryNamesLeft.push(left[category].key);
             leftGroups.push(left[category].values);
         }
         
         // get all the categories about educations
         let rightGroups = [];
-        const categoryNamesRight = [];
+        this.categoryNamesRight = [];
         for (var category2 in right) {
-            categoryNamesRight.push(right[category2].key);
+            this.categoryNamesRight.push(right[category2].key);
             rightGroups.push(right[category2].values);
         }
 
@@ -111,15 +111,7 @@ class ParallelSet {
         
         let rightGroupsPartitioned = [];
         rightGroups.forEach((item) => rightGroupsPartitioned.push(item));
-    
-        // console.log("left + leftgroups");
-        // console.log(left);
-        // console.log(leftGroups);
-        // console.log("right + rightgroups");
-        // console.log(right);
-        // console.log(rightGroups);
-        
-    
+ 
         //setup scale
         this.yscale = d3.scaleLinear()
             .domain([0, 50000])
@@ -147,8 +139,6 @@ class ParallelSet {
                 leftOffset += d.length;
                 return leftOffset - d.length; // prefix sum, i.e starting with 0
             });
-            // console.log(left);
-            // console.log(right);
 
             left.forEach((l, i) => {
                 const lset = new Set(l); // faster lookup
@@ -195,18 +185,41 @@ class ParallelSet {
     
     
     renderGroup($g, group) {
-        
         const rects = $g.selectAll('rect');
-        // ENTER
+        // UPDATE
         rects.data(group);
 
-        // MERGE & UPDATE
+        // ENTER
+        const enterRects = rects.data(group)
+            .enter()
+            .append('rect');
+
+        // styling for rects in enter phase
+        enterRects
+            .attr('width', 50)
+            .style('fill', this.colorSchema);
+
+        // add labels
+        enterRects.append('text')
+            .attr('class', 'bartext')
+            .attr('text-anchor', 'middle')
+            .attr('fill', 'blue')
+            .attr('transform', 'rotate(-90)')
+            .attr('y', 100)
+            .attr('x', -400)
+            .attr('dy', '1em')
+            .text(this.categoryNamesLeft.map((d) => d));
         
+        // MERGE
+        rects.data(group)
+            .merge(enterRects)
+            .attr('height', (d) => this.yscale(d.length))
+            .attr('transform', (d) => `translate(0,${d.height})`);
+
         // EXIT
         rects.data(group)
             .exit()
             .remove();
-        // TODO render group stacked on top of each other
     }
 
     filterData(val, triggedByExternal) {
