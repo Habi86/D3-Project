@@ -195,8 +195,17 @@ class ParallelSet {
     
     
     renderGroup($g, group) {
-        $g.selectAll('rect').data(group);
-        // ENTER + MERGE + UPDATE + EXIT missing <-- actually not needed anymore
+        
+        const rects = $g.selectAll('rect');
+        // ENTER
+        rects.data(group);
+
+        // MERGE & UPDATE
+        
+        // EXIT
+        rects.data(group)
+            .exit()
+            .remove();
         // TODO render group stacked on top of each other
     }
 
