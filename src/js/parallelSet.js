@@ -103,7 +103,7 @@ class ParallelSet {
         const left = this.groupedByCountry;
         const right = this.filteredGroupedByEducation;
         
-        // get all the categories about payment
+        // get all the countries
         let leftGroups = [];
         const categoryNamesLeft = [];
         for (var category in left) {
@@ -130,7 +130,6 @@ class ParallelSet {
         this.yscale = d3.scaleLinear()
             .domain([0, 50000])
             .range([0, 520]);
-        //this.yscale = d3.scaleLinear().domain([0, 10000]).range([0, 100]);
     
         // call the function to render the data
         const leftDiv = d3.select('svg').select('g.left');
@@ -153,8 +152,6 @@ class ParallelSet {
                 leftOffset += d.length;
                 return leftOffset - d.length; // prefix sum, i.e starting with 0
             });
-            // console.log(left);
-            // console.log(right);
 
             left.forEach((l, i) => {
                 const lset = new Set(l); // faster lookup
@@ -174,9 +171,10 @@ class ParallelSet {
             return result;
         };
         
-        // generate intersections of the two groups
+        // generate intersections of the two groups to display in the parallelset
         this.bands = intersections(leftGroupsPartitioned, rightGroupsPartitioned);
 
+        // render the lines for the bands
         this.line = d3.line()
             .curve(d3.curveLinearClosed)
             .x((d) => d.x)
@@ -205,16 +203,17 @@ class ParallelSet {
     
     renderGroup($g, group) {
         // TODO: render group on top of each other
+        // We got some hints from a stackoverflow Post : https://stackoverflow.com/questions/18151455/d3-js-create-objects-on-top-of-each-other
         const rects = $g.selectAll('rect');
         
         // ENTER & UPDATE
-        rects.data(group);
-
+        // get all the groups and append a rectangle block for every one
         const enterRects = rects.data(group)
             .enter()
             .append('rect');
         
-        // add labels for rect
+        // add labels for rect 
+        // somehow they are not showing
         // enterRects.append('text')
         //     .attr('class', 'bartext')
         //     .attr('text-anchor', 'middle')
@@ -240,19 +239,20 @@ class ParallelSet {
                 .style('fill', this.colorSchema);
         }
     
-        // MERGE
+        // MERGE enterRects group and add attributes to scale the axis
+        // 
         rects.data(group)
             .merge(enterRects)
             .attr('height', (d) => this.yscale(d.length))
             .attr('transform', (d) => `translate(0,${d.height})`);
 
-        // EXIT
+        // EXIT remove all groups which are not needed anymore
         rects.data(group)
             .exit()
             .remove();
     }
     
-    clickedRec(d, i) {
+    clickedRec(d, i) {  // function to set the right country, based on the index
         switch (i) {
         case 0:
             setNewCountry('Australia');
@@ -290,7 +290,8 @@ class ParallelSet {
         default:
             console.log('switch case - default');
         }
-    
+        
+        // set the new country triggered through a click on a rectangle
         function setNewCountry(value){
             const dropdown = d3.select('#bubbleDropdown').node();
             for (var i = 0; i < dropdown.length; i++) {
@@ -304,18 +305,11 @@ class ParallelSet {
         }
     }
     
-    //TODO: Clicking a band triggers the setNewCountry() (just like rectancle-click)
-    clicked(d, i) {
-        console.log('band got clicked ^^');
-    }
-    
-    
     greaterThanEdgeValue(data) {
         return data.values.length > 800;
         // we had more than 200 countries which was not really useful in
         // the diagram to show so we reduced it
     }
-    
     
     // function to trigger observers
     onChange(callback) {
