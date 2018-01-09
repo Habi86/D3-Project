@@ -228,8 +228,9 @@ class ParallelSet {
         // styling for rects in enter phase
         enterRects
             .attr('width', 20)
-            .style('fill', this.colorSchema);
-        
+            .style('fill', this.colorSchema)
+            .on('click', this.clickedRec);
+    
         // MERGE
         rects.data(group)
             .merge(enterRects)
