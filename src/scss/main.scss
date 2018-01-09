@@ -125,7 +125,8 @@ select {
         fill: $primary-color;
         fill-opacity: 0.3;
         &:hover {
-            fill: $third-color;
+            fill: $secondary-color;
+            fill-opacity: 0.8;
         }
     }
 }
