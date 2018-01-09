@@ -226,10 +226,19 @@ class ParallelSet {
         //     .text(this.categoryNamesLeft.map((d) => d));
         
         // styling for rects in enter phase
-        enterRects
-            .attr('width', 20)
-            .style('fill', this.colorSchema)
-            .on('click', this.clickedRec);
+        
+        if ($g._groups[0][0].classList.value === 'left') { //TODO: Refactor me; ugly solution to only add the onClick Event on the Countries (left div)
+            enterRects
+                .attr('width', 20)
+                .style('fill', this.colorSchema)
+                .on('click', this.clickedRec);
+
+        }
+        else {
+            enterRects
+                .attr('width', 20)
+                .style('fill', this.colorSchema);
+        }
     
         // MERGE
         rects.data(group)
@@ -295,8 +304,9 @@ class ParallelSet {
         }
     }
     
+    //TODO: Clicking a band triggers the setNewCountry() (just like rectancle-click)
     clicked(d, i) {
-        console.log('cliiiicked');
+        console.log('band got clicked ^^');
     }
     
     
