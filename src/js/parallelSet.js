@@ -54,7 +54,7 @@ class ParallelSet {
     createChart(){
         this.loadData();
         // define height and width of svg element
-        const labelWidth = 15 0;
+        const labelWidth = 150;
         this.width = 560 + labelWidth * 2; // 50 per side for label
         this.height = 360;
 
@@ -135,7 +135,7 @@ class ParallelSet {
                 right.forEach((r, j) => {
                     const intersection = r.reduce((acc, d) => acc + (lset.has(d) ? 1 : 0), 0);
                     result.push({
-                        title: `${leftLabels[i]} ∩ ${rightLabels[j]}`,
+                        title: `${leftLabels[i]} ∩ ${rightLabels[j]} = ${intersection}`,
                         intersection, // number of intersecting items
                         left: offset, // start left side
                         right: rightOffsets[j] // start right side
@@ -158,12 +158,15 @@ class ParallelSet {
             .y((d) => this.yscale(d.y));
 
         // create four points out of a band
-        this.points = this.bands.map((b) => [
-            {x: 0, y: b.left},
-            {x: 520, y: b.right},
-            {x: 520, y: b.right + b.intersection},
-            {x: 0, y: b.left + b.intersection}
-        ]);
+        this.points = this.bands.map((b) => {
+            b.points = [
+                {x: 0, y: b.left},
+                {x: 520, y: b.right},
+                {x: 520, y: b.right + b.intersection},
+                {x: 0, y: b.left + b.intersection}
+            ];
+            return b;
+        });
     
         this.selectBands = d3.select('g.bands');
     
@@ -174,7 +177,7 @@ class ParallelSet {
         this.linePaths.enter()
             .append('path')
             .on('click', this.clicked)
-            .attr('d', this.line)
+            .attr('d', (d) => this.line(d.points))
             .append('title').text((d) => d.title);
     }
     
