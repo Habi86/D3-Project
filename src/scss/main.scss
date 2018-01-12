@@ -121,6 +121,16 @@ select {
         display: block;
         margin: 20px auto;
     }
+
+    text {
+        dominant-baseline: middle;
+        font-size: 80%;
+    }
+
+    .left text {
+        text-anchor: end;
+    }
+
     path {
         fill: $primary-color;
         fill-opacity: 0.3;

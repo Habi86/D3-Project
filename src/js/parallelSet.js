@@ -23,23 +23,12 @@ class ParallelSet {
                     .filter(this.greaterThanEdgeValue); // .filter((d) => d.key === 'Australia' || d.key === 'Canada' || d.key === 'France' || d.key === 'Germany' || d.key === 'India' || d.key === 'Netherlands' || d.key === 'Poland' || d.key === 'Russian Federation' || d.key === 'Spain' || d.key === 'United Kingdom' || d.key === 'United States');
     
     
-                this.groupedByEducation = d3.nest()
+                this.filteredGroupedByEducation = d3.nest()
                     .key((d) => d.FormalEducation)
                     .sortKeys(d3.ascending)
-                    .entries(this.surveyResults)
+                    .entries([].concat(...this.groupedByCountry.map((d) => d.values)))
                     .filter((d) => d.key !== 'NA');
-    
-                // Filter groupedByEducation with greaterThanEdgeValue - check
-                this.filteredGroupedByEducation = [];
-                
-                for (var i = 0; i < this.groupedByEducation.length; i++ ){
-                    this.filteredGroupedByEducation[i] = {
-                        key: this.groupedByEducation[i].key,
-                        values: this.groupedByEducation[i].values
-                            .filter((d) => d.Country === 'Australia' || d.Country === 'Canada' || d.Country === 'France' || d.Country === 'Germany' || d.Country === 'India' || d.Country === 'Netherlands' || d.Country === 'Poland' || d.Country === 'Russian Federation' || d.Country === 'Spain' || d.Country === 'United Kingdom' || d.Country === 'United States')
-                    };
-                }
-                
+
                 // console.log("groupedByCountry");
                 // console.log(this.groupedByCountry);
                 // onsole.log("groupedByEducation");
@@ -65,34 +54,36 @@ class ParallelSet {
     createChart(){
         this.loadData();
         // define height and width of svg element
-        this.width = 560;
+        const labelWidth = 15 0;
+        this.width = 560 + labelWidth * 2; // 50 per side for label
         this.height = 360;
 
         // define color schema for ordinal scale (colors of different categories)
         // adjust to more appropriate colors
         this.colorSchema = d3.scaleOrdinal()  // ordinal because of categorical data 
-            .range(d3.schemeCategory20);
+            .range(d3.schemeCategory10);
         // used predefined color schema 
         // from https://github.com/d3/d3/blob/master/API.md#ordinal-scales
         
         // create source <svg> element and display it in the #parallelSet div
-        d3.select('#parallelSet')
+        const svg = d3.select('#parallelSet')
             .append('svg')
             .attr('width', this.width)
-            .attr('height', this.height);
+            .attr('height', this.height)
+            .append('g').attr('transform', `translate(${labelWidth},0)`);
         
         // append left and right classes to display the axis
-        d3.select('svg')
+        svg
             .append('g')
             .attr('class' ,'left');
         
-        d3.select('svg')
+        svg
             .append('g')
             .attr('class', 'right')
             .attr('transform', 'translate(540,0)');
 
         // append bands class to later bind the rendered bands to
-        d3.select('svg')
+        svg
             .append('g')
             .attr('class', 'bands')
             .attr('transform', 'translate(20,0)'); 
@@ -104,27 +95,12 @@ class ParallelSet {
         const right = this.filteredGroupedByEducation;
         
         // get all the countries
-        let leftGroups = [];
-        const categoryNamesLeft = [];
-        for (var category in left) {
-            categoryNamesLeft.push(left[category].key);
-            leftGroups.push(left[category].values);
-        }
+        const leftGroups = left.map((d) => d.values);
+        const categoryNamesLeft = left.map((d) => d.key);
         
         // get all the categories about educations
-        let rightGroups = [];
-        const categoryNamesRight = [];
-        for (var category2 in right) {
-            categoryNamesRight.push(right[category2].key);
-            rightGroups.push(right[category2].values);
-        }
-
-        // save the category partitions to create the intersections afterwards
-        let leftGroupsPartitioned = [];
-        leftGroups.forEach((item) => leftGroupsPartitioned.push(item));
-        
-        let rightGroupsPartitioned = [];
-        rightGroups.forEach((item) => rightGroupsPartitioned.push(item));
+        const rightGroups = right.map((d) => d.values);
+        const categoryNamesRight = right.map((d) => d.key);
 
         //setup scale
         this.yscale = d3.scaleLinear()
@@ -134,12 +110,12 @@ class ParallelSet {
         // call the function to render the data
         const leftDiv = d3.select('svg').select('g.left');
         const rightDiv = d3.select('svg').select('g.right');
-        this.renderGroup(leftDiv, leftGroupsPartitioned);
-        this.renderGroup(rightDiv, rightGroupsPartitioned);
+        this.renderGroup(leftDiv, leftGroups, categoryNamesLeft, true);
+        this.renderGroup(rightDiv, rightGroups, categoryNamesRight, false);
 
         // compute the intersections between to given set arrays 
         // (code taken from Samuel Gratzl, he gave us hints about the parallelset)
-        const intersections = (left, right) => {
+        const intersections = (left, leftLabels, right, rightLabels) => {
             const result = [];
             // work on copy such that it can be manipulated to keep track of the right one
             let rightOffset = 0;
@@ -159,6 +135,7 @@ class ParallelSet {
                 right.forEach((r, j) => {
                     const intersection = r.reduce((acc, d) => acc + (lset.has(d) ? 1 : 0), 0);
                     result.push({
+                        title: `${leftLabels[i]} ∩ ${rightLabels[j]}`,
                         intersection, // number of intersecting items
                         left: offset, // start left side
                         right: rightOffsets[j] // start right side
@@ -172,7 +149,7 @@ class ParallelSet {
         };
         
         // generate intersections of the two groups to display in the parallelset
-        this.bands = intersections(leftGroupsPartitioned, rightGroupsPartitioned);
+        this.bands = intersections(leftGroups, categoryNamesLeft, rightGroups, categoryNamesRight);
 
         // render the lines for the bands
         this.line = d3.line()
@@ -193,24 +170,27 @@ class ParallelSet {
         // TODO render points using d3.line generator
         this.linePaths = this.selectBands
             .selectAll('path')
-            .data(this.points, this.categoryNamesLeft);
+            .data(this.points);
         this.linePaths.enter()
             .append('path')
             .on('click', this.clicked)
-            .attr('d', this.line);
+            .attr('d', this.line)
+            .append('title').text((d) => d.title);
     }
     
     
-    renderGroup($g, group) {
+    renderGroup($g, group, labels, isLeft) {
         // TODO: render group on top of each other
         // We got some hints from a stackoverflow Post : https://stackoverflow.com/questions/18151455/d3-js-create-objects-on-top-of-each-other
-        const rects = $g.selectAll('rect');
+        const rects = $g.selectAll('g').data(group);
         
         // ENTER & UPDATE
         // get all the groups and append a rectangle block for every one
-        const enterRects = rects.data(group)
-            .enter()
-            .append('rect');
+        const enterRects = rects.enter().append('g');
+        enterRects.append('rect').attr('width', 20);
+        enterRects.append('text').attr('x', -2);
+
+
         
         // add labels for rect 
         // somehow they are not showing
@@ -225,30 +205,36 @@ class ParallelSet {
         //     .text(this.categoryNamesLeft.map((d) => d));
         
         // styling for rects in enter phase
-        
-        if ($g._groups[0][0].classList.value === 'left') { //TODO: Refactor me; ugly solution to only add the onClick Event on the Countries (left div)
-            enterRects
-                .attr('width', 20)
-                .style('fill', this.colorSchema)
-                .on('click', this.clickedRec);
 
-        }
-        else {
-            enterRects
-                .attr('width', 20)
-                .style('fill', this.colorSchema);
+        if (isLeft) {
+            enterRects.on('click', this.clickedRec);
+        } else {
+            enterRects.select('text').attr('x', 22); // shift to the right side
         }
     
         // MERGE enterRects group and add attributes to scale the axis
         // 
-        rects.data(group)
-            .merge(enterRects)
+        const updateRects = rects.merge(enterRects);
+        let acc = 0;
+        updateRects.select('rect')
+            .style('fill', this.colorSchema)
+            .attr('y', (d) => {
+                const r = acc;
+                acc += d.length;
+                return this.yscale(r);
+            })
             .attr('height', (d) => this.yscale(d.length))
-            .attr('transform', (d) => `translate(0,${d.height})`);
+        acc = 0;
+        updateRects.select('text')
+            .attr('y', (d) => {
+                const r = acc;
+                acc += d.length;
+                return this.yscale(r + d.length / 2);
+            })
+            .text((d, i) => labels[i]);
 
         // EXIT remove all groups which are not needed anymore
-        rects.data(group)
-            .exit()
+        rects.exit()
             .remove();
     }
     
